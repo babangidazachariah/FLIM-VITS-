@@ -18,6 +18,7 @@ The combined results obtained in <a href="ref1">[1]</a> and <a href="ref2">[2]</
 ### Documentation
 To reproduce the research, clone the repository to your local computer and extract (unzip) its contents.
 The directory should look as follows:
+
 /FLIM-VITS-
 
 |___TrafficLightsApp
