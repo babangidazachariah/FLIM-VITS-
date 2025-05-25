@@ -13,7 +13,7 @@ The challenge of road traffic delays persist even with various modern solutions 
   </li>
 </ol>
 
-The combined results obtained in <a href="ref1>[1]</a> and <a href="ref2">[2]</a> produced the thesis that partially fulfilled the requirements for the award of Masters of Applied Science (MASc) in Electrical and Computer Engineering. Thesis Title: "Fuzzy Logic-Based Intersection Management for Delay Minimization in Intelligent Transportation Systems Using V2X Communication" <a href="ref3">[3]</a>.
+The combined results obtained in <a href="ref1">[1]</a> and <a href="ref2">[2]</a> produced the thesis that partially fulfilled the requirements for the award of Masters of Applied Science (MASc) in Electrical and Computer Engineering. Thesis Title: "Fuzzy Logic-Based Intersection Management for Delay Minimization in Intelligent Transportation Systems Using V2X Communication" <a href="ref3">[3]</a>.
 
 ### Reference
 <a id="ref1"></a>  
