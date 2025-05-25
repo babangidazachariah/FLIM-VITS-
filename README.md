@@ -19,7 +19,9 @@ The combined results obtained in <a href="ref1">[1]</a> and <a href="ref2">[2]</
 To reproduce the research, clone the repository to your local computer and extract (unzip) its contents.
 The directory should look as follows:
 /FLIM-VITS-
+
 |___TrafficLightsApp
+
 |___mosaic
 
 The "TrafficLightsApp" directory contains the Java codes used to instantiate and control the simulation elements while the "mosaic" directory contains the simulation configurations and their dependencies.
