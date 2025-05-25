@@ -1,0 +1,5 @@
+{
+    "sumoConfigurationFile": "loopandv2idataintersection.sumocfg",
+    "updateInterval": 1000,
+	"subscribeToAllVehicles": true
+}

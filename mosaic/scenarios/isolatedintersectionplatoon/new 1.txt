@@ -1,0 +1,80 @@
+import com.fuzzylite.*;
+import com.fuzzylite.defuzzifier.Centroid;
+import com.fuzzylite.hedge.Any;
+import com.fuzzylite.norm.s.*;
+import com.fuzzylite.norm.t.*;
+import com.fuzzylite.rule.*;
+import com.fuzzylite.term.*;
+import com.fuzzylite.variable.*;
+
+public class FuzzyTrafficControl {
+    public static void main(String[] args) {
+        // Create a new engine
+        Engine engine = new Engine();
+        engine.setName("Untitled");
+        engine.setDescription("");
+
+        // Input variable 'queueLength'
+        InputVariable queueLength = new InputVariable();
+        queueLength.setName("queueLength");
+        queueLength.setRange(0.0, 20.0);
+        queueLength.addTerm(new Bell("short", 4.166, 2.5, -0.05291));
+        queueLength.addTerm(new Bell("long", 4.166, 2.5, 10.0));
+        queueLength.addTerm(new Bell("verylong", 4.166, 2.5, 20.0));
+        engine.addInputVariable(queueLength);
+
+        // Input variable 'waitingTime'
+        InputVariable waitingTime = new InputVariable();
+        waitingTime.setName("waitingTime");
+        waitingTime.setRange(0.0, 50.0);
+        waitingTime.addTerm(new Bell("small", 10.42, 2.5, -6.94e-16));
+        waitingTime.addTerm(new Bell("large", 10.42, 2.5, 25.0));
+        waitingTime.addTerm(new Bell("verylarge", 10.42, 2.5, 50.0));
+        engine.addInputVariable(waitingTime);
+
+        // Output variable 'phaseDuration'
+        OutputVariable phaseDuration = new OutputVariable();
+        phaseDuration.setName("phaseDuration");
+        phaseDuration.setRange(6.0, 30.0);
+        phaseDuration.setAggregation(new Maximum());
+        phaseDuration.setDefuzzifier(new Centroid(100));
+        phaseDuration.setDefaultValue(Double.NaN);
+        phaseDuration.setLockValidOutput(false);
+        phaseDuration.setLockOutputRange(false);
+        phaseDuration.addTerm(new Bell("small", 4.999, 2.5, 6.0));
+        phaseDuration.addTerm(new Bell("large", 4.999, 2.5, 18.0));
+        phaseDuration.addTerm(new Bell("verylarge", 4.999, 2.5, 30.0));
+        engine.addOutputVariable(phaseDuration);
+
+        // Create rule block
+        RuleBlock ruleBlock = new RuleBlock();
+        ruleBlock.setName("");
+        ruleBlock.setConjunction(new Minimum());
+        ruleBlock.setDisjunction(new Maximum());
+        ruleBlock.setImplication(new Minimum());
+        ruleBlock.setActivation(new General());
+
+        // Add rules
+        ruleBlock.addRule(Rule.parse("if queueLength is short and waitingTime is small then phaseDuration is small", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength is short and waitingTime is large then phaseDuration is small", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength is short and waitingTime is verylarge then phaseDuration is small", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength is long and waitingTime is small then phaseDuration is large", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength is long and waitingTime is large then phaseDuration is large", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength is long and waitingTime is verylarge then phaseDuration is large", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength is verylong and waitingTime is small then phaseDuration is verylarge", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength is verylong and waitingTime is large then phaseDuration is verylarge", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength is verylong and waitingTime is verylarge then phaseDuration is verylarge", engine));
+
+        // Add rule block to engine
+        engine.addRuleBlock(ruleBlock);
+
+        // Validate the engine
+        engine.configure("", "", "Minimum", "Maximum", "Centroid");
+
+        // Test the engine
+        queueLength.setInputValue(15);
+        waitingTime.setInputValue(30);
+        engine.process();
+        System.out.println("phaseDuration.outputValue = " + phaseDuration.getOutputValue());
+    }
+}

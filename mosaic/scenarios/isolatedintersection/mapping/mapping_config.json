@@ -1,0 +1,139 @@
+{
+  "prototypes": [
+    {
+      "name": "Car",
+      "length": "4.5 m",
+      "minGap": "5.0 m",
+      "maxSpeed": "50.0 m/s",
+      "accel": 0.8,
+      "decel": 4.5,
+      "sigma": 0.5,
+      "tau": 1.0
+	  
+    },
+	{
+		"name": "TrafficLight",
+		"applications": ["com.debangis.TrafficLightsController" ]
+	}
+	  
+  ],
+  "trafficLights": [
+    	{
+        	"name": "TrafficLight",
+        	"tlGroupId": "Junction"
+    	}
+   ],
+  
+  "chargingStations": [],
+  "servers": [
+        {
+            "name": "CellularTrafficRecordingServer",
+            "group": "TrafficRecordingServers",
+            "applications": [ "com.debangis.CellularTrafficRecordingServer" ]
+        }
+		
+    ],
+"rsus":[
+		{
+			"name": "RSU",
+            "position": {
+                "latitude": 53.547745,
+                "longitude": 9.966246
+            }, 
+            "applications": [ "com.debangis.VehDelayRecordingRSU" ]
+        }
+		
+		
+	],
+  "vehicles": [
+  		{
+            
+            "route": "SW0",
+            "maxNumberVehicles": 500,
+			"targetFlow": 100,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "SE1",
+            "maxNumberVehicles": 500,
+			"targetFlow": 150,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "SN1",
+            "maxNumberVehicles": 500,
+			"targetFlow": 150,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehicleOnBoardUnit"] } ]
+        },
+	  	
+  		{
+            
+            "route": "NE0",
+            "maxNumberVehicles": 500,
+			"targetFlow": 100,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "NS1",
+            "maxNumberVehicles": 500,
+			"targetFlow": 150,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "NW1",
+            "maxNumberVehicles": 500,
+			"targetFlow": 150,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehicleOnBoardUnit"] } ]
+        },
+	  	
+	  	
+  		{
+            
+            "route": "ES0",
+            "maxNumberVehicles": 500,
+			"targetFlow": 0,
+            "types": [ { "name": "Car" , "applications":["com.debangis.VehicleOnBoardUnit"]} ]
+        },
+	  	{
+            
+            "route": "EW1",
+            "maxNumberVehicles": 500,
+			"targetFlow": 0,
+            "types": [ { "name": "Car" , "applications":["com.debangis.VehicleOnBoardUnit"]} ]
+        },
+	  	{
+            
+            "route": "EN1",
+            "maxNumberVehicles": 500,
+			"targetFlow": 0,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehicleOnBoardUnit"] } ]
+        },
+	  	
+	  	
+  		{
+            
+            "route": "WN0",
+            "maxNumberVehicles": 500,
+			"targetFlow": 0,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "WE1",
+            "maxNumberVehicles": 500,
+			"targetFlow": 0,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "WS1",
+            "maxNumberVehicles": 500,
+			"targetFlow": 0,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehicleOnBoardUnit"] } ]
+        }
+	]
+}

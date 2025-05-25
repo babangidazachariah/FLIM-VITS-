@@ -1,0 +1,14 @@
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <e1Detector file="e1output.xml" freq="60" friendlyPos="x" id="e1det_eastApproach_0" lane="eastApproach_0" pos="499.9"/>
+    <e1Detector file="e1output.xml" freq="60" friendlyPos="x" id="e1det_eastApproach_1" lane="eastApproach_1" pos="499.9"/>
+    <e1Detector file="e1output.xml" freq="60" friendlyPos="x" id="e1det_eastApproach_2" lane="eastApproach_2" pos="499.9"/>
+    <e1Detector file="e1output.xml" freq="60" friendlyPos="x" id="e1det_northApproach_0" lane="northApproach_0" pos="499.9"/>
+    <e1Detector file="e1output.xml" freq="60" friendlyPos="x" id="e1det_northApproach_1" lane="northApproach_1" pos="499.9"/>
+    <e1Detector file="e1output.xml" freq="60" friendlyPos="x" id="e1det_northApproach_2" lane="northApproach_2" pos="499.9"/>
+    <e1Detector file="e1output.xml" freq="60" friendlyPos="x" id="e1det_southApproach_0" lane="southApproach_0" pos="499.9"/>
+    <e1Detector file="e1output.xml" freq="60" friendlyPos="x" id="e1det_southApproach_1" lane="southApproach_1" pos="499.9"/>
+    <e1Detector file="e1output.xml" freq="60" friendlyPos="x" id="e1det_southApproach_2" lane="southApproach_2" pos="499.9"/>
+    <e1Detector file="e1output.xml" freq="60" friendlyPos="x" id="e1det_westApproach_0" lane="westApproach_0" pos="499.9"/>
+    <e1Detector file="e1output.xml" freq="60" friendlyPos="x" id="e1det_westApproach_1" lane="westApproach_1" pos="499.9"/>
+    <e1Detector file="e1output.xml" freq="60" friendlyPos="x" id="e1det_westApproach_2" lane="westApproach_2" pos="499.9"/>
+</additional>

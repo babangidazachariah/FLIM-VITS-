@@ -1,0 +1,186 @@
+package com.debangis;
+
+import org.apache.commons.lang3.Validate;
+//import org.eclipse.mosaic.app.tutorial.message.GreenWaveMsg;
+import org.eclipse.mosaic.fed.application.ambassador.simulation.communication.CamBuilder;
+import org.eclipse.mosaic.fed.application.ambassador.simulation.communication.ReceivedAcknowledgement;
+import org.eclipse.mosaic.fed.application.ambassador.simulation.communication.ReceivedV2xMessage;
+import org.eclipse.mosaic.fed.application.app.AbstractApplication;
+import org.eclipse.mosaic.fed.application.app.api.CommunicationApplication;
+import org.eclipse.mosaic.fed.application.app.api.OperatingSystemAccess;
+import org.eclipse.mosaic.fed.application.app.api.os.TrafficLightOperatingSystem;
+import org.eclipse.mosaic.interactions.communication.V2xMessageTransmission;
+import org.eclipse.mosaic.lib.geo.Point;
+import org.eclipse.mosaic.lib.util.scheduling.Event;
+import org.eclipse.mosaic.lib.util.scheduling.EventProcessor;
+
+import tech.tablesaw.api.Table;
+
+//import com.debangis.FuzzyModel;
+//import com.debangis.MyClass; TrafficLightsController
+//com.debangis.TrafficLightsController
+
+
+public final class TrafficLightsController extends AbstractApplication<TrafficLightOperatingSystem> implements CommunicationApplication {
+  
+	
+  int lightSequence = 0;
+  
+  FuzzyModel fisModel;// = new FuzzyModel();
+  Table adhocTrafficData;
+  Table cellularTrafficData;
+  //AdhocTrafficRecordingServer atrcdng = new AdhocTrafficRecordingServer();
+  //CellularTrafficRecordingServer ctrcdng = new CellularTrafficRecordingServer();
+  //TrafficRecording trcdng = new TrafficRecording();
+  
+  //Table trafficData = trcdng.CreateTrafficRecording("trafficData");
+  
+  int minPhaseDuration = 7;
+  int maxPhaseDuration = 25;
+  int phaseDuration = 15; //Temp value (15) for testing, set to 1
+  int nextPhaseDuration = 0;
+  int phasePointer = 1; 
+  
+  String[] greenPhaseSequence = {"northsouthleft", "northsouthstraightright", "eastwestleft", "eastweststraightright"};
+  String[] yellowPhaseSequence = {"northsouthleftyellow", "northsouthstraightrightyellow", "eastwestleftyellow", "eastweststraightrightyellow"};
+  String allRed = "allred";
+  
+  
+  public void onStartup() {
+	// This for Adhoc network Communication. 
+    getLog().infoSimTime((OperatingSystemAccess)this, "Initialize application", new Object[0]);
+    ((TrafficLightOperatingSystem)getOs()).getAdHocModule().enable();
+    getLog().infoSimTime((OperatingSystemAccess)this, "Activated Wifi Module", new Object[0]);
+    //*/
+	  
+    Event setGreenEvent = new Event(getOs().getSimulationTime() + (phaseDuration * 1000000000L), this::setGreenPhase);
+    getOs().getEventManager().addEvent(setGreenEvent);
+}
+  
+  
+
+  private void setNextSchedule(Event event) {
+	  
+	  //Set next phase
+	  /*
+	  adhocTrafficData = atrcdng.getAhocTrafficRecords();
+	  cellularTrafficData = ctrcdng.getCellularTrafficRecords();
+	  trafficData = trcdng.Append(cellularTrafficData, adhocTrafficData);
+	  */
+	  roundRobinControl();
+	  
+  }
+
+  private void setAllRedPhase(Event event) {
+	  ((TrafficLightOperatingSystem)getOs()).switchToProgram(allRed);
+	  getLog().infoSimTime(this, "Traffic Lights Assigned to " + allRed );
+  }
+  
+
+  private void setYellowPhase(Event event) {
+	//This function traffic lights 
+	  String phase = yellowPhaseSequence[phasePointer];
+	  ((TrafficLightOperatingSystem)getOs()).switchToProgram(phase);
+	  getLog().infoSimTime(this, "Traffic Lights Assigned to " + phase );
+  }
+  
+  private void setGreenPhase(Event event) {
+	  //This function traffic lights 
+	  String phase = greenPhaseSequence[phasePointer];
+	  ((TrafficLightOperatingSystem)getOs()).switchToProgram(phase);
+	  getLog().infoSimTime(this, "Traffic Lights Assigned to " + phase );
+	  //event = new Event(getOs().getSimulationTime() + (phaseDuration * 1000000000L), this::roundRobinControl);10 000 000 000L
+	  //getOs().getEventManager().addEvent(event);
+	  Event setRedEvent = new Event(getOs().getSimulationTime() + (phaseDuration - 2)* 1000000000L, this::setAllRedPhase);
+	  getOs().getEventManager().addEvent(setRedEvent);
+	    
+	    
+	  Event setYellowEvent = new Event(getOs().getSimulationTime() + (phaseDuration - 5)* 1000000000L, this::setYellowPhase);
+	  getOs().getEventManager().addEvent(setYellowEvent);
+	  
+	  Event setNextScheduleEvent = new Event(getOs().getSimulationTime() + (phaseDuration - 3)* 1000000000L, this::setNextSchedule);
+	  getOs().getEventManager().addEvent(setNextScheduleEvent);
+	  
+	  Event setGreenEvent = new Event(getOs().getSimulationTime() + (phaseDuration - 3)* 1000000000L, this::setGreenPhase);
+	  getOs().getEventManager().addEvent(setGreenEvent);
+	    
+  }
+  
+  public void roundRobinControl(){
+	  
+	  String trafficLight = "";
+	  fisModel = new FuzzyModel();
+	  getLog().infoSimTime(this, "Fuzzy Logic Object: " + fisModel.toString() );
+	  double[] otpt = fisModel.EvaluateFIS(10.000, 20.000, 10.000, 20.000);
+	  //String mcls = mycls.ReturnString();
+	  getLog().infoSimTime(this, "Fuzzy Logic Output: " + otpt + " MYCLASS: " );
+	  //while(true){ //Loop forever 
+		  if(lightSequence == 0){
+			  trafficLight = "northsouthleft";
+			  lightSequence += 1;
+		  }else if(lightSequence == 1){
+			  trafficLight = "northsouthstraightright";
+			  lightSequence += 1;
+		  }else if(lightSequence == 2){
+			  trafficLight = "eastwestleft";
+			  lightSequence += 1;
+		  }else if(lightSequence == 3){
+			  trafficLight = "eastweststraightright";
+			  lightSequence = 0;
+		  }
+		  ((TrafficLightOperatingSystem)getOs()).switchToProgram(trafficLight);
+		  long dur = ((TrafficLightOperatingSystem) getOs()).getSimulationTime() + 1000000L;
+		  //while (((TrafficLightOperatingSystem) getOs()).getSimulationTime() < dur){
+
+		  getLog().infoSimTime(this, "Traffic Lights Assigned to " + trafficLight );
+	  	  phasePointer = lightSequence;
+		  //}
+		  
+	  //}
+  }
+  
+  public void onShutdown() {
+    getLog().infoSimTime((OperatingSystemAccess)this, "Shutdown application", new Object[0]);
+  }
+  /*
+  private void setGreen() {
+    ((TrafficLightOperatingSystem)getOs()).switchToProgram("0");
+    getLog().infoSimTime((OperatingSystemAccess)this, "Setting traffic lights to GREEN", new Object[0]);
+    ((TrafficLightOperatingSystem)getOs()).getEventManager().addEvent(((TrafficLightOperatingSystem)
+        getOs()).getSimulationTime() + 10000000000L, new EventProcessor[] { e -> setRed() });
+  }
+  
+  private void setRed() {
+    ((TrafficLightOperatingSystem)getOs()).switchToProgram("1");
+    getLog().infoSimTime((OperatingSystemAccess)this, "Setting traffic lights to RED", new Object[0]);
+  }
+  */
+  public void onMessageReceived(ReceivedV2xMessage receivedV2xMessage) {
+  /*
+    if (!(receivedV2xMessage.getMessage() instanceof GreenWaveMsg))
+      return; 
+    getLog().infoSimTime((OperatingSystemAccess)this, "Received GreenWaveMsg", new Object[0]);
+    if (!((GreenWaveMsg)receivedV2xMessage.getMessage()).getMessage().equals("open sesame!"))
+      return; 
+    getLog().infoSimTime((OperatingSystemAccess)this, "Received correct passphrase: {}", new Object[] { "open sesame!" });
+    Validate.notNull(receivedV2xMessage.getMessage().getRouting().getSource().getSourcePosition(), "The source position of the sender cannot be null", new Object[0]);
+    if (receivedV2xMessage.getMessage().getRouting().getSource().getSourcePosition()
+      .distanceTo((Point)((TrafficLightOperatingSystem)getOs()).getPosition()) > MIN_DISTANCE.intValue()) {
+      getLog().infoSimTime((OperatingSystemAccess)this, "Vehicle that sent message is too far away.", new Object[0]);
+      return;
+    } 
+    if ("1".equals(((TrafficLightOperatingSystem)getOs()).getCurrentProgram().getProgramId()))
+      setGreen(); 
+     */
+	  getLog().info("SRM Message Receieve and being processed");
+  }
+  
+  public void onAcknowledgementReceived(ReceivedAcknowledgement acknowledgedMessage) {}
+  
+  public void onCamBuilding(CamBuilder camBuilder) {}
+  
+  public void onMessageTransmitted(V2xMessageTransmission v2xMessageTransmission) {}
+  
+  public void processEvent(Event event) throws Exception {}
+  
+}

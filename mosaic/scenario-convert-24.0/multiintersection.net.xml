@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-05-30 12:23:16 by Eclipse SUMO netedit Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/home/iotlab/CAV/mosaic/scenarios/multiintersection/sumo/multiintersection.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/iotlab/CAV/mosaic/scenarios/multiintersection/sumo/multiintersection.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="0"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+</configuration>
+-->
+
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="-563984.16,-5933566.87" convBoundary="-305.28,-333.41,479.57,349.79" origBoundary="9.970000,53.550000,9.990000,53.570000" projParameter="+proj=utm +zone=32 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"/>
+
+    <edge id=":J13_0" function="internal">
+        <lane id=":J13_0_0" index="0" speed="13.89" length="0.39" shape="37.91,-116.55 38.42,-116.54"/>
+        <lane id=":J13_0_1" index="1" speed="13.89" length="0.39" shape="37.88,-113.35 38.27,-113.34"/>
+        <lane id=":J13_0_2" index="2" speed="13.89" length="0.39" shape="37.86,-110.15 38.13,-110.14"/>
+    </edge>
+    <edge id=":J14_0" function="internal">
+        <lane id=":J14_0_0" index="0" speed="13.89" length="0.29" shape="41.42,64.52 41.75,64.51"/>
+        <lane id=":J14_0_1" index="1" speed="13.89" length="0.29" shape="41.54,67.72 41.83,67.71"/>
+        <lane id=":J14_0_2" index="2" speed="13.89" length="0.29" shape="41.65,70.92 41.91,70.91"/>
+    </edge>
+    <edge id=":J15_0" function="internal">
+        <lane id=":J15_0_0" index="0" speed="13.89" length="0.30" shape="-31.65,-27.80 -31.65,-27.48"/>
+        <lane id=":J15_0_1" index="1" speed="13.89" length="0.30" shape="-34.85,-27.82 -34.85,-27.53"/>
+        <lane id=":J15_0_2" index="2" speed="13.89" length="0.30" shape="-38.05,-27.84 -38.05,-27.57"/>
+    </edge>
+    <edge id=":J16_0" function="internal">
+        <lane id=":J16_0_0" index="0" speed="13.89" length="0.11" shape="195.23,-28.07 195.23,-27.89"/>
+        <lane id=":J16_0_1" index="1" speed="13.89" length="0.11" shape="192.04,-28.18 192.03,-28.07"/>
+        <lane id=":J16_0_2" index="2" speed="13.89" length="0.11" shape="188.84,-28.29 188.84,-28.26"/>
+    </edge>
+    <edge id=":J17_0" function="internal">
+        <lane id=":J17_0_0" index="0" speed="13.89" length="0.30" shape="120.22,-95.65 119.91,-95.66"/>
+        <lane id=":J17_0_1" index="1" speed="13.89" length="0.30" shape="120.32,-98.85 120.02,-98.86"/>
+        <lane id=":J17_0_2" index="2" speed="13.89" length="0.30" shape="120.42,-102.05 120.13,-102.06"/>
+    </edge>
+    <edge id=":J18_0" function="internal">
+        <lane id=":J18_0_0" index="0" speed="13.89" length="0.13" shape="175.58,4.36 175.59,4.14"/>
+        <lane id=":J18_0_1" index="1" speed="13.89" length="0.13" shape="178.78,4.46 178.79,4.33"/>
+        <lane id=":J18_0_2" index="2" speed="13.89" length="0.13" shape="181.98,4.56 181.98,4.52"/>
+    </edge>
+    <edge id=":J19_0" function="internal">
+        <lane id=":J19_0_0" index="0" speed="13.89" length="0.30" shape="81.65,80.46 81.32,80.47"/>
+        <lane id=":J19_0_1" index="1" speed="13.89" length="0.30" shape="81.54,77.26 81.24,77.27"/>
+        <lane id=":J19_0_2" index="2" speed="13.89" length="0.30" shape="81.43,74.06 81.16,74.07"/>
+    </edge>
+    <edge id=":J20_0" function="internal">
+        <lane id=":J20_0_0" index="0" speed="13.89" length="0.32" shape="-51.21,13.48 -51.21,12.94"/>
+        <lane id=":J20_0_1" index="1" speed="13.89" length="0.32" shape="-48.01,13.37 -48.01,13.04"/>
+        <lane id=":J20_0_2" index="2" speed="13.89" length="0.32" shape="-44.81,13.26 -44.81,13.15"/>
+    </edge>
+    <edge id=":MaryRosslandJuction_0" function="internal">
+        <lane id=":MaryRosslandJuction_0_0" index="0" speed="6.75" length="9.72" shape="174.20,83.77 173.73,80.97 172.60,79.00 170.81,77.85 168.35,77.53"/>
+    </edge>
+    <edge id=":MaryRosslandJuction_1" function="internal">
+        <lane id=":MaryRosslandJuction_1_0" index="0" speed="6.35" length="9.04" shape="195.67,77.57 193.18,77.84 191.44,78.85 190.44,80.60 190.19,83.09"/>
+    </edge>
+    <edge id=":MaryRosslandJuction_2" function="internal">
+        <lane id=":MaryRosslandJuction_2_0" index="0" speed="13.89" length="27.43" shape="195.67,77.57 168.35,77.53"/>
+        <lane id=":MaryRosslandJuction_2_1" index="1" speed="13.89" length="27.43" shape="195.78,74.37 168.24,74.33"/>
+    </edge>
+    <edge id=":MaryRosslandJuction_4" function="internal">
+        <lane id=":MaryRosslandJuction_4_0" index="0" speed="10.50" length="25.12" shape="195.89,71.17 188.94,69.98 184.05,66.97 181.20,62.13 180.41,55.47"/>
+    </edge>
+    <edge id=":MaryRosslandJuction_5" function="internal">
+        <lane id=":MaryRosslandJuction_5_0" index="0" speed="6.58" length="9.43" shape="190.37,55.78 190.62,58.24 191.67,60.02 193.54,61.13 196.22,61.58"/>
+    </edge>
+    <edge id=":MaryRosslandJuction_6" function="internal">
+        <lane id=":MaryRosslandJuction_6_0" index="0" speed="13.89" length="27.45" shape="190.37,55.78 189.93,63.88 189.77,69.43 189.86,74.99 190.19,83.09"/>
+        <lane id=":MaryRosslandJuction_6_1" index="1" speed="13.89" length="27.45" shape="187.18,55.68 186.73,63.85 186.57,69.45 186.66,75.05 186.99,83.23"/>
+    </edge>
+    <edge id=":MaryRosslandJuction_8" function="internal">
+        <lane id=":MaryRosslandJuction_8_0" index="0" speed="10.80" length="24.84" shape="183.98,55.58 182.66,62.20 179.58,66.99 174.74,69.97 168.13,71.14"/>
+    </edge>
+    <edge id=":MaryRosslandJuction_9" function="internal">
+        <lane id=":MaryRosslandJuction_9_0" index="0" speed="6.90" length="9.85" shape="167.80,61.42 170.45,60.98 172.37,59.81 173.55,57.90 174.01,55.27"/>
+    </edge>
+    <edge id=":MaryRosslandJuction_10" function="internal">
+        <lane id=":MaryRosslandJuction_10_0" index="0" speed="13.89" length="28.31" shape="167.80,61.42 196.22,61.58"/>
+        <lane id=":MaryRosslandJuction_10_1" index="1" speed="13.89" length="28.31" shape="167.91,64.61 196.11,64.77"/>
+    </edge>
+    <edge id=":MaryRosslandJuction_12" function="internal">
+        <lane id=":MaryRosslandJuction_12_0" index="0" speed="10.56" length="25.16" shape="168.02,67.81 174.67,68.65 179.51,71.51 182.56,76.42 183.79,83.36"/>
+    </edge>
+    <edge id=":MaryTauntonJunction_0" function="internal">
+        <lane id=":MaryTauntonJunction_0_0" index="0" speed="7.10" length="10.47" shape="-48.75,89.30 -49.23,86.65 -50.54,84.72 -52.67,83.52 -55.64,83.03"/>
+    </edge>
+    <edge id=":MaryTauntonJunction_1" function="internal">
+        <lane id=":MaryTauntonJunction_1_0" index="0" speed="6.68" length="9.54" shape="-26.66,83.20 -29.38,83.62 -31.29,84.72 -32.42,86.49 -32.76,88.95"/>
+    </edge>
+    <edge id=":MaryTauntonJunction_2" function="internal">
+        <lane id=":MaryTauntonJunction_2_0" index="0" speed="13.89" length="28.86" shape="-26.66,83.20 -55.64,83.03"/>
+        <lane id=":MaryTauntonJunction_2_1" index="1" speed="13.89" length="28.86" shape="-26.78,80.00 -55.52,79.84"/>
+    </edge>
+    <edge id=":MaryTauntonJunction_4" function="internal">
+        <lane id=":MaryTauntonJunction_4_0" index="0" speed="10.60" length="25.54" shape="-26.90,76.80 -33.80,75.98 -38.81,73.13 -41.92,68.24 -43.14,61.32"/>
+    </edge>
+    <edge id=":MaryTauntonJunction_5" function="internal">
+        <lane id=":MaryTauntonJunction_5_0" index="0" speed="6.55" length="9.52" shape="-32.85,60.98 -32.53,63.71 -31.50,65.63 -29.74,66.75 -27.26,67.05"/>
+    </edge>
+    <edge id=":MaryTauntonJunction_6" function="internal">
+        <lane id=":MaryTauntonJunction_6_0" index="0" speed="13.89" length="27.95" shape="-32.85,60.98 -32.76,88.95"/>
+        <lane id=":MaryTauntonJunction_6_1" index="1" speed="13.89" length="27.95" shape="-36.05,61.08 -35.95,89.02"/>
+    </edge>
+    <edge id=":MaryTauntonJunction_8" function="internal">
+        <lane id=":MaryTauntonJunction_8_0" index="0" speed="10.50" length="25.62" shape="-39.26,61.19 -40.35,68.17 -43.40,73.07 -48.42,75.89 -55.41,76.64"/>
+    </edge>
+    <edge id=":MaryTauntonJunction_9" function="internal">
+        <lane id=":MaryTauntonJunction_9_0" index="0" speed="6.36" length="9.04" shape="-55.06,67.05 -52.57,66.78 -50.82,65.77 -49.81,64.03 -49.54,61.54"/>
+    </edge>
+    <edge id=":MaryTauntonJunction_10" function="internal">
+        <lane id=":MaryTauntonJunction_10_0" index="0" speed="13.89" length="27.92" shape="-55.06,67.05 -27.26,67.05"/>
+        <lane id=":MaryTauntonJunction_10_1" index="1" speed="13.89" length="27.92" shape="-55.17,70.24 -27.14,70.24"/>
+    </edge>
+    <edge id=":MaryTauntonJunction_12" function="internal">
+        <lane id=":MaryTauntonJunction_12_0" index="0" speed="10.76" length="25.31" shape="-55.29,73.44 -48.35,74.63 -43.35,77.64 -40.29,82.46 -39.15,89.09"/>
+    </edge>
+    <edge id=":SimcoeRosslandJunction_0" function="internal">
+        <lane id=":SimcoeRosslandJunction_0_0" index="0" speed="6.81" length="9.71" shape="203.53,-93.54 200.90,-93.16 199.00,-92.04 197.82,-90.18 197.35,-87.58"/>
+    </edge>
+    <edge id=":SimcoeRosslandJunction_1" function="internal">
+        <lane id=":SimcoeRosslandJunction_1_0" index="0" speed="13.89" length="27.75" shape="203.53,-93.54 175.73,-93.93"/>
+        <lane id=":SimcoeRosslandJunction_1_1" index="1" speed="13.89" length="27.75" shape="203.52,-96.74 175.83,-97.13"/>
+    </edge>
+    <edge id=":SimcoeRosslandJunction_3" function="internal">
+        <lane id=":SimcoeRosslandJunction_3_0" index="0" speed="10.41" length="24.88" shape="203.51,-99.94 196.83,-100.90 192.07,-103.81 189.22,-108.69 188.29,-115.53"/>
+    </edge>
+    <edge id=":SimcoeRosslandJunction_4" function="internal">
+        <lane id=":SimcoeRosslandJunction_4_0" index="0" speed="6.59" length="9.32" shape="197.89,-115.49 198.23,-112.88 199.28,-111.02 201.03,-109.91 203.48,-109.54"/>
+    </edge>
+    <edge id=":SimcoeRosslandJunction_5" function="internal">
+        <lane id=":SimcoeRosslandJunction_5_0" index="0" speed="13.89" length="27.87" shape="197.89,-115.49 197.35,-87.58"/>
+        <lane id=":SimcoeRosslandJunction_5_1" index="1" speed="13.89" length="27.87" shape="194.69,-115.50 194.15,-87.69"/>
+    </edge>
+    <edge id=":SimcoeRosslandJunction_7" function="internal">
+        <lane id=":SimcoeRosslandJunction_7_0" index="0" speed="10.35" length="24.95" shape="191.49,-115.51 190.50,-108.69 187.57,-103.89 182.71,-101.10 175.93,-100.33"/>
+    </edge>
+    <edge id=":SimcoeRosslandJunction_8" function="internal">
+        <lane id=":SimcoeRosslandJunction_8_0" index="0" speed="6.41" length="9.02" shape="176.23,-110.14 178.70,-110.38 180.47,-111.36 181.53,-113.08 181.89,-115.55"/>
+    </edge>
+    <edge id=":SimcoeRosslandJunction_9" function="internal">
+        <lane id=":SimcoeRosslandJunction_9_0" index="0" speed="13.89" length="27.31" shape="176.23,-110.14 203.48,-109.54"/>
+        <lane id=":SimcoeRosslandJunction_9_1" index="1" speed="13.89" length="27.31" shape="176.13,-106.94 203.49,-106.34"/>
+    </edge>
+    <edge id=":SimcoeRosslandJunction_11" function="internal">
+        <lane id=":SimcoeRosslandJunction_11_0" index="0" speed="10.47" length="24.84" shape="176.03,-103.74 182.76,-102.48 187.49,-99.40 190.22,-94.51 190.95,-87.81"/>
+    </edge>
+    <edge id=":SimcoeRosslandJunction_12" function="internal">
+        <lane id=":SimcoeRosslandJunction_12_0" index="0" speed="6.44" length="9.00" shape="181.04,-88.16 180.83,-90.62 179.88,-92.40 178.17,-93.51 175.73,-93.93"/>
+    </edge>
+    <edge id=":SimcoeTauntonJunction_0" function="internal">
+        <lane id=":SimcoeTauntonJunction_0_0" index="0" speed="6.46" length="9.08" shape="-25.64,-100.66 -28.10,-100.38 -29.85,-99.37 -30.91,-97.61 -31.28,-95.10"/>
+    </edge>
+    <edge id=":SimcoeTauntonJunction_1" function="internal">
+        <lane id=":SimcoeTauntonJunction_1_0" index="0" speed="13.89" length="27.60" shape="-25.64,-100.66 -53.18,-100.68"/>
+        <lane id=":SimcoeTauntonJunction_1_1" index="1" speed="13.89" length="27.60" shape="-25.62,-103.86 -53.28,-103.87"/>
+    </edge>
+    <edge id=":SimcoeTauntonJunction_3" function="internal">
+        <lane id=":SimcoeTauntonJunction_3_0" index="0" speed="10.71" length="24.86" shape="-25.59,-107.06 -32.26,-108.23 -37.09,-111.23 -40.09,-116.04 -41.26,-122.68"/>
+    </edge>
+    <edge id=":SimcoeTauntonJunction_4" function="internal">
+        <lane id=":SimcoeTauntonJunction_4_0" index="0" speed="6.82" length="9.69" shape="-31.66,-123.01 -31.21,-120.41 -30.03,-118.54 -28.13,-117.42 -25.52,-117.03"/>
+    </edge>
+    <edge id=":SimcoeTauntonJunction_5" function="internal">
+        <lane id=":SimcoeTauntonJunction_5_0" index="0" speed="13.89" length="27.84" shape="-31.66,-123.01 -31.28,-95.10"/>
+        <lane id=":SimcoeTauntonJunction_5_1" index="1" speed="13.89" length="27.84" shape="-34.86,-122.90 -34.48,-95.12"/>
+    </edge>
+    <edge id=":SimcoeTauntonJunction_7" function="internal">
+        <lane id=":SimcoeTauntonJunction_7_0" index="0" speed="10.46" length="12.33" shape="-38.06,-122.79 -38.83,-116.11 -41.64,-111.26"/>
+    </edge>
+    <edge id=":SimcoeTauntonJunction_16" function="internal">
+        <lane id=":SimcoeTauntonJunction_16_0" index="0" speed="10.46" length="12.71" shape="-41.64,-111.26 -46.49,-108.25 -53.39,-107.07"/>
+    </edge>
+    <edge id=":SimcoeTauntonJunction_8" function="internal">
+        <lane id=":SimcoeTauntonJunction_8_0" index="0" speed="6.67" length="9.54" shape="-53.69,-116.67 -50.98,-117.11 -49.07,-118.22 -47.96,-120.01 -47.66,-122.47"/>
+    </edge>
+    <edge id=":SimcoeTauntonJunction_9" function="internal">
+        <lane id=":SimcoeTauntonJunction_9_0" index="0" speed="13.89" length="28.12" shape="-53.69,-116.67 -25.52,-117.03"/>
+        <lane id=":SimcoeTauntonJunction_9_1" index="1" speed="13.89" length="28.12" shape="-53.59,-113.47 -25.54,-113.83"/>
+    </edge>
+    <edge id=":SimcoeTauntonJunction_11" function="internal">
+        <lane id=":SimcoeTauntonJunction_11_0" index="0" speed="10.35" length="25.17" shape="-53.49,-110.27 -46.54,-109.52 -41.59,-106.74 -38.63,-101.95 -37.68,-95.14"/>
+    </edge>
+    <edge id=":SimcoeTauntonJunction_12" function="internal">
+        <lane id=":SimcoeTauntonJunction_12_0" index="0" speed="6.36" length="9.00" shape="-47.66,-95.20 -47.94,-97.66 -48.95,-99.40 -50.70,-100.40 -53.18,-100.68"/>
+    </edge>
+    <edge id=":SimcoeTauntonJunction_13" function="internal">
+        <lane id=":SimcoeTauntonJunction_13_0" index="0" speed="13.89" length="27.33" shape="-47.66,-95.20 -47.66,-122.47"/>
+        <lane id=":SimcoeTauntonJunction_13_1" index="1" speed="13.89" length="27.33" shape="-44.46,-95.18 -44.46,-122.58"/>
+    </edge>
+    <edge id=":SimcoeTauntonJunction_15" function="internal">
+        <lane id=":SimcoeTauntonJunction_15_0" index="0" speed="10.56" length="12.28" shape="-41.26,-95.16 -40.09,-101.97 -37.26,-106.53"/>
+    </edge>
+    <edge id=":SimcoeTauntonJunction_17" function="internal">
+        <lane id=":SimcoeTauntonJunction_17_0" index="0" speed="10.56" length="12.71" shape="-37.26,-106.53 -37.08,-106.82 -32.24,-109.70 -25.57,-110.63"/>
+    </edge>
+
+    <edge id="MaryRosslandEastApproach" from="J5" to="MaryRosslandJuction" priority="-1">
+        <lane id="MaryRosslandEastApproach_0" index="0" speed="13.89" length="283.79" shape="479.30,87.28 195.67,77.57"/>
+        <lane id="MaryRosslandEastApproach_1" index="1" speed="13.89" length="283.79" shape="479.41,84.08 195.78,74.37"/>
+        <lane id="MaryRosslandEastApproach_2" index="2" speed="13.89" length="283.79" shape="479.52,80.88 195.89,71.17"/>
+    </edge>
+    <edge id="MaryRosslandNorthDepart" from="MaryRosslandJuction" to="J4" priority="-1">
+        <lane id="MaryRosslandNorthDepart_0" index="0" speed="13.89" length="255.60" shape="190.19,83.09 200.94,338.46"/>
+        <lane id="MaryRosslandNorthDepart_1" index="1" speed="13.89" length="255.60" shape="186.99,83.23 197.75,338.60"/>
+        <lane id="MaryRosslandNorthDepart_2" index="2" speed="13.89" length="255.60" shape="183.79,83.36 194.55,338.73"/>
+    </edge>
+    <edge id="MaryRosslandWestApproach" from="J14" to="MaryRosslandJuction" priority="-1">
+        <lane id="MaryRosslandWestApproach_0" index="0" speed="13.89" length="126.12" shape="41.75,64.51 167.80,61.42"/>
+        <lane id="MaryRosslandWestApproach_1" index="1" speed="13.89" length="126.12" shape="41.83,67.71 167.91,64.61"/>
+        <lane id="MaryRosslandWestApproach_2" index="2" speed="13.89" length="126.12" shape="41.91,70.91 168.02,67.81"/>
+    </edge>
+    <edge id="MaryTauntonEastApproach" from="J19" to="MaryTauntonJunction" priority="-1">
+        <lane id="MaryTauntonEastApproach_0" index="0" speed="13.89" length="108.06" shape="81.32,80.47 -26.66,83.20"/>
+        <lane id="MaryTauntonEastApproach_1" index="1" speed="13.89" length="108.06" shape="81.24,77.27 -26.78,80.00"/>
+        <lane id="MaryTauntonEastApproach_2" index="2" speed="13.89" length="108.06" shape="81.16,74.07 -26.90,76.80"/>
+    </edge>
+    <edge id="MaryTauntonNorthDepart" from="MaryTauntonJunction" to="J1" priority="-1">
+        <lane id="MaryTauntonNorthDepart_0" index="0" speed="13.89" length="260.73" shape="-32.76,88.95 -27.06,349.62"/>
+        <lane id="MaryTauntonNorthDepart_1" index="1" speed="13.89" length="260.73" shape="-35.95,89.02 -30.26,349.69"/>
+        <lane id="MaryTauntonNorthDepart_2" index="2" speed="13.89" length="260.73" shape="-39.15,89.09 -33.46,349.76"/>
+    </edge>
+    <edge id="MaryTauntonSouthDepart" from="MaryTauntonJunction" to="J20" priority="-1">
+        <lane id="MaryTauntonSouthDepart_0" index="0" speed="13.89" length="48.09" shape="-49.54,61.54 -51.21,13.48"/>
+        <lane id="MaryTauntonSouthDepart_1" index="1" speed="13.89" length="48.09" shape="-46.34,61.43 -48.01,13.37"/>
+        <lane id="MaryTauntonSouthDepart_2" index="2" speed="13.89" length="48.09" shape="-43.14,61.32 -44.81,13.26"/>
+    </edge>
+    <edge id="MaryTauntonWestApproach" from="J7" to="MaryTauntonJunction" priority="-1">
+        <lane id="MaryTauntonWestApproach_0" index="0" speed="13.89" length="250.10" shape="-304.99,57.96 -55.06,67.05"/>
+        <lane id="MaryTauntonWestApproach_1" index="1" speed="13.89" length="250.10" shape="-305.11,61.15 -55.17,70.24"/>
+        <lane id="MaryTauntonWestApproach_2" index="2" speed="13.89" length="250.10" shape="-305.22,64.35 -55.29,73.44"/>
+    </edge>
+    <edge id="MaryTauntonWestDepart" from="MaryTauntonJunction" to="J7" priority="-1">
+        <lane id="MaryTauntonWestDepart_0" index="0" speed="13.89" length="250.10" shape="-55.64,83.03 -305.57,73.94"/>
+        <lane id="MaryTauntonWestDepart_1" index="1" speed="13.89" length="250.10" shape="-55.52,79.84 -305.45,70.75"/>
+        <lane id="MaryTauntonWestDepart_2" index="2" speed="13.89" length="250.10" shape="-55.41,76.64 -305.34,67.55"/>
+    </edge>
+    <edge id="RosslandMaryEastDepart" from="MaryRosslandJuction" to="J5" priority="-1">
+        <lane id="RosslandMaryEastDepart_0" index="0" speed="13.89" length="283.79" shape="196.22,61.58 479.84,71.28"/>
+        <lane id="RosslandMaryEastDepart_1" index="1" speed="13.89" length="283.79" shape="196.11,64.77 479.73,74.48"/>
+        <lane id="RosslandMaryEastDepart_2" index="2" speed="13.89" length="283.79" shape="196.00,67.97 479.62,77.68"/>
+    </edge>
+    <edge id="RosslandMaryNorthApproach" from="J4" to="MaryRosslandJuction" priority="-1">
+        <lane id="RosslandMaryNorthApproach_0" index="0" speed="13.89" length="255.60" shape="184.96,339.14 174.20,83.77"/>
+        <lane id="RosslandMaryNorthApproach_1" index="1" speed="13.89" length="255.60" shape="188.15,339.00 177.40,83.63"/>
+        <lane id="RosslandMaryNorthApproach_2" index="2" speed="13.89" length="255.60" shape="191.35,338.87 180.60,83.50"/>
+    </edge>
+    <edge id="RosslandMarySouthApproach" from="J16" to="MaryRosslandJuction" priority="-1">
+        <lane id="RosslandMarySouthApproach_0" index="0" speed="13.89" length="83.89" shape="195.23,-27.89 190.37,55.78"/>
+        <lane id="RosslandMarySouthApproach_1" index="1" speed="13.89" length="83.89" shape="192.03,-28.07 187.18,55.68"/>
+        <lane id="RosslandMarySouthApproach_2" index="2" speed="13.89" length="83.89" shape="188.84,-28.26 183.98,55.58"/>
+    </edge>
+    <edge id="RosslandMarySouthDepart" from="MaryRosslandJuction" to="J18" priority="-1">
+        <lane id="RosslandMarySouthDepart_0" index="0" speed="13.89" length="50.93" shape="174.01,55.27 175.58,4.36"/>
+        <lane id="RosslandMarySouthDepart_1" index="1" speed="13.89" length="50.93" shape="177.21,55.37 178.78,4.46"/>
+        <lane id="RosslandMarySouthDepart_2" index="2" speed="13.89" length="50.93" shape="180.41,55.47 181.98,4.56"/>
+    </edge>
+    <edge id="RosslandMaryWestDepart" from="MaryRosslandJuction" to="J19" priority="-1">
+        <lane id="RosslandMaryWestDepart_0" index="0" speed="13.89" length="86.75" shape="168.35,77.53 81.65,80.46"/>
+        <lane id="RosslandMaryWestDepart_1" index="1" speed="13.89" length="86.75" shape="168.24,74.33 81.54,77.26"/>
+        <lane id="RosslandMaryWestDepart_2" index="2" speed="13.89" length="86.75" shape="168.13,71.14 81.43,74.06"/>
+    </edge>
+    <edge id="RosslandSimcoeEastDepart" from="SimcoeRosslandJunction" to="J9" priority="-1">
+        <lane id="RosslandSimcoeEastDepart_0" index="0" speed="13.89" length="267.49" shape="203.48,-109.54 470.97,-110.33"/>
+        <lane id="RosslandSimcoeEastDepart_1" index="1" speed="13.89" length="267.49" shape="203.49,-106.34 470.98,-107.13"/>
+        <lane id="RosslandSimcoeEastDepart_2" index="2" speed="13.89" length="267.49" shape="203.50,-103.14 470.99,-103.93"/>
+    </edge>
+    <edge id="RosslandSimcoeNorthApproach" from="J18" to="SimcoeRosslandJunction" priority="-1">
+        <lane id="RosslandSimcoeNorthApproach_0" index="0" speed="13.89" length="92.53" shape="175.59,4.14 181.04,-88.16"/>
+        <lane id="RosslandSimcoeNorthApproach_1" index="1" speed="13.89" length="92.53" shape="178.79,4.33 184.24,-88.05"/>
+        <lane id="RosslandSimcoeNorthApproach_2" index="2" speed="13.89" length="92.53" shape="181.98,4.52 187.44,-87.93"/>
+    </edge>
+    <edge id="RosslandSimcoeSouthApproach" from="J12" to="SimcoeRosslandJunction" priority="-1">
+        <lane id="RosslandSimcoeSouthApproach_0" index="0" speed="13.89" length="217.02" shape="198.68,-332.51 197.89,-115.49"/>
+        <lane id="RosslandSimcoeSouthApproach_1" index="1" speed="13.89" length="217.02" shape="195.48,-332.52 194.69,-115.50"/>
+        <lane id="RosslandSimcoeSouthApproach_2" index="2" speed="13.89" length="217.02" shape="192.28,-332.53 191.49,-115.51"/>
+    </edge>
+    <edge id="SimcoeRosslandEastApproach" from="J9" to="SimcoeRosslandJunction" priority="-1">
+        <lane id="SimcoeRosslandEastApproach_0" index="0" speed="13.89" length="267.49" shape="471.01,-94.33 203.53,-93.54"/>
+        <lane id="SimcoeRosslandEastApproach_1" index="1" speed="13.89" length="267.49" shape="471.00,-97.53 203.52,-96.74"/>
+        <lane id="SimcoeRosslandEastApproach_2" index="2" speed="13.89" length="267.49" shape="470.99,-100.73 203.51,-99.94"/>
+    </edge>
+    <edge id="SimcoeRosslandNorthDepart" from="SimcoeRosslandJunction" to="J16" priority="-1">
+        <lane id="SimcoeRosslandNorthDepart_0" index="0" speed="13.89" length="59.55" shape="197.35,-87.58 195.23,-28.07"/>
+        <lane id="SimcoeRosslandNorthDepart_1" index="1" speed="13.89" length="59.55" shape="194.15,-87.69 192.04,-28.18"/>
+        <lane id="SimcoeRosslandNorthDepart_2" index="2" speed="13.89" length="59.55" shape="190.95,-87.81 188.84,-28.29"/>
+    </edge>
+    <edge id="SimcoeRosslandSouthDepart" from="SimcoeRosslandJunction" to="J12" priority="-1">
+        <lane id="SimcoeRosslandSouthDepart_0" index="0" speed="13.89" length="217.02" shape="181.89,-115.55 182.68,-332.57"/>
+        <lane id="SimcoeRosslandSouthDepart_1" index="1" speed="13.89" length="217.02" shape="185.09,-115.54 185.88,-332.56"/>
+        <lane id="SimcoeRosslandSouthDepart_2" index="2" speed="13.89" length="217.02" shape="188.29,-115.53 189.08,-332.55"/>
+    </edge>
+    <edge id="SimcoeRosslandWestApproach" from="J13" to="SimcoeRosslandJunction" priority="-1">
+        <lane id="SimcoeRosslandWestApproach_0" index="0" speed="13.89" length="138.00" shape="38.42,-116.54 176.23,-110.14"/>
+        <lane id="SimcoeRosslandWestApproach_1" index="1" speed="13.89" length="138.00" shape="38.27,-113.34 176.13,-106.94"/>
+        <lane id="SimcoeRosslandWestApproach_2" index="2" speed="13.89" length="138.00" shape="38.13,-110.14 176.03,-103.74"/>
+    </edge>
+    <edge id="SimcoeRosslandWestDepart" from="SimcoeRosslandJunction" to="J17" priority="-1">
+        <lane id="SimcoeRosslandWestDepart_0" index="0" speed="13.89" length="55.53" shape="175.73,-93.93 120.22,-95.65"/>
+        <lane id="SimcoeRosslandWestDepart_1" index="1" speed="13.89" length="55.53" shape="175.83,-97.13 120.32,-98.85"/>
+        <lane id="SimcoeRosslandWestDepart_2" index="2" speed="13.89" length="55.53" shape="175.93,-100.33 120.42,-102.05"/>
+    </edge>
+    <edge id="SimcoeTauntonEastApproach" from="J17" to="SimcoeTauntonJunction" priority="-1">
+        <lane id="SimcoeTauntonEastApproach_0" index="0" speed="13.89" length="145.73" shape="119.91,-95.66 -25.64,-100.66"/>
+        <lane id="SimcoeTauntonEastApproach_1" index="1" speed="13.89" length="145.73" shape="120.02,-98.86 -25.62,-103.86"/>
+        <lane id="SimcoeTauntonEastApproach_2" index="2" speed="13.89" length="145.73" shape="120.13,-102.06 -25.59,-107.06"/>
+    </edge>
+    <edge id="SimcoeTauntonEastDepart" from="SimcoeTauntonJunction" to="J13" priority="-1">
+        <lane id="SimcoeTauntonEastDepart_0" index="0" speed="13.89" length="63.43" shape="-25.52,-117.03 37.91,-116.55"/>
+        <lane id="SimcoeTauntonEastDepart_1" index="1" speed="13.89" length="63.43" shape="-25.54,-113.83 37.88,-113.35"/>
+        <lane id="SimcoeTauntonEastDepart_2" index="2" speed="13.89" length="63.43" shape="-25.57,-110.63 37.86,-110.15"/>
+    </edge>
+    <edge id="SimcoeTauntonNorthDepart" from="SimcoeTauntonJunction" to="J15" priority="-1">
+        <lane id="SimcoeTauntonNorthDepart_0" index="0" speed="13.89" length="67.30" shape="-31.28,-95.10 -31.65,-27.80"/>
+        <lane id="SimcoeTauntonNorthDepart_1" index="1" speed="13.89" length="67.30" shape="-34.48,-95.12 -34.85,-27.82"/>
+        <lane id="SimcoeTauntonNorthDepart_2" index="2" speed="13.89" length="67.30" shape="-37.68,-95.14 -38.05,-27.84"/>
+    </edge>
+    <edge id="SimcoeTauntonSouthApproach" from="J15" to="MaryTauntonJunction" priority="-1">
+        <lane id="SimcoeTauntonSouthApproach_0" index="0" speed="13.89" length="88.62" shape="-31.65,-27.48 -32.85,60.98"/>
+        <lane id="SimcoeTauntonSouthApproach_1" index="1" speed="13.89" length="88.62" shape="-34.85,-27.53 -36.05,61.08"/>
+        <lane id="SimcoeTauntonSouthApproach_2" index="2" speed="13.89" length="88.62" shape="-38.05,-27.57 -39.26,61.19"/>
+    </edge>
+    <edge id="SimcoeTauntonSouthDepart" from="SimcoeTauntonJunction" to="J11" priority="-1">
+        <lane id="SimcoeTauntonSouthDepart_0" index="0" speed="13.89" length="210.79" shape="-47.66,-122.47 -54.78,-333.14"/>
+        <lane id="SimcoeTauntonSouthDepart_1" index="1" speed="13.89" length="210.79" shape="-44.46,-122.58 -51.58,-333.25"/>
+        <lane id="SimcoeTauntonSouthDepart_2" index="2" speed="13.89" length="210.79" shape="-41.26,-122.68 -48.38,-333.36"/>
+    </edge>
+    <edge id="SimcoeTauntonWestApproach" from="J10" to="SimcoeTauntonJunction" priority="-1">
+        <lane id="SimcoeTauntonWestApproach_0" index="0" speed="13.89" length="238.85" shape="-292.42,-108.99 -53.69,-116.67"/>
+        <lane id="SimcoeTauntonWestApproach_1" index="1" speed="13.89" length="238.85" shape="-292.31,-105.79 -53.59,-113.47"/>
+        <lane id="SimcoeTauntonWestApproach_2" index="2" speed="13.89" length="238.85" shape="-292.21,-102.59 -53.49,-110.27"/>
+    </edge>
+    <edge id="SimcoeTauntonWestDepart" from="SimcoeTauntonJunction" to="J10" priority="-1">
+        <lane id="SimcoeTauntonWestDepart_0" index="0" speed="13.89" length="238.85" shape="-53.18,-100.68 -291.90,-92.99"/>
+        <lane id="SimcoeTauntonWestDepart_1" index="1" speed="13.89" length="238.85" shape="-53.28,-103.87 -292.01,-96.19"/>
+        <lane id="SimcoeTauntonWestDepart_2" index="2" speed="13.89" length="238.85" shape="-53.39,-107.07 -292.11,-99.39"/>
+    </edge>
+    <edge id="TauntonMaryEastDepart" from="MaryTauntonJunction" to="J14" priority="-1">
+        <lane id="TauntonMaryEastDepart_0" index="0" speed="13.89" length="68.72" shape="-27.26,67.05 41.42,64.52"/>
+        <lane id="TauntonMaryEastDepart_1" index="1" speed="13.89" length="68.72" shape="-27.14,70.24 41.54,67.72"/>
+        <lane id="TauntonMaryEastDepart_2" index="2" speed="13.89" length="68.72" shape="-27.02,73.44 41.65,70.92"/>
+    </edge>
+    <edge id="TauntonMaryNorthApproach" from="J1" to="MaryTauntonJunction" priority="-1">
+        <lane id="TauntonMaryNorthApproach_0" index="0" speed="13.89" length="260.73" shape="-43.06,349.96 -48.75,89.30"/>
+        <lane id="TauntonMaryNorthApproach_1" index="1" speed="13.89" length="260.73" shape="-39.86,349.89 -45.55,89.23"/>
+        <lane id="TauntonMaryNorthApproach_2" index="2" speed="13.89" length="260.73" shape="-36.66,349.82 -42.35,89.16"/>
+    </edge>
+    <edge id="TauntonSimcoeNorthApproach" from="J20" to="SimcoeTauntonJunction" priority="-1">
+        <lane id="TauntonSimcoeNorthApproach_0" index="0" speed="13.89" length="108.28" shape="-51.21,12.94 -47.66,-95.20"/>
+        <lane id="TauntonSimcoeNorthApproach_1" index="1" speed="13.89" length="108.28" shape="-48.01,13.04 -44.46,-95.18"/>
+        <lane id="TauntonSimcoeNorthApproach_2" index="2" speed="13.89" length="108.28" shape="-44.81,13.15 -41.26,-95.16"/>
+    </edge>
+    <edge id="TauntonSimcoeSouthApproach" from="J11" to="SimcoeTauntonJunction" priority="-1">
+        <lane id="TauntonSimcoeSouthApproach_0" index="0" speed="13.89" length="210.79" shape="-38.78,-333.68 -31.66,-123.01"/>
+        <lane id="TauntonSimcoeSouthApproach_1" index="1" speed="13.89" length="210.79" shape="-41.98,-333.57 -34.86,-122.90"/>
+        <lane id="TauntonSimcoeSouthApproach_2" index="2" speed="13.89" length="210.79" shape="-45.18,-333.46 -38.06,-122.79"/>
+    </edge>
+
+    <tlLogic id="MaryRosslandJuction" type="static" programID="MaryRosslandJuction" offset="0">
+        <phase duration="42" state="rrrrGGGgrrrrGGGg"/>
+        <phase duration="3"  state="rrryyyrrrrrryyyy"/>
+        <phase duration="42" state="gggrrrrrgggrrrrr"/>
+        <phase duration="3"  state="yyyrrrrryyyrrrrr"/>
+    </tlLogic>
+    <tlLogic id="MaryTauntonJunction" type="static" programID="MaryTauntonJunction" offset="0">
+        <phase duration="42" state="rrrrGGGgrrrrGGGg"/>
+        <phase duration="3"  state="rrryyyrrrrrryyyy"/>
+        <phase duration="42" state="gggrrrrrgggrrrrr"/>
+        <phase duration="3"  state="yyyrrrrryyyrrrrr"/>
+    </tlLogic>
+    <tlLogic id="SimcoeRosslandJunction" type="static" programID="SimcoeRosslandJunction" offset="0">
+        <phase duration="42" state="rrrrGGGgrrrrGGGg"/>
+        <phase duration="3"  state="rrryyyrrrrrryyyy"/>
+        <phase duration="42" state="gggrrrrrgggrrrrr"/>
+        <phase duration="3"  state="yyyrrrrryyyrrrrr"/>
+    </tlLogic>
+    <tlLogic id="SimcoeTauntonJunction" type="static" programID="SimcoeTauntonJunction" offset="0">
+        <phase duration="42" state="rrrrGGGgrrrrGGGg"/>
+        <phase duration="3"  state="rrryyyrrrrrryyyy"/>
+        <phase duration="42" state="gggrrrrrgggrrrrr"/>
+        <phase duration="3"  state="yyyrrrrryyyrrrrr"/>
+    </tlLogic>
+    <tlLogic id="SimcoeTauntonJunction" type="static" programID="allRed" offset="0">
+        <phase duration="32" state="rrrrrrrrrrrrrrrr"/>
+    </tlLogic>
+    <tlLogic id="SimcoeTauntonJunction" type="static" programID="northSouthLeft" offset="0">
+        <phase duration="42" state="grrrrrrGgrrrrrrG"/>
+    </tlLogic>
+    <tlLogic id="SimcoeTauntonJunction" type="static" programID="northSouthLeftYellow" offset="0">
+        <phase duration="42" state="yrrrrrryyrrrrrry"/>
+    </tlLogic>
+    <tlLogic id="SimcoeTauntonJunction" type="static" programID="northSouthStraightRight" offset="0">
+        <phase duration="32" state="rrrrGGGrrrrrGGGr"/>
+    </tlLogic>
+    <tlLogic id="SimcoeTauntonJunction" type="static" programID="northSouthStraightRightYellow" offset="0">
+        <phase duration="32" state="rrrryyyrrrrryyyr"/>
+    </tlLogic>
+    <tlLogic id="SimcoeTauntonJunction" type="static" programID="westEastLeft" offset="0">
+        <phase duration="42" state="rrrGgrrrrrrGgrrr"/>
+    </tlLogic>
+    <tlLogic id="SimcoeTauntonJunction" type="static" programID="westEastLeftYellow" offset="0">
+        <phase duration="42" state="rrryyrrrrrryyrrr"/>
+    </tlLogic>
+    <tlLogic id="SimcoeTauntonJunction" type="static" programID="westEastStraightRight" offset="0">
+        <phase duration="42" state="GGGrrrrrGGGrrrrr"/>
+    </tlLogic>
+    <tlLogic id="SimcoeTauntonJunction" type="static" programID="westEastStraightRightYellow" offset="0">
+        <phase duration="42" state="yyyrrrrryyyrrrrr"/>
+    </tlLogic>
+
+    <junction id="J1" type="dead_end" x="-35.06" y="349.79" incLanes="MaryTauntonNorthDepart_0 MaryTauntonNorthDepart_1 MaryTauntonNorthDepart_2" intLanes="" shape="-35.06,349.79 -25.46,349.58 -35.06,349.79"/>
+    <junction id="J10" type="dead_end" x="-292.16" y="-100.99" incLanes="SimcoeTauntonWestDepart_0 SimcoeTauntonWestDepart_1 SimcoeTauntonWestDepart_2" intLanes="" shape="-292.16,-100.99 -291.85,-91.39 -292.16,-100.99"/>
+    <junction id="J11" type="dead_end" x="-46.78" y="-333.41" incLanes="SimcoeTauntonSouthDepart_0 SimcoeTauntonSouthDepart_1 SimcoeTauntonSouthDepart_2" intLanes="" shape="-46.78,-333.41 -56.37,-333.09 -46.78,-333.41"/>
+    <junction id="J12" type="dead_end" x="190.68" y="-332.54" incLanes="SimcoeRosslandSouthDepart_0 SimcoeRosslandSouthDepart_1 SimcoeRosslandSouthDepart_2" intLanes="" shape="190.68,-332.54 181.08,-332.57 190.68,-332.54"/>
+    <junction id="J13" type="priority" x="37.95" y="-108.55" incLanes="SimcoeTauntonEastDepart_0 SimcoeTauntonEastDepart_1 SimcoeTauntonEastDepart_2" intLanes=":J13_0_0 :J13_0_1 :J13_0_2" shape="38.05,-108.55 38.50,-118.13 37.92,-118.15 37.85,-108.55">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="J14" type="priority" x="41.83" y="72.51" incLanes="TauntonMaryEastDepart_0 TauntonMaryEastDepart_1 TauntonMaryEastDepart_2" intLanes=":J14_0_0 :J14_0_1 :J14_0_2" shape="41.95,72.51 41.71,62.91 41.36,62.92 41.71,72.51">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="J15" type="priority" x="-39.65" y="-27.72" incLanes="SimcoeTauntonNorthDepart_0 SimcoeTauntonNorthDepart_1 SimcoeTauntonNorthDepart_2" intLanes=":J15_0_0 :J15_0_1 :J15_0_2" shape="-30.05,-27.80 -39.65,-27.85 -39.65,-27.59 -30.05,-27.46">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="J16" type="priority" x="187.24" y="-28.35" incLanes="SimcoeRosslandNorthDepart_0 SimcoeRosslandNorthDepart_1 SimcoeRosslandNorthDepart_2" intLanes=":J16_0_0 :J16_0_1 :J16_0_2" shape="196.84,-28.09 187.24,-28.43 187.24,-28.27 196.82,-27.71">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="J17" type="priority" x="120.33" y="-103.65" incLanes="SimcoeRosslandWestDepart_0 SimcoeRosslandWestDepart_1 SimcoeRosslandWestDepart_2" intLanes=":J17_0_0 :J17_0_1 :J17_0_2" shape="120.17,-94.05 120.47,-103.65 120.19,-103.65 119.86,-94.06">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="J18" type="priority" x="183.58" y="4.61" incLanes="RosslandMarySouthDepart_0 RosslandMarySouthDepart_1 RosslandMarySouthDepart_2" intLanes=":J18_0_0 :J18_0_1 :J18_0_2" shape="183.58,4.53 174.00,3.96 173.98,4.40 183.58,4.69">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="J19" type="priority" x="81.25" y="72.47" incLanes="RosslandMaryWestDepart_0 RosslandMaryWestDepart_1 RosslandMaryWestDepart_2" intLanes=":J19_0_0 :J19_0_1 :J19_0_2" shape="81.70,82.06 81.38,72.47 81.12,72.47 81.36,82.07">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="J20" type="priority" x="-43.21" y="13.20" incLanes="MaryTauntonSouthDepart_0 MaryTauntonSouthDepart_1 MaryTauntonSouthDepart_2" intLanes=":J20_0_0 :J20_0_1 :J20_0_2" shape="-52.80,13.53 -43.21,13.20 -52.80,12.89">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="J4" type="dead_end" x="192.95" y="338.80" incLanes="MaryRosslandNorthDepart_0 MaryRosslandNorthDepart_1 MaryRosslandNorthDepart_2" intLanes="" shape="192.95,338.80 202.54,338.40 192.95,338.80"/>
+    <junction id="J5" type="dead_end" x="479.57" y="79.28" incLanes="RosslandMaryEastDepart_0 RosslandMaryEastDepart_1 RosslandMaryEastDepart_2" intLanes="" shape="479.57,79.28 479.90,69.69 479.57,79.28"/>
+    <junction id="J7" type="dead_end" x="-305.28" y="65.95" incLanes="MaryTauntonWestDepart_0 MaryTauntonWestDepart_1 MaryTauntonWestDepart_2" intLanes="" shape="-305.28,65.95 -305.63,75.54 -305.28,65.95"/>
+    <junction id="J9" type="dead_end" x="470.99" y="-102.33" incLanes="RosslandSimcoeEastDepart_0 RosslandSimcoeEastDepart_1 RosslandSimcoeEastDepart_2" intLanes="" shape="470.99,-102.33 470.96,-111.93 470.99,-102.33"/>
+    <junction id="MaryRosslandJuction" type="traffic_light" x="181.59" y="69.08" incLanes="RosslandMaryNorthApproach_0 RosslandMaryNorthApproach_1 RosslandMaryNorthApproach_2 MaryRosslandEastApproach_0 MaryRosslandEastApproach_1 MaryRosslandEastApproach_2 RosslandMarySouthApproach_0 RosslandMarySouthApproach_1 RosslandMarySouthApproach_2 MaryRosslandWestApproach_0 MaryRosslandWestApproach_1 MaryRosslandWestApproach_2" intLanes=":MaryRosslandJuction_0_0 :MaryRosslandJuction_1_0 :MaryRosslandJuction_2_0 :MaryRosslandJuction_2_1 :MaryRosslandJuction_4_0 :MaryRosslandJuction_5_0 :MaryRosslandJuction_6_0 :MaryRosslandJuction_6_1 :MaryRosslandJuction_8_0 :MaryRosslandJuction_9_0 :MaryRosslandJuction_10_0 :MaryRosslandJuction_10_1 :MaryRosslandJuction_12_0" shape="172.60,83.83 191.79,83.03 192.14,80.82 192.66,80.06 193.41,79.53 194.40,79.23 195.62,79.17 196.27,59.98 193.78,59.45 192.93,58.86 192.35,58.06 192.03,57.05 191.97,55.83 172.41,55.22 171.83,57.72 171.18,58.61 170.28,59.26 169.14,59.66 167.75,59.82 168.40,79.13 170.65,79.59 171.45,80.24 172.05,81.16 172.43,82.36">
+        <request index="0"  response="0000000001100" foes="0000000001100" cont="0"/>
+        <request index="1"  response="0000000000000" foes="0000011000000" cont="0"/>
+        <request index="2"  response="0000000000000" foes="1000011000001" cont="0"/>
+        <request index="3"  response="0000000000000" foes="1000011000001" cont="0"/>
+        <request index="4"  response="0110000000000" foes="0110111000000" cont="0"/>
+        <request index="5"  response="0110000000000" foes="0110000000000" cont="0"/>
+        <request index="6"  response="0110000011110" foes="0110000011110" cont="0"/>
+        <request index="7"  response="0110000011110" foes="0110000011110" cont="0"/>
+        <request index="8"  response="1110000010000" foes="1110000010000" cont="0"/>
+        <request index="9"  response="0000000000000" foes="0000000000000" cont="0"/>
+        <request index="10" response="0000000000000" foes="0000111110000" cont="0"/>
+        <request index="11" response="0000000000000" foes="0000111110000" cont="0"/>
+        <request index="12" response="0000000001100" foes="0000100001100" cont="0"/>
+    </junction>
+    <junction id="MaryTauntonJunction" type="traffic_light" x="-41.05" y="75.56" incLanes="TauntonMaryNorthApproach_0 TauntonMaryNorthApproach_1 TauntonMaryNorthApproach_2 MaryTauntonEastApproach_0 MaryTauntonEastApproach_1 MaryTauntonEastApproach_2 SimcoeTauntonSouthApproach_0 SimcoeTauntonSouthApproach_1 SimcoeTauntonSouthApproach_2 MaryTauntonWestApproach_0 MaryTauntonWestApproach_1 MaryTauntonWestApproach_2" intLanes=":MaryTauntonJunction_0_0 :MaryTauntonJunction_1_0 :MaryTauntonJunction_2_0 :MaryTauntonJunction_2_1 :MaryTauntonJunction_4_0 :MaryTauntonJunction_5_0 :MaryTauntonJunction_6_0 :MaryTauntonJunction_6_1 :MaryTauntonJunction_8_0 :MaryTauntonJunction_9_0 :MaryTauntonJunction_10_0 :MaryTauntonJunction_10_1 :MaryTauntonJunction_12_0" shape="-50.35,89.33 -31.16,88.91 -30.69,86.68 -30.06,85.89 -29.17,85.31 -28.02,84.95 -26.61,84.80 -27.32,65.45 -29.53,65.01 -30.30,64.39 -30.84,63.50 -31.16,62.35 -31.25,60.92 -51.14,61.59 -51.51,63.80 -52.03,64.56 -52.79,65.08 -53.78,65.38 -55.00,65.45 -55.70,84.63 -52.77,85.24 -51.74,85.90 -50.99,86.81 -50.53,87.95">
+        <request index="0"  response="0000000000000" foes="0000000001100" cont="0"/>
+        <request index="1"  response="0000011000000" foes="0000011000000" cont="0"/>
+        <request index="2"  response="0000011000001" foes="1000011000001" cont="0"/>
+        <request index="3"  response="0000011000001" foes="1000011000001" cont="0"/>
+        <request index="4"  response="0110111000000" foes="0110111000000" cont="0"/>
+        <request index="5"  response="0000000000000" foes="0110000000000" cont="0"/>
+        <request index="6"  response="0000000000000" foes="0110000011110" cont="0"/>
+        <request index="7"  response="0000000000000" foes="0110000011110" cont="0"/>
+        <request index="8"  response="0000000000000" foes="1110000010000" cont="0"/>
+        <request index="9"  response="0000000000000" foes="0000000000000" cont="0"/>
+        <request index="10" response="0000111100000" foes="0000111110000" cont="0"/>
+        <request index="11" response="0000111100000" foes="0000111110000" cont="0"/>
+        <request index="12" response="0000100001100" foes="0000100001100" cont="0"/>
+    </junction>
+    <junction id="SimcoeRosslandJunction" type="traffic_light" x="189.84" y="-101.50" incLanes="SimcoeRosslandEastApproach_0 SimcoeRosslandEastApproach_1 SimcoeRosslandEastApproach_2 RosslandSimcoeSouthApproach_0 RosslandSimcoeSouthApproach_1 RosslandSimcoeSouthApproach_2 SimcoeRosslandWestApproach_0 SimcoeRosslandWestApproach_1 SimcoeRosslandWestApproach_2 RosslandSimcoeNorthApproach_0 RosslandSimcoeNorthApproach_1 RosslandSimcoeNorthApproach_2" intLanes=":SimcoeRosslandJunction_0_0 :SimcoeRosslandJunction_1_0 :SimcoeRosslandJunction_1_1 :SimcoeRosslandJunction_3_0 :SimcoeRosslandJunction_4_0 :SimcoeRosslandJunction_5_0 :SimcoeRosslandJunction_5_1 :SimcoeRosslandJunction_7_0 :SimcoeRosslandJunction_8_0 :SimcoeRosslandJunction_9_0 :SimcoeRosslandJunction_9_1 :SimcoeRosslandJunction_11_0 :SimcoeRosslandJunction_12_0" shape="203.53,-91.94 203.48,-111.14 201.25,-111.62 200.48,-112.22 199.93,-113.07 199.60,-114.15 199.49,-115.48 180.29,-115.55 179.84,-113.35 179.28,-112.60 178.50,-112.08 177.50,-111.79 176.28,-111.74 175.68,-92.33 177.87,-91.82 178.62,-91.24 179.13,-90.45 179.40,-89.44 179.44,-88.22 198.95,-87.52 199.53,-89.97 200.17,-90.83 201.06,-91.44 202.18,-91.81">
+        <request index="0"  response="0000000000000" foes="0000001100000" cont="0"/>
+        <request index="1"  response="0000000000000" foes="1100001100000" cont="0"/>
+        <request index="2"  response="0000000000000" foes="1100001100000" cont="0"/>
+        <request index="3"  response="0011000000000" foes="0011011100000" cont="0"/>
+        <request index="4"  response="0011000000000" foes="0011000000000" cont="0"/>
+        <request index="5"  response="0011000001111" foes="0011000001111" cont="0"/>
+        <request index="6"  response="0011000001111" foes="0011000001111" cont="0"/>
+        <request index="7"  response="0111000001000" foes="0111000001000" cont="0"/>
+        <request index="8"  response="0000000000000" foes="0000000000000" cont="0"/>
+        <request index="9"  response="0000000000000" foes="0000011111000" cont="0"/>
+        <request index="10" response="0000000000000" foes="0000011111000" cont="0"/>
+        <request index="11" response="0000000000110" foes="0000010000110" cont="0"/>
+        <request index="12" response="0000000000110" foes="0000000000110" cont="0"/>
+    </junction>
+    <junction id="SimcoeTauntonJunction" type="traffic_light" x="-39.20" y="-109.13" incLanes="SimcoeTauntonEastApproach_0 SimcoeTauntonEastApproach_1 SimcoeTauntonEastApproach_2 TauntonSimcoeSouthApproach_0 TauntonSimcoeSouthApproach_1 TauntonSimcoeSouthApproach_2 SimcoeTauntonWestApproach_0 SimcoeTauntonWestApproach_1 SimcoeTauntonWestApproach_2 TauntonSimcoeNorthApproach_0 TauntonSimcoeNorthApproach_1 TauntonSimcoeNorthApproach_2" intLanes=":SimcoeTauntonJunction_0_0 :SimcoeTauntonJunction_1_0 :SimcoeTauntonJunction_1_1 :SimcoeTauntonJunction_3_0 :SimcoeTauntonJunction_4_0 :SimcoeTauntonJunction_5_0 :SimcoeTauntonJunction_5_1 :SimcoeTauntonJunction_16_0 :SimcoeTauntonJunction_8_0 :SimcoeTauntonJunction_9_0 :SimcoeTauntonJunction_9_1 :SimcoeTauntonJunction_11_0 :SimcoeTauntonJunction_12_0 :SimcoeTauntonJunction_13_0 :SimcoeTauntonJunction_13_1 :SimcoeTauntonJunction_17_0" shape="-25.66,-99.06 -25.51,-118.63 -27.97,-119.13 -28.85,-119.75 -29.49,-120.61 -29.90,-121.72 -30.07,-123.06 -49.25,-122.41 -49.69,-120.18 -50.31,-119.38 -51.19,-118.79 -52.34,-118.42 -53.75,-118.27 -53.13,-99.08 -50.92,-98.70 -50.16,-98.17 -49.63,-97.41 -49.33,-96.43 -49.26,-95.21 -29.68,-95.09 -29.22,-97.36 -28.66,-98.14 -27.88,-98.68 -26.88,-98.99">
+        <request index="0"  response="0000000000000000" foes="0000000001100000" cont="0"/>
+        <request index="1"  response="1000000000000000" foes="1111100001100000" cont="0"/>
+        <request index="2"  response="1000000000000000" foes="1111100001100000" cont="0"/>
+        <request index="3"  response="1000011010000000" foes="1000011011100000" cont="0"/>
+        <request index="4"  response="0000011000000000" foes="0000011000000000" cont="0"/>
+        <request index="5"  response="0000011000001111" foes="1000011000001111" cont="0"/>
+        <request index="6"  response="0000011000001111" foes="1000011000001111" cont="0"/>
+        <request index="7"  response="0110111000001000" foes="0110111000001000" cont="1"/>
+        <request index="8"  response="0000000000000000" foes="0110000000000000" cont="0"/>
+        <request index="9"  response="0000000010000000" foes="0110000011111000" cont="0"/>
+        <request index="10" response="0000000010000000" foes="0110000011111000" cont="0"/>
+        <request index="11" response="1000000010000110" foes="1110000010000110" cont="0"/>
+        <request index="12" response="0000000000000110" foes="0000000000000110" cont="0"/>
+        <request index="13" response="0000111100000110" foes="0000111110000110" cont="0"/>
+        <request index="14" response="0000111100000110" foes="0000111110000110" cont="0"/>
+        <request index="15" response="0000100001101110" foes="0000100001101110" cont="1"/>
+    </junction>
+
+    <junction id=":SimcoeTauntonJunction_16_0" type="internal" x="-41.64" y="-111.26" incLanes=":SimcoeTauntonJunction_7_0 TauntonSimcoeNorthApproach_0 TauntonSimcoeNorthApproach_1" intLanes=":SimcoeTauntonJunction_1_0 :SimcoeTauntonJunction_1_1 :SimcoeTauntonJunction_3_0 :SimcoeTauntonJunction_9_0 :SimcoeTauntonJunction_9_1 :SimcoeTauntonJunction_11_0 :SimcoeTauntonJunction_12_0 :SimcoeTauntonJunction_13_0 :SimcoeTauntonJunction_13_1"/>
+    <junction id=":SimcoeTauntonJunction_17_0" type="internal" x="-37.26" y="-106.53" incLanes=":SimcoeTauntonJunction_15_0 TauntonSimcoeSouthApproach_0 TauntonSimcoeSouthApproach_1" intLanes=":SimcoeTauntonJunction_1_0 :SimcoeTauntonJunction_1_1 :SimcoeTauntonJunction_3_0 :SimcoeTauntonJunction_4_0 :SimcoeTauntonJunction_5_0 :SimcoeTauntonJunction_5_1 :SimcoeTauntonJunction_9_0 :SimcoeTauntonJunction_9_1 :SimcoeTauntonJunction_11_0"/>
+
+    <connection from="MaryRosslandEastApproach" to="MaryRosslandNorthDepart" fromLane="0" toLane="0" via=":MaryRosslandJuction_1_0" tl="MaryRosslandJuction" linkIndex="0" dir="r" state="O"/>
+    <connection from="MaryRosslandEastApproach" to="RosslandMaryWestDepart" fromLane="0" toLane="0" via=":MaryRosslandJuction_2_0" tl="MaryRosslandJuction" linkIndex="1" dir="s" state="O"/>
+    <connection from="MaryRosslandEastApproach" to="RosslandMaryWestDepart" fromLane="1" toLane="1" via=":MaryRosslandJuction_2_1" tl="MaryRosslandJuction" linkIndex="2" dir="s" state="O"/>
+    <connection from="MaryRosslandEastApproach" to="RosslandMarySouthDepart" fromLane="2" toLane="2" via=":MaryRosslandJuction_4_0" tl="MaryRosslandJuction" linkIndex="4" dir="l" state="o"/>
+    <connection from="MaryRosslandWestApproach" to="RosslandMarySouthDepart" fromLane="0" toLane="0" via=":MaryRosslandJuction_9_0" tl="MaryRosslandJuction" linkIndex="10" dir="r" state="O"/>
+    <connection from="MaryRosslandWestApproach" to="RosslandMaryEastDepart" fromLane="0" toLane="0" via=":MaryRosslandJuction_10_0" tl="MaryRosslandJuction" linkIndex="11" dir="s" state="O"/>
+    <connection from="MaryRosslandWestApproach" to="RosslandMaryEastDepart" fromLane="1" toLane="1" via=":MaryRosslandJuction_10_1" tl="MaryRosslandJuction" linkIndex="12" dir="s" state="O"/>
+    <connection from="MaryRosslandWestApproach" to="MaryRosslandNorthDepart" fromLane="2" toLane="2" via=":MaryRosslandJuction_12_0" tl="MaryRosslandJuction" linkIndex="14" dir="l" state="o"/>
+    <connection from="MaryTauntonEastApproach" to="MaryTauntonNorthDepart" fromLane="0" toLane="0" via=":MaryTauntonJunction_1_0" tl="MaryTauntonJunction" linkIndex="0" dir="r" state="o"/>
+    <connection from="MaryTauntonEastApproach" to="MaryTauntonWestDepart" fromLane="0" toLane="0" via=":MaryTauntonJunction_2_0" tl="MaryTauntonJunction" linkIndex="1" dir="s" state="o"/>
+    <connection from="MaryTauntonEastApproach" to="MaryTauntonWestDepart" fromLane="1" toLane="1" via=":MaryTauntonJunction_2_1" tl="MaryTauntonJunction" linkIndex="2" dir="s" state="o"/>
+    <connection from="MaryTauntonEastApproach" to="MaryTauntonSouthDepart" fromLane="2" toLane="2" via=":MaryTauntonJunction_4_0" tl="MaryTauntonJunction" linkIndex="4" dir="l" state="o"/>
+    <connection from="MaryTauntonSouthDepart" to="TauntonSimcoeNorthApproach" fromLane="0" toLane="0" via=":J20_0_0" dir="s" state="M"/>
+    <connection from="MaryTauntonSouthDepart" to="TauntonSimcoeNorthApproach" fromLane="1" toLane="1" via=":J20_0_1" dir="s" state="M"/>
+    <connection from="MaryTauntonSouthDepart" to="TauntonSimcoeNorthApproach" fromLane="2" toLane="2" via=":J20_0_2" dir="s" state="M"/>
+    <connection from="MaryTauntonWestApproach" to="MaryTauntonSouthDepart" fromLane="0" toLane="0" via=":MaryTauntonJunction_9_0" tl="MaryTauntonJunction" linkIndex="10" dir="r" state="O"/>
+    <connection from="MaryTauntonWestApproach" to="TauntonMaryEastDepart" fromLane="0" toLane="0" via=":MaryTauntonJunction_10_0" tl="MaryTauntonJunction" linkIndex="11" dir="s" state="o"/>
+    <connection from="MaryTauntonWestApproach" to="TauntonMaryEastDepart" fromLane="1" toLane="1" via=":MaryTauntonJunction_10_1" tl="MaryTauntonJunction" linkIndex="12" dir="s" state="o"/>
+    <connection from="MaryTauntonWestApproach" to="MaryTauntonNorthDepart" fromLane="2" toLane="2" via=":MaryTauntonJunction_12_0" tl="MaryTauntonJunction" linkIndex="14" dir="l" state="o"/>
+    <connection from="RosslandMaryNorthApproach" to="RosslandMaryWestDepart" fromLane="0" toLane="0" via=":MaryRosslandJuction_0_0" tl="MaryRosslandJuction" linkIndex="15" dir="r" state="o"/>
+    <connection from="RosslandMarySouthApproach" to="RosslandMaryEastDepart" fromLane="0" toLane="0" via=":MaryRosslandJuction_5_0" tl="MaryRosslandJuction" linkIndex="5" dir="r" state="o"/>
+    <connection from="RosslandMarySouthApproach" to="MaryRosslandNorthDepart" fromLane="0" toLane="0" via=":MaryRosslandJuction_6_0" tl="MaryRosslandJuction" linkIndex="6" dir="s" state="o"/>
+    <connection from="RosslandMarySouthApproach" to="MaryRosslandNorthDepart" fromLane="1" toLane="1" via=":MaryRosslandJuction_6_1" tl="MaryRosslandJuction" linkIndex="7" dir="s" state="o"/>
+    <connection from="RosslandMarySouthApproach" to="RosslandMaryWestDepart" fromLane="2" toLane="2" via=":MaryRosslandJuction_8_0" tl="MaryRosslandJuction" linkIndex="9" dir="l" state="o"/>
+    <connection from="RosslandMarySouthDepart" to="RosslandSimcoeNorthApproach" fromLane="0" toLane="0" via=":J18_0_0" dir="s" state="M"/>
+    <connection from="RosslandMarySouthDepart" to="RosslandSimcoeNorthApproach" fromLane="1" toLane="1" via=":J18_0_1" dir="s" state="M"/>
+    <connection from="RosslandMarySouthDepart" to="RosslandSimcoeNorthApproach" fromLane="2" toLane="2" via=":J18_0_2" dir="s" state="M"/>
+    <connection from="RosslandMaryWestDepart" to="MaryTauntonEastApproach" fromLane="0" toLane="0" via=":J19_0_0" dir="s" state="M"/>
+    <connection from="RosslandMaryWestDepart" to="MaryTauntonEastApproach" fromLane="1" toLane="1" via=":J19_0_1" dir="s" state="M"/>
+    <connection from="RosslandMaryWestDepart" to="MaryTauntonEastApproach" fromLane="2" toLane="2" via=":J19_0_2" dir="s" state="M"/>
+    <connection from="RosslandSimcoeNorthApproach" to="SimcoeRosslandWestDepart" fromLane="0" toLane="0" via=":SimcoeRosslandJunction_12_0" tl="SimcoeRosslandJunction" linkIndex="15" dir="r" state="o"/>
+    <connection from="RosslandSimcoeSouthApproach" to="RosslandSimcoeEastDepart" fromLane="0" toLane="0" via=":SimcoeRosslandJunction_4_0" tl="SimcoeRosslandJunction" linkIndex="5" dir="r" state="o"/>
+    <connection from="RosslandSimcoeSouthApproach" to="SimcoeRosslandNorthDepart" fromLane="0" toLane="0" via=":SimcoeRosslandJunction_5_0" tl="SimcoeRosslandJunction" linkIndex="6" dir="s" state="o"/>
+    <connection from="RosslandSimcoeSouthApproach" to="SimcoeRosslandNorthDepart" fromLane="1" toLane="1" via=":SimcoeRosslandJunction_5_1" tl="SimcoeRosslandJunction" linkIndex="7" dir="s" state="o"/>
+    <connection from="RosslandSimcoeSouthApproach" to="SimcoeRosslandWestDepart" fromLane="2" toLane="2" via=":SimcoeRosslandJunction_7_0" tl="SimcoeRosslandJunction" linkIndex="9" dir="l" state="o"/>
+    <connection from="SimcoeRosslandEastApproach" to="SimcoeRosslandNorthDepart" fromLane="0" toLane="0" via=":SimcoeRosslandJunction_0_0" tl="SimcoeRosslandJunction" linkIndex="0" dir="r" state="O"/>
+    <connection from="SimcoeRosslandEastApproach" to="SimcoeRosslandWestDepart" fromLane="0" toLane="0" via=":SimcoeRosslandJunction_1_0" tl="SimcoeRosslandJunction" linkIndex="1" dir="s" state="O"/>
+    <connection from="SimcoeRosslandEastApproach" to="SimcoeRosslandWestDepart" fromLane="1" toLane="1" via=":SimcoeRosslandJunction_1_1" tl="SimcoeRosslandJunction" linkIndex="2" dir="s" state="O"/>
+    <connection from="SimcoeRosslandEastApproach" to="SimcoeRosslandSouthDepart" fromLane="2" toLane="2" via=":SimcoeRosslandJunction_3_0" tl="SimcoeRosslandJunction" linkIndex="4" dir="l" state="o"/>
+    <connection from="SimcoeRosslandNorthDepart" to="RosslandMarySouthApproach" fromLane="0" toLane="0" via=":J16_0_0" dir="s" state="M"/>
+    <connection from="SimcoeRosslandNorthDepart" to="RosslandMarySouthApproach" fromLane="1" toLane="1" via=":J16_0_1" dir="s" state="M"/>
+    <connection from="SimcoeRosslandNorthDepart" to="RosslandMarySouthApproach" fromLane="2" toLane="2" via=":J16_0_2" dir="s" state="M"/>
+    <connection from="SimcoeRosslandWestApproach" to="SimcoeRosslandSouthDepart" fromLane="0" toLane="0" via=":SimcoeRosslandJunction_8_0" tl="SimcoeRosslandJunction" linkIndex="10" dir="r" state="O"/>
+    <connection from="SimcoeRosslandWestApproach" to="RosslandSimcoeEastDepart" fromLane="0" toLane="0" via=":SimcoeRosslandJunction_9_0" tl="SimcoeRosslandJunction" linkIndex="11" dir="s" state="O"/>
+    <connection from="SimcoeRosslandWestApproach" to="RosslandSimcoeEastDepart" fromLane="1" toLane="1" via=":SimcoeRosslandJunction_9_1" tl="SimcoeRosslandJunction" linkIndex="12" dir="s" state="O"/>
+    <connection from="SimcoeRosslandWestApproach" to="SimcoeRosslandNorthDepart" fromLane="2" toLane="2" via=":SimcoeRosslandJunction_11_0" tl="SimcoeRosslandJunction" linkIndex="14" dir="l" state="o"/>
+    <connection from="SimcoeRosslandWestDepart" to="SimcoeTauntonEastApproach" fromLane="0" toLane="0" via=":J17_0_0" dir="s" state="M"/>
+    <connection from="SimcoeRosslandWestDepart" to="SimcoeTauntonEastApproach" fromLane="1" toLane="1" via=":J17_0_1" dir="s" state="M"/>
+    <connection from="SimcoeRosslandWestDepart" to="SimcoeTauntonEastApproach" fromLane="2" toLane="2" via=":J17_0_2" dir="s" state="M"/>
+    <connection from="SimcoeTauntonEastApproach" to="SimcoeTauntonNorthDepart" fromLane="0" toLane="0" via=":SimcoeTauntonJunction_0_0" tl="SimcoeTauntonJunction" linkIndex="0" dir="r" state="O"/>
+    <connection from="SimcoeTauntonEastApproach" to="SimcoeTauntonWestDepart" fromLane="0" toLane="0" via=":SimcoeTauntonJunction_1_0" tl="SimcoeTauntonJunction" linkIndex="1" dir="s" state="O"/>
+    <connection from="SimcoeTauntonEastApproach" to="SimcoeTauntonWestDepart" fromLane="1" toLane="1" via=":SimcoeTauntonJunction_1_1" tl="SimcoeTauntonJunction" linkIndex="2" dir="s" state="O"/>
+    <connection from="SimcoeTauntonEastApproach" to="SimcoeTauntonSouthDepart" fromLane="2" toLane="2" via=":SimcoeTauntonJunction_3_0" tl="SimcoeTauntonJunction" linkIndex="3" dir="l" state="o"/>
+    <connection from="SimcoeTauntonEastDepart" to="SimcoeRosslandWestApproach" fromLane="0" toLane="0" via=":J13_0_0" dir="s" state="M"/>
+    <connection from="SimcoeTauntonEastDepart" to="SimcoeRosslandWestApproach" fromLane="1" toLane="1" via=":J13_0_1" dir="s" state="M"/>
+    <connection from="SimcoeTauntonEastDepart" to="SimcoeRosslandWestApproach" fromLane="2" toLane="2" via=":J13_0_2" dir="s" state="M"/>
+    <connection from="SimcoeTauntonNorthDepart" to="SimcoeTauntonSouthApproach" fromLane="0" toLane="0" via=":J15_0_0" dir="s" state="M"/>
+    <connection from="SimcoeTauntonNorthDepart" to="SimcoeTauntonSouthApproach" fromLane="1" toLane="1" via=":J15_0_1" dir="s" state="M"/>
+    <connection from="SimcoeTauntonNorthDepart" to="SimcoeTauntonSouthApproach" fromLane="2" toLane="2" via=":J15_0_2" dir="s" state="M"/>
+    <connection from="SimcoeTauntonSouthApproach" to="TauntonMaryEastDepart" fromLane="0" toLane="0" via=":MaryTauntonJunction_5_0" tl="MaryTauntonJunction" linkIndex="5" dir="r" state="O"/>
+    <connection from="SimcoeTauntonSouthApproach" to="MaryTauntonNorthDepart" fromLane="0" toLane="0" via=":MaryTauntonJunction_6_0" tl="MaryTauntonJunction" linkIndex="6" dir="s" state="O"/>
+    <connection from="SimcoeTauntonSouthApproach" to="MaryTauntonNorthDepart" fromLane="1" toLane="1" via=":MaryTauntonJunction_6_1" tl="MaryTauntonJunction" linkIndex="7" dir="s" state="O"/>
+    <connection from="SimcoeTauntonSouthApproach" to="MaryTauntonWestDepart" fromLane="2" toLane="2" via=":MaryTauntonJunction_8_0" tl="MaryTauntonJunction" linkIndex="9" dir="l" state="O"/>
+    <connection from="SimcoeTauntonWestApproach" to="SimcoeTauntonSouthDepart" fromLane="0" toLane="0" via=":SimcoeTauntonJunction_8_0" tl="SimcoeTauntonJunction" linkIndex="8" dir="r" state="O"/>
+    <connection from="SimcoeTauntonWestApproach" to="SimcoeTauntonEastDepart" fromLane="0" toLane="0" via=":SimcoeTauntonJunction_9_0" tl="SimcoeTauntonJunction" linkIndex="9" dir="s" state="O"/>
+    <connection from="SimcoeTauntonWestApproach" to="SimcoeTauntonEastDepart" fromLane="1" toLane="1" via=":SimcoeTauntonJunction_9_1" tl="SimcoeTauntonJunction" linkIndex="10" dir="s" state="O"/>
+    <connection from="SimcoeTauntonWestApproach" to="SimcoeTauntonNorthDepart" fromLane="2" toLane="2" via=":SimcoeTauntonJunction_11_0" tl="SimcoeTauntonJunction" linkIndex="11" dir="l" state="o"/>
+    <connection from="TauntonMaryEastDepart" to="MaryRosslandWestApproach" fromLane="0" toLane="0" via=":J14_0_0" dir="s" state="M"/>
+    <connection from="TauntonMaryEastDepart" to="MaryRosslandWestApproach" fromLane="1" toLane="1" via=":J14_0_1" dir="s" state="M"/>
+    <connection from="TauntonMaryEastDepart" to="MaryRosslandWestApproach" fromLane="2" toLane="2" via=":J14_0_2" dir="s" state="M"/>
+    <connection from="TauntonMaryNorthApproach" to="MaryTauntonWestDepart" fromLane="0" toLane="0" via=":MaryTauntonJunction_0_0" tl="MaryTauntonJunction" linkIndex="15" dir="r" state="O"/>
+    <connection from="TauntonSimcoeNorthApproach" to="SimcoeTauntonWestDepart" fromLane="0" toLane="0" via=":SimcoeTauntonJunction_12_0" tl="SimcoeTauntonJunction" linkIndex="12" dir="r" state="o"/>
+    <connection from="TauntonSimcoeNorthApproach" to="SimcoeTauntonSouthDepart" fromLane="0" toLane="0" via=":SimcoeTauntonJunction_13_0" tl="SimcoeTauntonJunction" linkIndex="13" dir="s" state="o"/>
+    <connection from="TauntonSimcoeNorthApproach" to="SimcoeTauntonSouthDepart" fromLane="1" toLane="1" via=":SimcoeTauntonJunction_13_1" tl="SimcoeTauntonJunction" linkIndex="14" dir="s" state="o"/>
+    <connection from="TauntonSimcoeNorthApproach" to="SimcoeTauntonEastDepart" fromLane="2" toLane="2" via=":SimcoeTauntonJunction_15_0" tl="SimcoeTauntonJunction" linkIndex="15" dir="l" state="o"/>
+    <connection from="TauntonSimcoeSouthApproach" to="SimcoeTauntonEastDepart" fromLane="0" toLane="0" via=":SimcoeTauntonJunction_4_0" tl="SimcoeTauntonJunction" linkIndex="4" dir="r" state="o"/>
+    <connection from="TauntonSimcoeSouthApproach" to="SimcoeTauntonNorthDepart" fromLane="0" toLane="0" via=":SimcoeTauntonJunction_5_0" tl="SimcoeTauntonJunction" linkIndex="5" dir="s" state="o"/>
+    <connection from="TauntonSimcoeSouthApproach" to="SimcoeTauntonNorthDepart" fromLane="1" toLane="1" via=":SimcoeTauntonJunction_5_1" tl="SimcoeTauntonJunction" linkIndex="6" dir="s" state="o"/>
+    <connection from="TauntonSimcoeSouthApproach" to="SimcoeTauntonWestDepart" fromLane="2" toLane="2" via=":SimcoeTauntonJunction_7_0" tl="SimcoeTauntonJunction" linkIndex="7" dir="l" state="o"/>
+
+    <connection from=":J13_0" to="SimcoeRosslandWestApproach" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J13_0" to="SimcoeRosslandWestApproach" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":J13_0" to="SimcoeRosslandWestApproach" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":J14_0" to="MaryRosslandWestApproach" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J14_0" to="MaryRosslandWestApproach" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":J14_0" to="MaryRosslandWestApproach" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":J15_0" to="SimcoeTauntonSouthApproach" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J15_0" to="SimcoeTauntonSouthApproach" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":J15_0" to="SimcoeTauntonSouthApproach" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":J16_0" to="RosslandMarySouthApproach" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J16_0" to="RosslandMarySouthApproach" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":J16_0" to="RosslandMarySouthApproach" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":J17_0" to="SimcoeTauntonEastApproach" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J17_0" to="SimcoeTauntonEastApproach" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":J17_0" to="SimcoeTauntonEastApproach" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":J18_0" to="RosslandSimcoeNorthApproach" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J18_0" to="RosslandSimcoeNorthApproach" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":J18_0" to="RosslandSimcoeNorthApproach" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":J19_0" to="MaryTauntonEastApproach" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J19_0" to="MaryTauntonEastApproach" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":J19_0" to="MaryTauntonEastApproach" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":J20_0" to="TauntonSimcoeNorthApproach" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J20_0" to="TauntonSimcoeNorthApproach" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":J20_0" to="TauntonSimcoeNorthApproach" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":MaryRosslandJuction_0" to="RosslandMaryWestDepart" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":MaryRosslandJuction_1" to="MaryRosslandNorthDepart" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":MaryRosslandJuction_2" to="RosslandMaryWestDepart" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":MaryRosslandJuction_2" to="RosslandMaryWestDepart" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":MaryRosslandJuction_4" to="RosslandMarySouthDepart" fromLane="0" toLane="2" dir="l" state="M"/>
+    <connection from=":MaryRosslandJuction_5" to="RosslandMaryEastDepart" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":MaryRosslandJuction_6" to="MaryRosslandNorthDepart" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":MaryRosslandJuction_6" to="MaryRosslandNorthDepart" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":MaryRosslandJuction_8" to="RosslandMaryWestDepart" fromLane="0" toLane="2" dir="l" state="M"/>
+    <connection from=":MaryRosslandJuction_9" to="RosslandMarySouthDepart" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":MaryRosslandJuction_10" to="RosslandMaryEastDepart" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":MaryRosslandJuction_10" to="RosslandMaryEastDepart" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":MaryRosslandJuction_12" to="MaryRosslandNorthDepart" fromLane="0" toLane="2" dir="l" state="M"/>
+    <connection from=":MaryTauntonJunction_0" to="MaryTauntonWestDepart" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":MaryTauntonJunction_1" to="MaryTauntonNorthDepart" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":MaryTauntonJunction_2" to="MaryTauntonWestDepart" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":MaryTauntonJunction_2" to="MaryTauntonWestDepart" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":MaryTauntonJunction_4" to="MaryTauntonSouthDepart" fromLane="0" toLane="2" dir="l" state="M"/>
+    <connection from=":MaryTauntonJunction_5" to="TauntonMaryEastDepart" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":MaryTauntonJunction_6" to="MaryTauntonNorthDepart" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":MaryTauntonJunction_6" to="MaryTauntonNorthDepart" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":MaryTauntonJunction_8" to="MaryTauntonWestDepart" fromLane="0" toLane="2" dir="l" state="M"/>
+    <connection from=":MaryTauntonJunction_9" to="MaryTauntonSouthDepart" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":MaryTauntonJunction_10" to="TauntonMaryEastDepart" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":MaryTauntonJunction_10" to="TauntonMaryEastDepart" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":MaryTauntonJunction_12" to="MaryTauntonNorthDepart" fromLane="0" toLane="2" dir="l" state="M"/>
+    <connection from=":SimcoeRosslandJunction_0" to="SimcoeRosslandNorthDepart" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":SimcoeRosslandJunction_1" to="SimcoeRosslandWestDepart" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":SimcoeRosslandJunction_1" to="SimcoeRosslandWestDepart" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":SimcoeRosslandJunction_3" to="SimcoeRosslandSouthDepart" fromLane="0" toLane="2" dir="l" state="M"/>
+    <connection from=":SimcoeRosslandJunction_4" to="RosslandSimcoeEastDepart" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":SimcoeRosslandJunction_5" to="SimcoeRosslandNorthDepart" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":SimcoeRosslandJunction_5" to="SimcoeRosslandNorthDepart" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":SimcoeRosslandJunction_7" to="SimcoeRosslandWestDepart" fromLane="0" toLane="2" dir="l" state="M"/>
+    <connection from=":SimcoeRosslandJunction_8" to="SimcoeRosslandSouthDepart" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":SimcoeRosslandJunction_9" to="RosslandSimcoeEastDepart" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":SimcoeRosslandJunction_9" to="RosslandSimcoeEastDepart" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":SimcoeRosslandJunction_11" to="SimcoeRosslandNorthDepart" fromLane="0" toLane="2" dir="l" state="M"/>
+    <connection from=":SimcoeRosslandJunction_12" to="SimcoeRosslandWestDepart" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":SimcoeTauntonJunction_0" to="SimcoeTauntonNorthDepart" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":SimcoeTauntonJunction_1" to="SimcoeTauntonWestDepart" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":SimcoeTauntonJunction_1" to="SimcoeTauntonWestDepart" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":SimcoeTauntonJunction_3" to="SimcoeTauntonSouthDepart" fromLane="0" toLane="2" dir="l" state="M"/>
+    <connection from=":SimcoeTauntonJunction_4" to="SimcoeTauntonEastDepart" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":SimcoeTauntonJunction_5" to="SimcoeTauntonNorthDepart" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":SimcoeTauntonJunction_5" to="SimcoeTauntonNorthDepart" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":SimcoeTauntonJunction_7" to="SimcoeTauntonWestDepart" fromLane="0" toLane="2" via=":SimcoeTauntonJunction_16_0" dir="l" state="m"/>
+    <connection from=":SimcoeTauntonJunction_16" to="SimcoeTauntonWestDepart" fromLane="0" toLane="2" dir="l" state="M"/>
+    <connection from=":SimcoeTauntonJunction_8" to="SimcoeTauntonSouthDepart" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":SimcoeTauntonJunction_9" to="SimcoeTauntonEastDepart" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":SimcoeTauntonJunction_9" to="SimcoeTauntonEastDepart" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":SimcoeTauntonJunction_11" to="SimcoeTauntonNorthDepart" fromLane="0" toLane="2" dir="l" state="M"/>
+    <connection from=":SimcoeTauntonJunction_12" to="SimcoeTauntonWestDepart" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":SimcoeTauntonJunction_13" to="SimcoeTauntonSouthDepart" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":SimcoeTauntonJunction_13" to="SimcoeTauntonSouthDepart" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":SimcoeTauntonJunction_15" to="SimcoeTauntonEastDepart" fromLane="0" toLane="2" via=":SimcoeTauntonJunction_17_0" dir="l" state="m"/>
+    <connection from=":SimcoeTauntonJunction_17" to="SimcoeTauntonEastDepart" fromLane="0" toLane="2" dir="l" state="M"/>
+
+</net>

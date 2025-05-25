@@ -1,0 +1,328 @@
+<additionals>
+    
+    <tlLogic id="MaryRosslandJuction" type="static" programID="MaryRosslandJuction" offset="0">
+        <phase duration="33" state="rrrrGGGgrrrrGGGg"/>
+        <phase duration="3"  state="rrrryyygrrrryyyg"/>
+        <phase duration="6"  state="rrrrrrrGrrrrrrrG"/>
+        <phase duration="3"  state="rrrrrrryrrrrrrry"/>
+        <phase duration="33" state="GGGgrrrrGGGgrrrr"/>
+        <phase duration="3"  state="yyygrrrryyygrrrr"/>
+        <phase duration="6"  state="rrrGrrrrrrrGrrrr"/>
+        <phase duration="3"  state="rrryrrrrrrryrrrr"/>
+    </tlLogic>
+    <tlLogic id="MaryRosslandJuction" type="static" programID="allRed" offset="0">
+        
+        <phase duration="33"  state="rrrrrrrrrrrrrrrr"/>
+    </tlLogic>
+    <tlLogic id="MaryRosslandJuction" type="static" programID="eastWestLeft" offset="0">
+        <phase duration="33" state="grrrrrrGgrrrrrrG"/>
+        
+    </tlLogic>
+    <tlLogic id="MaryRosslandJuction" type="static" programID="eastWestLeftYellow" offset="0">
+        <phase duration="33" state="yrrrrrryyrrrrrry"/>
+        
+    </tlLogic>
+    <tlLogic id="MaryRosslandJuction" type="static" programID="eastWestStraightRight" offset="0">
+        <phase duration="33" state="rrrrGGGrrrrrGGGr"/>
+        
+    </tlLogic>
+    <tlLogic id="MaryRosslandJuction" type="static" programID="eastWestStraightRightYellow" offset="0">
+        <phase duration="33" state="rrrryyyrrrrryyyr"/>
+        
+    </tlLogic>
+    <tlLogic id="MaryRosslandJuction" type="static" programID="northSouthLeft" offset="0">
+        <phase duration="33" state="rrrGgrrrrrrGgrrr"/>
+        
+    </tlLogic>
+    <tlLogic id="MaryRosslandJuction" type="static" programID="northSouthLeftYellow" offset="0">
+        <phase duration="33" state="rrryyrrrrrryyrrr"/>
+        
+    </tlLogic>
+    <tlLogic id="MaryRosslandJuction" type="static" programID="northSouthStraightRight" offset="0">
+        <phase duration="33" state="GGGrrrrrGGGrrrrr"/>
+        
+    </tlLogic>
+    <tlLogic id="MaryRosslandJuction" type="static" programID="northSouthStraightRightYellow" offset="0">
+        <phase duration="33" state="yyyrrrrryyyrrrrr"/>
+        
+    </tlLogic>
+		
+	<tlLogic id="MaryRosslandJuction" type="static" programID="allOutNorth" offset="0">
+        <phase duration="33" state="GGGGrrrrrrrrrrrr"/>
+        
+    </tlLogic>
+	<tlLogic id="MaryRosslandJuction" type="static" programID="allOutSouth" offset="0">
+        <phase duration="33" state="rrrrrrrrGGGGrrrr"/>
+        
+    </tlLogic>
+	<tlLogic id="MaryRosslandJuction" type="static" programID="allOutWest" offset="0">
+        <phase duration="33" state="rrrrrrrrrrrrGGGG"/>
+        
+    </tlLogic>
+	<tlLogic id="MaryRosslandJuction" type="static" programID="allOutEast" offset="0">
+        <phase duration="33" state="rrrrGGGGrrrrrrrr"/>
+        
+    </tlLogic>
+	
+	<tlLogic id="MaryRosslandJuction" type="static" programID="allOutNorthYellow" offset="0">
+        <phase duration="33" state="yyyyrrrrrrrrrrrr"/>
+        
+    </tlLogic>
+	<tlLogic id="MaryRosslandJuction" type="static" programID="allOutSouthYellow" offset="0">
+        <phase duration="33" state="rrrrrrrryyyyrrrr"/>
+        
+    </tlLogic>
+	<tlLogic id="MaryRosslandJuction" type="static" programID="allOutWestYellow" offset="0">
+        <phase duration="33" state="rrrrrrrrrrrryyyy"/>
+        
+    </tlLogic>
+	<tlLogic id="MaryRosslandJuction" type="static" programID="allOutEastYellow" offset="0">
+        <phase duration="33" state="rrrryyyyrrrrrrrr"/>
+        
+    </tlLogic>
+	
+	
+	
+	
+	
+	
+    <tlLogic id="MaryTauntonJunction" type="static" programID="MaryTauntonJunction" offset="0">
+        <phase duration="33" state="GGGgrrrrGGGgrrrr"/>
+        <phase duration="3"  state="yyygrrrryyygrrrr"/>
+        <phase duration="6"  state="rrrGrrrrrrrGrrrr"/>
+        <phase duration="3"  state="rrryrrrrrrryrrrr"/>
+        <phase duration="33" state="rrrrGGGgrrrrGGGg"/>
+        <phase duration="3"  state="rrrryyygrrrryyyg"/>
+        <phase duration="6"  state="rrrrrrrGrrrrrrrG"/>
+        <phase duration="3"  state="rrrrrrryrrrrrrry"/>
+    </tlLogic>
+    <tlLogic id="MaryTauntonJunction" type="static" programID="allRed" offset="0">
+        <phase duration="33" state="rrrrrrrrrrrrrrrr"/>
+        
+    </tlLogic>
+    <tlLogic id="MaryTauntonJunction" type="static" programID="eastWestLeft" offset="0">
+        <phase duration="33" state="grrrrrrGgrrrrrrG"/>
+       
+    </tlLogic>
+    <tlLogic id="MaryTauntonJunction" type="static" programID="eastWestLeftYellow" offset="0">
+        <phase duration="33" state="yrrrrrryyrrrrrry"/>
+        
+    </tlLogic>
+    <tlLogic id="MaryTauntonJunction" type="static" programID="eastWestStraightRight" offset="0">
+        <phase duration="33" state="rrrrGGGrrrrrGGGr"/>
+        
+    </tlLogic>
+    <tlLogic id="MaryTauntonJunction" type="static" programID="eastWestStraightRightYellow" offset="0">
+        <phase duration="33" state="rrrryyyrrrrryyyr"/>
+        
+    </tlLogic>
+    <tlLogic id="MaryTauntonJunction" type="static" programID="northSouthLeft" offset="0">
+        <phase duration="33" state="rrrGgrrrrrrGgrrr"/>
+        
+    </tlLogic>
+    <tlLogic id="MaryTauntonJunction" type="static" programID="northSouthLeftYellow" offset="0">
+        <phase duration="33" state="rrryyrrrrrryyrrr"/>
+        
+    </tlLogic>
+    <tlLogic id="MaryTauntonJunction" type="static" programID="northSouthStraightRight" offset="0">
+        <phase duration="33" state="GGGrrrrrGGGrrrrr"/>
+        
+    </tlLogic>
+    <tlLogic id="MaryTauntonJunction" type="static" programID="northSouthStraightRightYellow" offset="0">
+        <phase duration="33" state="yyyrrrrryyyrrrrr"/>
+        
+    </tlLogic>
+		
+	<tlLogic id="MaryTauntonJunction" type="static" programID="allOutNorth" offset="0">
+        <phase duration="33" state="GGGGrrrrrrrrrrrr"/>
+        
+    </tlLogic>
+	<tlLogic id="MaryTauntonJunction" type="static" programID="allOutSouth" offset="0">
+        <phase duration="33" state="rrrrrrrrGGGGrrrr"/>
+        
+    </tlLogic>
+	<tlLogic id="MaryTauntonJunction" type="static" programID="allOutWest" offset="0">
+        <phase duration="33" state="rrrrrrrrrrrrGGGG"/>
+        
+    </tlLogic>
+	<tlLogic id="MaryTauntonJunction" type="static" programID="allOutEast" offset="0">
+        <phase duration="33" state="rrrrGGGGrrrrrrrr"/>
+        
+    </tlLogic>
+	
+	<tlLogic id="MaryTauntonJunction" type="static" programID="allOutNorthYellow" offset="0">
+        <phase duration="33" state="yyyyrrrrrrrrrrrr"/>
+        
+    </tlLogic>
+	<tlLogic id="MaryTauntonJunction" type="static" programID="allOutSouthYellow" offset="0">
+        <phase duration="33" state="rrrrrrrryyyyrrrr"/>
+        
+    </tlLogic>
+	<tlLogic id="MaryTauntonJunction" type="static" programID="allOutWestYellow" offset="0">
+        <phase duration="33" state="rrrrrrrrrrrryyyy"/>
+        
+    </tlLogic>
+	<tlLogic id="MaryTauntonJunction" type="static" programID="allOutEastYellow" offset="0">
+        <phase duration="33" state="rrrryyyyrrrrrrrr"/>
+        
+    </tlLogic>
+	
+	
+	
+	
+	
+    <tlLogic id="SimcoeRosslandJunction" type="static" programID="SimcoeRosslandJunction" offset="0">
+        <phase duration="33" state="GGGgrrrrGGGgrrrr"/>
+        <phase duration="3"  state="yyygrrrryyygrrrr"/>
+        <phase duration="6"  state="rrrGrrrrrrrGrrrr"/>
+        <phase duration="3"  state="rrryrrrrrrryrrrr"/>
+        <phase duration="33" state="rrrrGGGgrrrrGGGg"/>
+        <phase duration="3"  state="rrrryyygrrrryyyg"/>
+        <phase duration="6"  state="rrrrrrrGrrrrrrrG"/>
+        <phase duration="3"  state="rrrrrrryrrrrrrry"/>
+    </tlLogic>
+    <tlLogic id="SimcoeRosslandJunction" type="static" programID="allRed" offset="0">
+        <phase duration="33" state="rrrrrrrrrrrrrrrr"/>
+       
+    </tlLogic>
+    <tlLogic id="SimcoeRosslandJunction" type="static" programID="eastWestLeft" offset="0">
+        <phase duration="33" state="rrrGgrrrrrrGgrrr"/>
+        
+    </tlLogic>
+    <tlLogic id="SimcoeRosslandJunction" type="static" programID="eastWestLeftYellow" offset="0">
+        <phase duration="33" state="rrryyrrrrrryyrrr"/>
+        
+    </tlLogic>
+    <tlLogic id="SimcoeRosslandJunction" type="static" programID="eastWestStraightRight" offset="0">
+        <phase duration="33" state="GGGrrrrrGGGrrrrr"/>
+        
+    </tlLogic>
+    <tlLogic id="SimcoeRosslandJunction" type="static" programID="eastWestStraightRightYellow" offset="0">
+        <phase duration="33" state="yyyrrrrryyyrrrrr"/>
+        
+    </tlLogic>
+    <tlLogic id="SimcoeRosslandJunction" type="static" programID="northSouthLeft" offset="0">
+        <phase duration="33" state="grrrrrrGgrrrrrrG"/>
+        
+    </tlLogic>
+    <tlLogic id="SimcoeRosslandJunction" type="static" programID="northSouthLeftYellow" offset="0">
+        <phase duration="33" state="yrrrrrryyrrrrrry"/>
+        
+    </tlLogic>
+    <tlLogic id="SimcoeRosslandJunction" type="static" programID="northSouthStraightRight" offset="0">
+        <phase duration="33" state="rrrrGGGrrrrrGGGr"/>
+       
+    </tlLogic>
+    <tlLogic id="SimcoeRosslandJunction" type="static" programID="northSouthStraightRightYellow" offset="0">
+        <phase duration="33" state="rrrryyyrrrrryyyr"/>
+        
+    </tlLogic>
+	
+		
+	<tlLogic id="SimcoeRosslandJunction" type="static" programID="allOutNorth" offset="0">
+        <phase duration="33" state="rrrrrrrrrrrrGGGG"/>
+        
+    </tlLogic>
+	<tlLogic id="SimcoeRosslandJunction" type="static" programID="allOutSouth" offset="0">
+        <phase duration="33" state="rrrrGGGGrrrrrrrr"/>
+        
+    </tlLogic>
+	<tlLogic id="SimcoeRosslandJunction" type="static" programID="allOutWest" offset="0">
+        <phase duration="33" state="rrrrrrrrGGGGrrrr"/>
+        
+    </tlLogic>
+	<tlLogic id="SimcoeRosslandJunction" type="static" programID="allOutEast" offset="0">
+        <phase duration="33" state="GGGGrrrrrrrrrrrr"/>
+        
+    </tlLogic>
+	
+	<tlLogic id="SimcoeRosslandJunction" type="static" programID="allOutNorthYellow" offset="0">
+        <phase duration="33" state="rrrrrrrrrrrryyyy"/>
+        
+    </tlLogic>
+	<tlLogic id="SimcoeRosslandJunction" type="static" programID="allOutSouthYellow" offset="0">
+        <phase duration="33" state="rrrryyyyrrrrrrrr"/>
+        
+    </tlLogic>
+	<tlLogic id="SimcoeRosslandJunction" type="static" programID="allOutWestYellow" offset="0">
+        <phase duration="33" state="rrrrrrrryyyyrrrr"/>
+        
+    </tlLogic>
+	<tlLogic id="SimcoeRosslandJunction" type="static" programID="allOutEastYellow" offset="0">
+        <phase duration="33" state="yyyyrrrrrrrrrrrr"/>
+        
+    </tlLogic>
+	
+	
+	
+	
+    <tlLogic id="SimcoeTauntonJunction" type="static" programID="SimcoeTauntonJunction" offset="0">
+        <phase duration="42" state="rrrrGGGgrrrrGGGg"/>
+        <phase duration="3"  state="rrryyyrrrrrryyyy"/>
+        <phase duration="42" state="gggrrrrrgggrrrrr"/>
+        <phase duration="3"  state="yyyrrrrryyyrrrrr"/>
+    </tlLogic>
+    <tlLogic id="SimcoeTauntonJunction" type="static" programID="allRed" offset="0">
+        <phase duration="32" state="rrrrrrrrrrrrrrrr"/>
+    </tlLogic>
+    <tlLogic id="SimcoeTauntonJunction" type="static" programID="eastWestLeft" offset="0">
+        <phase duration="42" state="rrrGgrrrrrrGgrrr"/>
+    </tlLogic>
+    <tlLogic id="SimcoeTauntonJunction" type="static" programID="eastWestLeftYellow" offset="0">
+        <phase duration="42" state="rrryyrrrrrryyrrr"/>
+    </tlLogic>
+    <tlLogic id="SimcoeTauntonJunction" type="static" programID="eastWestStraightRight" offset="0">
+        <phase duration="42" state="GGGrrrrrGGGrrrrr"/>
+    </tlLogic>
+    <tlLogic id="SimcoeTauntonJunction" type="static" programID="eastWestStraightRightYellow" offset="0">
+        <phase duration="42" state="yyyrrrrryyyrrrrr"/>
+    </tlLogic>
+    <tlLogic id="SimcoeTauntonJunction" type="static" programID="northSouthLeft" offset="0">
+        <phase duration="42" state="grrrrrrGgrrrrrrG"/>
+    </tlLogic>
+    <tlLogic id="SimcoeTauntonJunction" type="static" programID="northSouthLeftYellow" offset="0">
+        <phase duration="42" state="yrrrrrryyrrrrrry"/>
+    </tlLogic>
+    <tlLogic id="SimcoeTauntonJunction" type="static" programID="northSouthStraightRight" offset="0">
+        <phase duration="32" state="rrrrGGGrrrrrGGGr"/>
+    </tlLogic>
+    <tlLogic id="SimcoeTauntonJunction" type="static" programID="northSouthStraightRightYellow" offset="0">
+        <phase duration="32" state="rrrryyyrrrrryyyr"/>
+    </tlLogic>
+		
+	<tlLogic id="SimcoeTauntonJunction" type="static" programID="allOutNorth" offset="0">
+        <phase duration="33" state="rrrrrrrrrrrrGGGG"/>
+        
+    </tlLogic>
+	<tlLogic id="SimcoeTauntonJunction" type="static" programID="allOutSouth" offset="0">
+        <phase duration="33" state="rrrrGGGGrrrrrrrr"/>
+        
+    </tlLogic>
+	<tlLogic id="SimcoeTauntonJunction" type="static" programID="allOutWest" offset="0">
+        <phase duration="33" state="rrrrrrrrGGGGrrrr"/>
+        
+    </tlLogic>
+	<tlLogic id="SimcoeTauntonJunction" type="static" programID="allOutEast" offset="0">
+        <phase duration="33" state="GGGGrrrrrrrrrrrr"/>
+        
+    </tlLogic>
+	
+	<tlLogic id="SimcoeTauntonJunction" type="static" programID="allOutNorthYellow" offset="0">
+        <phase duration="33" state="rrrrrrrrrrrryyyy"/>
+        
+    </tlLogic>
+	<tlLogic id="SimcoeTauntonJunction" type="static" programID="allOutSouthYellow" offset="0">
+        <phase duration="33" state="rrrryyyyrrrrrrrr"/>
+        
+    </tlLogic>
+	<tlLogic id="SimcoeTauntonJunction" type="static" programID="allOutWestYellow" offset="0">
+        <phase duration="33" state="rrrrrrrryyyyrrrr"/>
+        
+    </tlLogic>
+	<tlLogic id="SimcoeTauntonJunction" type="static" programID="allOutEastYellow" offset="0">
+        <phase duration="33" state="yyyyrrrrrrrrrrrr"/>
+        
+    </tlLogic>
+	
+
+</additionals>

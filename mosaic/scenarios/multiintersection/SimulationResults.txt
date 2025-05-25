@@ -1,0 +1,707 @@
+UNSIGNALIZED/BENCHMARK Only High Priority Vehicles 10Veh/hr
+
+Overall Vehicular Delay at the Intersection: 17.884615384615383.5% (RTF:0.00, ETC:unknown)                        
+Summary of Delay Based on Vehicular Turning at Intersection:                        VehicleDelay summary                       
+   turn    |  Min [delay]  |  Max [delay]  |    Mean [delay]     |
+------------------------------------------------------------------
+    right  |           16  |           17  |              16.75  |
+     left  |           17  |           20  |                 18  |
+ straight  |           17  |           19  |  18.77777777777778  |
+Throughput: 9
+PRIORITY VEHICLES DETAILS:
+                                                  VehicleDelay                                                  
+       junctionid        |  vehicleid  |    turn    |  priority  |   arrivaltime   |  departuretime  |  delay  |
+----------------------------------------------------------------------------------------------------------------
+    MaryRosslandJuction  |      veh_0  |     right  |         3  |   159000000000  |   176000000000  |     17  |
+    MaryRosslandJuction  |      veh_1  |     right  |         3  |   518000000000  |   535000000000  |     17  |
+    MaryRosslandJuction  |      veh_2  |     right  |         3  |   878000000000  |   895000000000  |     17  |
+    MaryRosslandJuction  |      veh_3  |     right  |         3  |  1239000000000  |  1255000000000  |     16  |
+    MaryRosslandJuction  |      veh_4  |     right  |         3  |  1598000000000  |  1615000000000  |     17  |
+    MaryRosslandJuction  |      veh_5  |     right  |         3  |  1960000000000  |  1977000000000  |     17  |
+    MaryRosslandJuction  |      veh_6  |     right  |         3  |  2319000000000  |  2335000000000  |     16  |
+    MaryRosslandJuction  |      veh_7  |     right  |         3  |  2680000000000  |  2697000000000  |     17  |
+ SimcoeRosslandJunction  |      veh_0  |      left  |         3  |    99000000000  |   116000000000  |     17  |
+ SimcoeRosslandJunction  |      veh_1  |      left  |         3  |   457000000000  |   475000000000  |     18  |
+ SimcoeRosslandJunction  |      veh_2  |      left  |         3  |   817000000000  |   835000000000  |     18  |
+ SimcoeRosslandJunction  |      veh_3  |      left  |         3  |  1178000000000  |  1195000000000  |     17  |
+ SimcoeRosslandJunction  |      veh_4  |      left  |         3  |  1537000000000  |  1555000000000  |     18  |
+ SimcoeRosslandJunction  |      veh_5  |      left  |         3  |  1897000000000  |  1917000000000  |     20  |
+ SimcoeRosslandJunction  |      veh_6  |      left  |         3  |  2257000000000  |  2275000000000  |     18  |
+ SimcoeRosslandJunction  |      veh_7  |      left  |         3  |  2618000000000  |  2635000000000  |     17  |
+ SimcoeRosslandJunction  |      veh_8  |      left  |         3  |  2978000000000  |  2997000000000  |     19  |
+  SimcoeTauntonJunction  |      veh_0  |  straight  |         3  |    25000000000  |    44000000000  |     19  |
+  SimcoeTauntonJunction  |      veh_1  |  straight  |         3  |   384000000000  |   401000000000  |     17  |
+  SimcoeTauntonJunction  |      veh_2  |  straight  |         3  |   744000000000  |   763000000000  |     19  |
+  SimcoeTauntonJunction  |      veh_3  |  straight  |         3  |  1104000000000  |  1123000000000  |     19  |
+  SimcoeTauntonJunction  |      veh_4  |  straight  |         3  |  1464000000000  |  1483000000000  |     19  |
+  SimcoeTauntonJunction  |      veh_5  |  straight  |         3  |  1824000000000  |  1843000000000  |     19  |
+  SimcoeTauntonJunction  |      veh_6  |  straight  |         3  |  2184000000000  |  2203000000000  |     19  |
+  SimcoeTauntonJunction  |      veh_7  |  straight  |         3  |  2544000000000  |  2563000000000  |     19  |
+  SimcoeTauntonJunction  |      veh_8  |  straight  |         3  |  2904000000000  |  2923000000000  |     19  |
+Overall Average Delay for priority vehicles at the Intersections: 17.884615384615383
+Summary of Priority Vehicles' Delay Based on Vehicular Turning at Intersections:                        VehicleDelay summary                       
+   turn    |  Min [delay]  |  Max [delay]  |    Mean [delay]     |
+------------------------------------------------------------------
+    right  |           16  |           17  |              16.75  |
+     left  |           17  |           20  |                 18  |
+ straight  |           17  |           19  |  18.77777777777778  |
+Veh: veh_7 Travel Time: 136.0
+Veh: veh_5 Travel Time: 136.0
+Veh: veh_3 Travel Time: 135.0
+Veh: veh_2 Travel Time: 134.0
+Veh: veh_0 Travel Time: 134.0
+Veh: veh_4 Travel Time: 134.0
+Veh: veh_1 Travel Time: 134.0
+Veh: veh_8 Travel Time: 74.0
+Veh: veh_6 Travel Time: 135.0
+Total : 1152.0 Count : 9
+Average Travel Time of Priority Vehicles : 128.0
+OTHER VEHICLES DETAILS:
+11:52:45 - Simulating: 3000000000000ns (3000.0s) - 100.0%       
+
+
+
+
+StaticPhaseTransitPreemptionController: Only High Priority Vehicles 10Veh/hr
+
+Overall Vehicular Delay at the Intersection: 17.115384615384617
+Summary of Delay Based on Vehicular Turning at Intersection:                        VehicleDelay summary                        
+   turn    |  Min [delay]  |  Max [delay]  |     Mean [delay]     |
+-------------------------------------------------------------------
+    right  |           16  |           17  |              16.875  |
+     left  |           16  |           18  |  17.444444444444443  |
+ straight  |           17  |           17  |                  17  |
+Throughput: 9
+PRIORITY VEHICLES DETAILS:
+                                                  VehicleDelay                                                  
+       junctionid        |  vehicleid  |    turn    |  priority  |   arrivaltime   |  departuretime  |  delay  |
+----------------------------------------------------------------------------------------------------------------
+    MaryRosslandJuction  |      veh_0  |     right  |         3  |   157000000000  |   174000000000  |     17  |
+    MaryRosslandJuction  |      veh_1  |     right  |         3  |   516000000000  |   533000000000  |     17  |
+    MaryRosslandJuction  |      veh_2  |     right  |         3  |   877000000000  |   893000000000  |     16  |
+    MaryRosslandJuction  |      veh_3  |     right  |         3  |  1236000000000  |  1253000000000  |     17  |
+    MaryRosslandJuction  |      veh_4  |     right  |         3  |  1596000000000  |  1613000000000  |     17  |
+    MaryRosslandJuction  |      veh_5  |     right  |         3  |  1956000000000  |  1973000000000  |     17  |
+    MaryRosslandJuction  |      veh_6  |     right  |         3  |  2316000000000  |  2333000000000  |     17  |
+    MaryRosslandJuction  |      veh_7  |     right  |         3  |  2676000000000  |  2693000000000  |     17  |
+ SimcoeRosslandJunction  |      veh_0  |      left  |         3  |    96000000000  |   114000000000  |     18  |
+ SimcoeRosslandJunction  |      veh_1  |      left  |         3  |   456000000000  |   473000000000  |     17  |
+ SimcoeRosslandJunction  |      veh_2  |      left  |         3  |   816000000000  |   833000000000  |     17  |
+ SimcoeRosslandJunction  |      veh_3  |      left  |         3  |  1175000000000  |  1193000000000  |     18  |
+ SimcoeRosslandJunction  |      veh_4  |      left  |         3  |  1535000000000  |  1553000000000  |     18  |
+ SimcoeRosslandJunction  |      veh_5  |      left  |         3  |  1895000000000  |  1913000000000  |     18  |
+ SimcoeRosslandJunction  |      veh_6  |      left  |         3  |  2256000000000  |  2273000000000  |     17  |
+ SimcoeRosslandJunction  |      veh_7  |      left  |         3  |  2615000000000  |  2633000000000  |     18  |
+ SimcoeRosslandJunction  |      veh_8  |      left  |         3  |  2975000000000  |  2991000000000  |     16  |
+  SimcoeTauntonJunction  |      veh_0  |  straight  |         3  |    25000000000  |    42000000000  |     17  |
+  SimcoeTauntonJunction  |      veh_1  |  straight  |         3  |   384000000000  |   401000000000  |     17  |
+  SimcoeTauntonJunction  |      veh_2  |  straight  |         3  |   744000000000  |   761000000000  |     17  |
+  SimcoeTauntonJunction  |      veh_3  |  straight  |         3  |  1104000000000  |  1121000000000  |     17  |
+  SimcoeTauntonJunction  |      veh_4  |  straight  |         3  |  1464000000000  |  1481000000000  |     17  |
+  SimcoeTauntonJunction  |      veh_5  |  straight  |         3  |  1824000000000  |  1841000000000  |     17  |
+  SimcoeTauntonJunction  |      veh_6  |  straight  |         3  |  2184000000000  |  2201000000000  |     17  |
+  SimcoeTauntonJunction  |      veh_7  |  straight  |         3  |  2544000000000  |  2561000000000  |     17  |
+  SimcoeTauntonJunction  |      veh_8  |  straight  |         3  |  2904000000000  |  2921000000000  |     17  |
+Overall Average Delay for priority vehicles at the Intersections: 17.115384615384617
+Summary of Priority Vehicles' Delay Based on Vehicular Turning at Intersections:                        VehicleDelay summary                        
+   turn    |  Min [delay]  |  Max [delay]  |     Mean [delay]     |
+-------------------------------------------------------------------
+    right  |           16  |           17  |              16.875  |
+     left  |           16  |           18  |  17.444444444444443  |
+ straight  |           17  |           17  |                  17  |
+Veh: veh_7 Travel Time: 132.0
+Veh: veh_5 Travel Time: 132.0
+Veh: veh_3 Travel Time: 132.0
+Veh: veh_2 Travel Time: 133.0
+Veh: veh_0 Travel Time: 132.0
+Veh: veh_4 Travel Time: 132.0
+Veh: veh_1 Travel Time: 132.0
+Veh: veh_8 Travel Time: 71.0
+Veh: veh_6 Travel Time: 132.0
+Total : 1128.0 Count : 9
+Average Travel Time of Priority Vehicles : 125.33333333333333
+OTHER VEHICLES DETAILS:
+12:17:16 - Simulating: 3000000000000ns (3000.0s) - 100.0%     
+
+
+
+MultiIntersectionTrafficLightsController: Only High Priority Vehicles 10Veh/hr
+
+Overall Vehicular Delay at the Intersection: 17.115384615384617
+Summary of Delay Based on Vehicular Turning at Intersection:                        VehicleDelay summary                        
+   turn    |  Min [delay]  |  Max [delay]  |     Mean [delay]     |
+-------------------------------------------------------------------
+    right  |           16  |           17  |              16.875  |
+     left  |           16  |           18  |  17.444444444444443  |
+ straight  |           17  |           17  |                  17  |
+Throughput: 9
+PRIORITY VEHICLES DETAILS:
+                                                  VehicleDelay                                                  
+       junctionid        |  vehicleid  |    turn    |  priority  |   arrivaltime   |  departuretime  |  delay  |
+----------------------------------------------------------------------------------------------------------------
+    MaryRosslandJuction  |      veh_0  |     right  |         3  |   157000000000  |   174000000000  |     17  |
+    MaryRosslandJuction  |      veh_1  |     right  |         3  |   516000000000  |   533000000000  |     17  |
+    MaryRosslandJuction  |      veh_2  |     right  |         3  |   877000000000  |   893000000000  |     16  |
+    MaryRosslandJuction  |      veh_3  |     right  |         3  |  1236000000000  |  1253000000000  |     17  |
+    MaryRosslandJuction  |      veh_4  |     right  |         3  |  1596000000000  |  1613000000000  |     17  |
+    MaryRosslandJuction  |      veh_5  |     right  |         3  |  1956000000000  |  1973000000000  |     17  |
+    MaryRosslandJuction  |      veh_6  |     right  |         3  |  2316000000000  |  2333000000000  |     17  |
+    MaryRosslandJuction  |      veh_7  |     right  |         3  |  2676000000000  |  2693000000000  |     17  |
+ SimcoeRosslandJunction  |      veh_0  |      left  |         3  |    96000000000  |   114000000000  |     18  |
+ SimcoeRosslandJunction  |      veh_1  |      left  |         3  |   456000000000  |   473000000000  |     17  |
+ SimcoeRosslandJunction  |      veh_2  |      left  |         3  |   816000000000  |   833000000000  |     17  |
+ SimcoeRosslandJunction  |      veh_3  |      left  |         3  |  1175000000000  |  1193000000000  |     18  |
+ SimcoeRosslandJunction  |      veh_4  |      left  |         3  |  1535000000000  |  1553000000000  |     18  |
+ SimcoeRosslandJunction  |      veh_5  |      left  |         3  |  1895000000000  |  1913000000000  |     18  |
+ SimcoeRosslandJunction  |      veh_6  |      left  |         3  |  2256000000000  |  2273000000000  |     17  |
+ SimcoeRosslandJunction  |      veh_7  |      left  |         3  |  2615000000000  |  2633000000000  |     18  |
+ SimcoeRosslandJunction  |      veh_8  |      left  |         3  |  2975000000000  |  2991000000000  |     16  |
+  SimcoeTauntonJunction  |      veh_0  |  straight  |         3  |    25000000000  |    42000000000  |     17  |
+  SimcoeTauntonJunction  |      veh_1  |  straight  |         3  |   384000000000  |   401000000000  |     17  |
+  SimcoeTauntonJunction  |      veh_2  |  straight  |         3  |   744000000000  |   761000000000  |     17  |
+  SimcoeTauntonJunction  |      veh_3  |  straight  |         3  |  1104000000000  |  1121000000000  |     17  |
+  SimcoeTauntonJunction  |      veh_4  |  straight  |         3  |  1464000000000  |  1481000000000  |     17  |
+  SimcoeTauntonJunction  |      veh_5  |  straight  |         3  |  1824000000000  |  1841000000000  |     17  |
+  SimcoeTauntonJunction  |      veh_6  |  straight  |         3  |  2184000000000  |  2201000000000  |     17  |
+  SimcoeTauntonJunction  |      veh_7  |  straight  |         3  |  2544000000000  |  2561000000000  |     17  |
+  SimcoeTauntonJunction  |      veh_8  |  straight  |         3  |  2904000000000  |  2921000000000  |     17  |
+Overall Average Delay for priority vehicles at the Intersections: 17.115384615384617
+Summary of Priority Vehicles' Delay Based on Vehicular Turning at Intersections:                        VehicleDelay summary                        
+   turn    |  Min [delay]  |  Max [delay]  |     Mean [delay]     |
+-------------------------------------------------------------------
+    right  |           16  |           17  |              16.875  |
+     left  |           16  |           18  |  17.444444444444443  |
+ straight  |           17  |           17  |                  17  |
+Veh: veh_7 Travel Time: 132.0
+Veh: veh_5 Travel Time: 132.0
+Veh: veh_3 Travel Time: 132.0
+Veh: veh_2 Travel Time: 133.0
+Veh: veh_0 Travel Time: 132.0
+Veh: veh_4 Travel Time: 132.0
+Veh: veh_1 Travel Time: 132.0
+Veh: veh_8 Travel Time: 71.0
+Veh: veh_6 Travel Time: 132.0
+Total : 1128.0 Count : 9
+Average Travel Time of Priority Vehicles : 125.33333333333333
+OTHER VEHICLES DETAILS:
+12:20:07 - Simulating: 3000000000000ns (3000.0s) - 100.0%  
+
+
+50: StaticPhaseTransitPreemptionController: Only High Priority Vehicles 10Veh/hr
+
+Overall Vehicular Delay at the Intersection: 46.077158135981655
+Summary of Delay Based on Vehicular Turning at Intersection:                        VehicleDelay summary                        
+   turn    |  Min [delay]  |  Max [delay]  |     Mean [delay]     |
+-------------------------------------------------------------------
+    right  |           15  |          120  |   37.51470588235295  |
+ straight  |           15  |          133  |  48.486842105263186  |
+     left  |           16  |          187  |  53.032171581769425  |
+Throughput: 1353
+PRIORITY VEHICLES DETAILS:
+                                                  VehicleDelay                                                  
+       junctionid        |  vehicleid  |    turn    |  priority  |   arrivaltime   |  departuretime  |  delay  |
+----------------------------------------------------------------------------------------------------------------
+    MaryRosslandJuction  |   veh_1131  |     right  |         3  |  2683000000000  |  2699000000000  |     16  |
+    MaryRosslandJuction  |    veh_165  |     right  |         3  |   523000000000  |   539000000000  |     16  |
+    MaryRosslandJuction  |    veh_326  |  straight  |         3  |   889000000000  |   907000000000  |     18  |
+    MaryRosslandJuction  |      veh_4  |     right  |         3  |   165000000000  |   182000000000  |     17  |
+    MaryRosslandJuction  |    veh_487  |     right  |         3  |  1244000000000  |  1265000000000  |     21  |
+    MaryRosslandJuction  |    veh_648  |     right  |         3  |  1601000000000  |  1617000000000  |     16  |
+    MaryRosslandJuction  |    veh_809  |     right  |         3  |  1961000000000  |  1979000000000  |     18  |
+    MaryRosslandJuction  |    veh_970  |     right  |         3  |  2322000000000  |  2339000000000  |     17  |
+    MaryTauntonJunction  |    veh_326  |     right  |         3  |   814000000000  |   831000000000  |     17  |
+ SimcoeRosslandJunction  |   veh_1131  |      left  |         3  |  2622000000000  |  2639000000000  |     17  |
+ SimcoeRosslandJunction  |   veh_1292  |      left  |         3  |  2981000000000  |  2997000000000  |     16  |
+ SimcoeRosslandJunction  |    veh_165  |      left  |         3  |   462000000000  |   479000000000  |     17  |
+ SimcoeRosslandJunction  |      veh_4  |      left  |         3  |   104000000000  |   122000000000  |     18  |
+ SimcoeRosslandJunction  |    veh_487  |      left  |         3  |  1183000000000  |  1201000000000  |     18  |
+ SimcoeRosslandJunction  |    veh_648  |      left  |         3  |  1540000000000  |  1557000000000  |     17  |
+ SimcoeRosslandJunction  |    veh_809  |      left  |         3  |  1900000000000  |  1917000000000  |     17  |
+ SimcoeRosslandJunction  |    veh_970  |      left  |         3  |  2261000000000  |  2279000000000  |     18  |
+  SimcoeTauntonJunction  |   veh_1131  |  straight  |         3  |  2550000000000  |  2567000000000  |     17  |
+  SimcoeTauntonJunction  |   veh_1292  |  straight  |         3  |  2909000000000  |  2925000000000  |     16  |
+  SimcoeTauntonJunction  |    veh_165  |  straight  |         3  |   391000000000  |   407000000000  |     16  |
+  SimcoeTauntonJunction  |    veh_326  |      left  |         3  |   748000000000  |   767000000000  |     19  |
+  SimcoeTauntonJunction  |      veh_4  |  straight  |         3  |    32000000000  |    48000000000  |     16  |
+  SimcoeTauntonJunction  |    veh_487  |  straight  |         3  |  1111000000000  |  1129000000000  |     18  |
+  SimcoeTauntonJunction  |    veh_648  |  straight  |         3  |  1468000000000  |  1485000000000  |     17  |
+  SimcoeTauntonJunction  |    veh_809  |  straight  |         3  |  1829000000000  |  1845000000000  |     16  |
+  SimcoeTauntonJunction  |    veh_970  |  straight  |         3  |  2188000000000  |  2205000000000  |     17  |
+Overall Average Delay for priority vehicles at the Intersections: 17.153846153846153
+Summary of Priority Vehicles' Delay Based on Vehicular Turning at Intersections:                        VehicleDelay summary                        
+   turn    |  Min [delay]  |  Max [delay]  |     Mean [delay]     |
+-------------------------------------------------------------------
+    right  |           16  |           21  |               17.25  |
+ straight  |           16  |           18  |   16.77777777777778  |
+     left  |           16  |           19  |  17.444444444444443  |
+Veh: veh_487 Travel Time: 133.0
+Veh: veh_165 Travel Time: 132.0
+Veh: veh_4 Travel Time: 133.0
+Veh: veh_326 Travel Time: 141.0
+Veh: veh_970 Travel Time: 134.0
+Veh: veh_809 Travel Time: 132.0
+Veh: veh_1292 Travel Time: 72.0
+Veh: veh_648 Travel Time: 133.0
+Veh: veh_1131 Travel Time: 133.0
+Total : 1143.0 Count : 9
+Average Travel Time of Priority Vehicles : 127.0
+OTHER VEHICLES DETAILS:
+Overall Average Delay for other vehicles at the Intersections: 46.36728395061728
+12:49:22 - Simulating: 3000000000000ns (3000.0s) - 100.0%    
+
+
+
+
+
+
+50: MultiIntersectionTrafficLightsController: Only High Priority Vehicles 10Veh/hr
+
+Overall Vehicular Delay at the Intersection: 33.457011845624756
+Summary of Delay Based on Vehicular Turning at Intersection:                        VehicleDelay summary                        
+   turn    |  Min [delay]  |  Max [delay]  |     Mean [delay]     |
+-------------------------------------------------------------------
+    right  |           15  |           76  |  28.661233993015134  |
+ straight  |           15  |           86  |   33.40277777777778  |
+     left  |           16  |           90  |  39.022666666666666  |
+Throughput: 1353
+PRIORITY VEHICLES DETAILS:
+                                                  VehicleDelay                                                  
+       junctionid        |  vehicleid  |    turn    |  priority  |   arrivaltime   |  departuretime  |  delay  |
+----------------------------------------------------------------------------------------------------------------
+    MaryRosslandJuction  |   veh_1131  |     right  |         3  |  2681000000000  |  2698000000000  |     17  |
+    MaryRosslandJuction  |    veh_165  |     right  |         3  |   523000000000  |   539000000000  |     16  |
+    MaryRosslandJuction  |    veh_326  |     right  |         3  |   883000000000  |   901000000000  |     18  |
+    MaryRosslandJuction  |      veh_4  |     right  |         3  |   165000000000  |   182000000000  |     17  |
+    MaryRosslandJuction  |    veh_487  |     right  |         3  |  1241000000000  |  1259000000000  |     18  |
+    MaryRosslandJuction  |    veh_648  |  straight  |         3  |  1608000000000  |  1625000000000  |     17  |
+    MaryRosslandJuction  |    veh_809  |     right  |         3  |  1963000000000  |  1979000000000  |     16  |
+    MaryRosslandJuction  |    veh_970  |  straight  |         3  |  2327000000000  |  2345000000000  |     18  |
+    MaryTauntonJunction  |   veh_1292  |     right  |         3  |  2975000000000  |  2992000000000  |     17  |
+    MaryTauntonJunction  |    veh_648  |     right  |         3  |  1533000000000  |  1549000000000  |     16  |
+    MaryTauntonJunction  |    veh_970  |     right  |         3  |  2253000000000  |  2269000000000  |     16  |
+ SimcoeRosslandJunction  |   veh_1131  |      left  |         3  |  2621000000000  |  2638000000000  |     17  |
+ SimcoeRosslandJunction  |    veh_165  |      left  |         3  |   462000000000  |   479000000000  |     17  |
+ SimcoeRosslandJunction  |    veh_326  |      left  |         3  |   822000000000  |   839000000000  |     17  |
+ SimcoeRosslandJunction  |      veh_4  |      left  |         3  |   104000000000  |   122000000000  |     18  |
+ SimcoeRosslandJunction  |    veh_487  |      left  |         3  |  1181000000000  |  1197000000000  |     16  |
+ SimcoeRosslandJunction  |    veh_809  |      left  |         3  |  1902000000000  |  1919000000000  |     17  |
+  SimcoeTauntonJunction  |   veh_1131  |  straight  |         3  |  2550000000000  |  2566000000000  |     16  |
+  SimcoeTauntonJunction  |   veh_1292  |      left  |         3  |  2910000000000  |  2928000000000  |     18  |
+  SimcoeTauntonJunction  |    veh_165  |  straight  |         3  |   391000000000  |   407000000000  |     16  |
+  SimcoeTauntonJunction  |    veh_326  |  straight  |         3  |   749000000000  |   765000000000  |     16  |
+  SimcoeTauntonJunction  |      veh_4  |  straight  |         3  |    32000000000  |    48000000000  |     16  |
+  SimcoeTauntonJunction  |    veh_487  |  straight  |         3  |  1108000000000  |  1125000000000  |     17  |
+  SimcoeTauntonJunction  |    veh_648  |      left  |         3  |  1468000000000  |  1485000000000  |     17  |
+  SimcoeTauntonJunction  |    veh_809  |  straight  |         3  |  1831000000000  |  1847000000000  |     16  |
+  SimcoeTauntonJunction  |    veh_970  |      left  |         3  |  2188000000000  |  2205000000000  |     17  |
+Overall Average Delay for priority vehicles at the Intersections: 16.807692307692307
+Summary of Priority Vehicles' Delay Based on Vehicular Turning at Intersections:                        VehicleDelay summary                       
+   turn    |  Min [delay]  |  Max [delay]  |    Mean [delay]     |
+------------------------------------------------------------------
+    right  |           16  |           18  |  16.77777777777778  |
+ straight  |           16  |           18  |               16.5  |
+     left  |           16  |           18  |  17.11111111111111  |
+Veh: veh_487 Travel Time: 133.0
+Veh: veh_165 Travel Time: 132.0
+Veh: veh_4 Travel Time: 133.0
+Veh: veh_326 Travel Time: 134.0
+Veh: veh_970 Travel Time: 139.0
+Veh: veh_809 Travel Time: 132.0
+Veh: veh_1292 Travel Time: 65.0
+Veh: veh_648 Travel Time: 140.0
+Veh: veh_1131 Travel Time: 131.0
+Total : 1139.0 Count : 9
+Average Travel Time of Priority Vehicles : 126.55555555555556
+OTHER VEHICLES DETAILS:
+Overall Average Delay for other vehicles at the Intersections: 33.62408336549595
+13:12:51 - Simulating: 3000000000000ns (3000.0s) - 100.0% 
+
+
+
+
+
+
+100: StaticPhaseTransitPreemptionController: Only High Priority Vehicles 10Veh/hr
+
+Overall Vehicular Delay at the Intersection: 48.794146152355119.8% (RTF:40.21, ETC:0.2s)                        
+Summary of Delay Based on Vehicular Turning at Intersection:                        VehicleDelay summary                        
+   turn    |  Min [delay]  |  Max [delay]  |     Mean [delay]     |
+-------------------------------------------------------------------
+    right  |           15  |          121  |   42.23784722222224  |
+ straight  |           15  |          158  |   49.24239298607527  |
+     left  |           16  |          196  |  55.804959785522755  |
+Throughput: 2665
+PRIORITY VEHICLES DETAILS:
+                                                  VehicleDelay                                                  
+       junctionid        |  vehicleid  |    turn    |  priority  |   arrivaltime   |  departuretime  |  delay  |
+----------------------------------------------------------------------------------------------------------------
+    MaryRosslandJuction  |   veh_1288  |     right  |         3  |  1602000000000  |  1622000000000  |     20  |
+    MaryRosslandJuction  |   veh_1609  |     right  |         3  |  1960000000000  |  1983000000000  |     23  |
+    MaryRosslandJuction  |   veh_1930  |     right  |         3  |  2320000000000  |  2339000000000  |     19  |
+    MaryRosslandJuction  |   veh_2251  |     right  |         3  |  2683000000000  |  2707000000000  |     24  |
+    MaryRosslandJuction  |    veh_325  |     right  |         3  |   522000000000  |   549000000000  |     27  |
+    MaryRosslandJuction  |      veh_4  |     right  |         3  |   165000000000  |   182000000000  |     17  |
+    MaryRosslandJuction  |    veh_646  |  straight  |         3  |   893000000000  |   909000000000  |     16  |
+    MaryRosslandJuction  |    veh_967  |     right  |         3  |  1241000000000  |  1277000000000  |     36  |
+    MaryTauntonJunction  |    veh_646  |     right  |         3  |   818000000000  |   835000000000  |     17  |
+ SimcoeRosslandJunction  |   veh_1288  |      left  |         3  |  1541000000000  |  1558000000000  |     17  |
+ SimcoeRosslandJunction  |   veh_1609  |      left  |         3  |  1900000000000  |  1917000000000  |     17  |
+ SimcoeRosslandJunction  |   veh_1930  |      left  |         3  |  2260000000000  |  2277000000000  |     17  |
+ SimcoeRosslandJunction  |   veh_2251  |      left  |         3  |  2623000000000  |  2639000000000  |     16  |
+ SimcoeRosslandJunction  |    veh_325  |      left  |         3  |   462000000000  |   479000000000  |     17  |
+ SimcoeRosslandJunction  |      veh_4  |      left  |         3  |   104000000000  |   122000000000  |     18  |
+ SimcoeRosslandJunction  |    veh_967  |      left  |         3  |  1181000000000  |  1197000000000  |     16  |
+  SimcoeTauntonJunction  |   veh_1288  |  straight  |         3  |  1469000000000  |  1486000000000  |     17  |
+  SimcoeTauntonJunction  |   veh_1609  |  straight  |         3  |  1828000000000  |  1845000000000  |     17  |
+  SimcoeTauntonJunction  |   veh_1930  |  straight  |         3  |  2188000000000  |  2205000000000  |     17  |
+  SimcoeTauntonJunction  |   veh_2251  |  straight  |         3  |  2551000000000  |  2567000000000  |     16  |
+  SimcoeTauntonJunction  |   veh_2572  |  straight  |         3  |  2909000000000  |  2927000000000  |     18  |
+  SimcoeTauntonJunction  |    veh_325  |  straight  |         3  |   390000000000  |   407000000000  |     17  |
+  SimcoeTauntonJunction  |      veh_4  |  straight  |         3  |    32000000000  |    48000000000  |     16  |
+  SimcoeTauntonJunction  |    veh_646  |      left  |         3  |   748000000000  |   771000000000  |     23  |
+  SimcoeTauntonJunction  |    veh_967  |  straight  |         3  |  1109000000000  |  1125000000000  |     16  |
+Overall Average Delay for priority vehicles at the Intersections: 18.96
+Summary of Priority Vehicles' Delay Based on Vehicular Turning at Intersections:                        VehicleDelay summary                        
+   turn    |  Min [delay]  |  Max [delay]  |     Mean [delay]     |
+-------------------------------------------------------------------
+    right  |           17  |           36  |              22.875  |
+ straight  |           16  |           18  |  16.666666666666668  |
+     left  |           16  |           23  |              17.625  |
+Veh: veh_1930 Travel Time: 132.0
+Veh: veh_2572 Travel Time: -0.0
+Veh: veh_967 Travel Time: 132.0
+Veh: veh_4 Travel Time: 133.0
+Veh: veh_325 Travel Time: 132.0
+Veh: veh_1288 Travel Time: 133.0
+Veh: veh_1609 Travel Time: 132.0
+Veh: veh_646 Travel Time: 145.0
+Veh: veh_2251 Travel Time: 132.0
+Total : 1071.0 Count : 9
+Average Travel Time of Priority Vehicles : 119.0
+OTHER VEHICLES DETAILS:
+Overall Average Delay for other vehicles at the Intersections: 48.939423451499806
+13:19:50 - Simulating: 3000000000000ns (3000.0s) - 100.0%  
+
+
+
+
+100: MultiIntersectionTrafficLightsController: Only High Priority Vehicles 10Veh/hr
+
+Overall Vehicular Delay at the Intersection: 35.673858601425536
+Summary of Delay Based on Vehicular Turning at Intersection:                        VehicleDelay summary                        
+   turn    |  Min [delay]  |  Max [delay]  |     Mean [delay]     |
+-------------------------------------------------------------------
+    right  |           15  |           89  |  31.341013824884776  |
+     left  |           16  |          102  |   38.87558528428092  |
+ straight  |           15  |           93  |   37.06938775510203  |
+Throughput: 2665
+PRIORITY VEHICLES DETAILS:
+                                                  VehicleDelay                                                  
+       junctionid        |  vehicleid  |    turn    |  priority  |   arrivaltime   |  departuretime  |  delay  |
+----------------------------------------------------------------------------------------------------------------
+    MaryRosslandJuction  |   veh_1288  |     right  |         3  |  1605000000000  |  1625000000000  |     20  |
+    MaryRosslandJuction  |   veh_1609  |  straight  |         3  |  1968000000000  |  1985000000000  |     17  |
+    MaryRosslandJuction  |   veh_1930  |     right  |         3  |  2324000000000  |  2343000000000  |     19  |
+    MaryRosslandJuction  |   veh_2251  |     right  |         3  |  2682000000000  |  2704000000000  |     22  |
+    MaryRosslandJuction  |    veh_325  |     right  |         3  |   523000000000  |   539000000000  |     16  |
+    MaryRosslandJuction  |      veh_4  |     right  |         3  |   165000000000  |   182000000000  |     17  |
+    MaryRosslandJuction  |    veh_646  |     right  |         3  |   884000000000  |   901000000000  |     17  |
+    MaryRosslandJuction  |    veh_967  |     right  |         3  |  1250000000000  |  1268000000000  |     18  |
+    MaryTauntonJunction  |   veh_1609  |     right  |         3  |  1893000000000  |  1911000000000  |     18  |
+ SimcoeRosslandJunction  |   veh_1288  |      left  |         3  |  1540000000000  |  1561000000000  |     21  |
+ SimcoeRosslandJunction  |   veh_1930  |      left  |         3  |  2262000000000  |  2281000000000  |     19  |
+ SimcoeRosslandJunction  |   veh_2251  |      left  |         3  |  2621000000000  |  2638000000000  |     17  |
+ SimcoeRosslandJunction  |   veh_2572  |      left  |         3  |  2981000000000  |  2998000000000  |     17  |
+ SimcoeRosslandJunction  |    veh_325  |      left  |         3  |   463000000000  |   479000000000  |     16  |
+ SimcoeRosslandJunction  |      veh_4  |      left  |         3  |   104000000000  |   122000000000  |     18  |
+ SimcoeRosslandJunction  |    veh_646  |      left  |         3  |   823000000000  |   841000000000  |     18  |
+ SimcoeRosslandJunction  |    veh_967  |      left  |         3  |  1184000000000  |  1206000000000  |     22  |
+  SimcoeTauntonJunction  |   veh_1288  |  straight  |         3  |  1469000000000  |  1485000000000  |     16  |
+  SimcoeTauntonJunction  |   veh_1609  |      left  |         3  |  1828000000000  |  1845000000000  |     17  |
+  SimcoeTauntonJunction  |   veh_1930  |  straight  |         3  |  2191000000000  |  2207000000000  |     16  |
+  SimcoeTauntonJunction  |   veh_2251  |  straight  |         3  |  2549000000000  |  2566000000000  |     17  |
+  SimcoeTauntonJunction  |   veh_2572  |  straight  |         3  |  2909000000000  |  2926000000000  |     17  |
+  SimcoeTauntonJunction  |    veh_325  |  straight  |         3  |   391000000000  |   407000000000  |     16  |
+  SimcoeTauntonJunction  |      veh_4  |  straight  |         3  |    32000000000  |    48000000000  |     16  |
+  SimcoeTauntonJunction  |    veh_646  |  straight  |         3  |   751000000000  |   767000000000  |     16  |
+  SimcoeTauntonJunction  |    veh_967  |  straight  |         3  |  1112000000000  |  1128000000000  |     16  |
+Overall Average Delay for priority vehicles at the Intersections: 17.653846153846153
+Summary of Priority Vehicles' Delay Based on Vehicular Turning at Intersections:                        VehicleDelay summary                        
+   turn    |  Min [delay]  |  Max [delay]  |     Mean [delay]     |
+-------------------------------------------------------------------
+    right  |           16  |           22  |              18.375  |
+ straight  |           16  |           17  |  16.333333333333332  |
+     left  |           16  |           22  |  18.333333333333332  |
+Veh: veh_1930 Travel Time: 133.0
+Veh: veh_2572 Travel Time: 72.0
+Veh: veh_967 Travel Time: 138.0
+Veh: veh_4 Travel Time: 133.0
+Veh: veh_325 Travel Time: 132.0
+Veh: veh_1288 Travel Time: 136.0
+Veh: veh_1609 Travel Time: 140.0
+Veh: veh_646 Travel Time: 133.0
+Veh: veh_2251 Travel Time: 133.0
+Total : 1150.0 Count : 9
+Average Travel Time of Priority Vehicles : 127.77777777777777
+OTHER VEHICLES DETAILS:
+Overall Average Delay for other vehicles at the Intersections: 35.76456921587609
+13:17:39 - Simulating: 3000000000000ns (3000.0s) - 100.0%  
+
+
+
+
+200: StaticPhaseTransitPreemptionController: Only High Priority Vehicles 10Veh/hr
+
+Overall Vehicular Delay at the Intersection: 64.110119932599629.8% (RTF:15.60, ETC:1.5s)                        
+Summary of Delay Based on Vehicular Turning at Intersection:                        VehicleDelay summary                        
+   turn    |  Min [delay]  |  Max [delay]  |     Mean [delay]     |
+-------------------------------------------------------------------
+    right  |           15  |          209  |  54.601353339217205  |
+ straight  |           15  |          256  |   64.38356895172008  |
+     left  |           16  |          310  |   74.75110506630419  |
+Throughput: 5321
+PRIORITY VEHICLES DETAILS:
+                                                  VehicleDelay                                                  
+       junctionid        |  vehicleid  |    turn    |  priority  |   arrivaltime   |  departuretime  |  delay  |
+----------------------------------------------------------------------------------------------------------------
+    MaryRosslandJuction  |   veh_1286  |  straight  |         3  |   912000000000  |   931000000000  |     19  |
+    MaryRosslandJuction  |   veh_1927  |     right  |         3  |  1256000000000  |  1307000000000  |     51  |
+    MaryRosslandJuction  |   veh_2568  |     right  |         3  |  1609000000000  |  1652000000000  |     43  |
+    MaryRosslandJuction  |   veh_3209  |  straight  |         3  |  2001000000000  |  2019000000000  |     18  |
+    MaryRosslandJuction  |   veh_3850  |     right  |         3  |  2336000000000  |  2375000000000  |     39  |
+    MaryRosslandJuction  |      veh_4  |     right  |         3  |   164000000000  |   180000000000  |     16  |
+    MaryRosslandJuction  |   veh_4491  |     right  |         3  |  2709000000000  |  2739000000000  |     30  |
+    MaryRosslandJuction  |    veh_645  |     right  |         3  |   529000000000  |   563000000000  |     34  |
+    MaryTauntonJunction  |   veh_1286  |     right  |         3  |   836000000000  |   853000000000  |     17  |
+    MaryTauntonJunction  |   veh_3209  |     right  |         3  |  1901000000000  |  1943000000000  |     42  |
+ SimcoeRosslandJunction  |   veh_1927  |      left  |         3  |  1188000000000  |  1213000000000  |     25  |
+ SimcoeRosslandJunction  |   veh_2568  |      left  |         3  |  1545000000000  |  1566000000000  |     21  |
+ SimcoeRosslandJunction  |   veh_3850  |      left  |         3  |  2263000000000  |  2293000000000  |     30  |
+ SimcoeRosslandJunction  |      veh_4  |      left  |         3  |   104000000000  |   120000000000  |     16  |
+ SimcoeRosslandJunction  |   veh_4491  |      left  |         3  |  2628000000000  |  2667000000000  |     39  |
+ SimcoeRosslandJunction  |    veh_645  |      left  |         3  |   462000000000  |   485000000000  |     23  |
+  SimcoeTauntonJunction  |   veh_1286  |      left  |         3  |   748000000000  |   789000000000  |     41  |
+  SimcoeTauntonJunction  |   veh_1927  |  straight  |         3  |  1109000000000  |  1133000000000  |     24  |
+  SimcoeTauntonJunction  |   veh_2568  |  straight  |         3  |  1472000000000  |  1490000000000  |     18  |
+  SimcoeTauntonJunction  |   veh_3209  |      left  |         3  |  1828000000000  |  1853000000000  |     25  |
+  SimcoeTauntonJunction  |   veh_3850  |  straight  |         3  |  2188000000000  |  2209000000000  |     21  |
+  SimcoeTauntonJunction  |      veh_4  |  straight  |         3  |    32000000000  |    48000000000  |     16  |
+  SimcoeTauntonJunction  |   veh_4491  |  straight  |         3  |  2550000000000  |  2573000000000  |     23  |
+  SimcoeTauntonJunction  |   veh_5132  |      left  |         3  |  2908000000000  |  2945000000000  |     37  |
+  SimcoeTauntonJunction  |    veh_645  |  straight  |         3  |   391000000000  |   407000000000  |     16  |
+Overall Average Delay for priority vehicles at the Intersections: 27.36
+Summary of Priority Vehicles' Delay Based on Vehicular Turning at Intersections:                        VehicleDelay summary                        
+   turn    |  Min [delay]  |  Max [delay]  |     Mean [delay]     |
+-------------------------------------------------------------------
+ straight  |           16  |           24  |              19.375  |
+    right  |           16  |           51  |                  34  |
+     left  |           16  |           41  |  28.555555555555557  |
+Veh: veh_2568 Travel Time: 137.0
+Veh: veh_645 Travel Time: 138.0
+Veh: veh_4 Travel Time: 132.0
+Veh: veh_3850 Travel Time: 148.0
+Veh: veh_5132 Travel Time: -0.0
+Veh: veh_1286 Travel Time: 164.0
+Veh: veh_3209 Travel Time: 173.0
+Veh: veh_4491 Travel Time: 159.0
+Veh: veh_1927 Travel Time: 147.0
+Total : 1198.0 Count : 9
+Average Travel Time of Priority Vehicles : 133.11111111111111
+OTHER VEHICLES DETAILS:
+Overall Average Delay for other vehicles at the Intersections: 64.20141096979378
+13:24:40 - Simulating: 3000000000000ns (3000.0s) - 100.0%    
+
+
+
+200: MultiIntersectionTrafficLightsController: Only High Priority Vehicles 10Veh/hr
+
+Summary of Delay Based on Vehicular Turning at Intersection:                        VehicleDelay summary                        
+   turn    |  Min [delay]  |  Max [delay]  |     Mean [delay]     |
+-------------------------------------------------------------------
+    right  |           15  |          135  |   45.57621145374442  |
+     left  |           16  |          147  |  53.553335590924455  |
+ straight  |           15  |          153  |  48.108583247156176  |
+Throughput: 5321
+PRIORITY VEHICLES DETAILS:
+                                                  VehicleDelay                                                  
+       junctionid        |  vehicleid  |    turn    |  priority  |   arrivaltime   |  departuretime  |  delay  |
+----------------------------------------------------------------------------------------------------------------
+    MaryRosslandJuction  |   veh_1286  |  straight  |         3  |   906000000000  |   929000000000  |     23  |
+    MaryRosslandJuction  |   veh_1927  |  straight  |         3  |  1261000000000  |  1283000000000  |     22  |
+    MaryRosslandJuction  |   veh_2568  |     right  |         3  |  1617000000000  |  1642000000000  |     25  |
+    MaryRosslandJuction  |   veh_3209  |     right  |         3  |  1989000000000  |  2012000000000  |     23  |
+    MaryRosslandJuction  |   veh_3850  |     right  |         3  |  2339000000000  |  2383000000000  |     44  |
+    MaryRosslandJuction  |      veh_4  |     right  |         3  |   164000000000  |   180000000000  |     16  |
+    MaryRosslandJuction  |   veh_4491  |     right  |         3  |  2700000000000  |  2740000000000  |     40  |
+    MaryRosslandJuction  |    veh_645  |  straight  |         3  |   528000000000  |   553000000000  |     25  |
+    MaryTauntonJunction  |   veh_1286  |     right  |         3  |   829000000000  |   849000000000  |     20  |
+    MaryTauntonJunction  |   veh_1927  |     right  |         3  |  1181000000000  |  1203000000000  |     22  |
+    MaryTauntonJunction  |    veh_645  |     right  |         3  |   453000000000  |   471000000000  |     18  |
+ SimcoeRosslandJunction  |   veh_2568  |      left  |         3  |  1542000000000  |  1574000000000  |     32  |
+ SimcoeRosslandJunction  |   veh_3209  |      left  |         3  |  1903000000000  |  1946000000000  |     43  |
+ SimcoeRosslandJunction  |   veh_3850  |      left  |         3  |  2268000000000  |  2295000000000  |     27  |
+ SimcoeRosslandJunction  |      veh_4  |      left  |         3  |   104000000000  |   120000000000  |     16  |
+ SimcoeRosslandJunction  |   veh_4491  |      left  |         3  |  2623000000000  |  2656000000000  |     33  |
+  SimcoeTauntonJunction  |   veh_1286  |      left  |         3  |   748000000000  |   781000000000  |     33  |
+  SimcoeTauntonJunction  |   veh_1927  |      left  |         3  |  1108000000000  |  1133000000000  |     25  |
+  SimcoeTauntonJunction  |   veh_2568  |  straight  |         3  |  1469000000000  |  1486000000000  |     17  |
+  SimcoeTauntonJunction  |   veh_3209  |  straight  |         3  |  1832000000000  |  1848000000000  |     16  |
+  SimcoeTauntonJunction  |   veh_3850  |  straight  |         3  |  2191000000000  |  2211000000000  |     20  |
+  SimcoeTauntonJunction  |      veh_4  |  straight  |         3  |    32000000000  |    48000000000  |     16  |
+  SimcoeTauntonJunction  |   veh_4491  |  straight  |         3  |  2549000000000  |  2568000000000  |     19  |
+  SimcoeTauntonJunction  |   veh_5132  |  straight  |         3  |  2909000000000  |  2925000000000  |     16  |
+  SimcoeTauntonJunction  |    veh_645  |      left  |         3  |   388000000000  |   405000000000  |     17  |
+Overall Average Delay for priority vehicles at the Intersections: 24.32
+Summary of Priority Vehicles' Delay Based on Vehicular Turning at Intersections:                        VehicleDelay summary                        
+   turn    |  Min [delay]  |  Max [delay]  |     Mean [delay]     |
+-------------------------------------------------------------------
+ straight  |           16  |           25  |  19.333333333333332  |
+    right  |           16  |           44  |                  26  |
+     left  |           16  |           43  |               28.25  |
+Veh: veh_2568 Travel Time: 148.0
+Veh: veh_645 Travel Time: 140.0
+Veh: veh_4 Travel Time: 132.0
+Veh: veh_3850 Travel Time: 148.0
+Veh: veh_5132 Travel Time: -0.0
+Veh: veh_1286 Travel Time: 158.0
+Veh: veh_3209 Travel Time: 157.0
+Veh: veh_4491 Travel Time: 151.0
+Veh: veh_1927 Travel Time: 153.0
+Total : 1187.0 Count : 9
+Average Travel Time of Priority Vehicles : 131.88888888888889
+OTHER VEHICLES DETAILS:
+Overall Average Delay for other vehicles at the Intersections: 48.897755122046846
+13:30:25 - Simulating: 3000000000000ns (3000.0s) - 100.0%     
+
+
+
+
+300: StaticPhaseTransitPreemptionController: Only High Priority Vehicles 10Veh/hr
+
+Overall Vehicular Delay at the Intersection: 124.88976562500119.9% (RTF:4.79, ETC:3.5s)                        
+Summary of Delay Based on Vehicular Turning at Intersection:                        VehicleDelay summary                        
+   turn    |  Min [delay]  |  Max [delay]  |     Mean [delay]     |
+-------------------------------------------------------------------
+    right  |           15  |          410  |  103.01855670103143  |
+     left  |           16  |         1056  |  162.43509952340906  |
+ straight  |           15  |          574  |   116.9899342645834  |
+Throughput: 7371
+PRIORITY VEHICLES DETAILS:
+                                                  VehicleDelay                                                  
+       junctionid        |  vehicleid  |    turn    |  priority  |   arrivaltime   |  departuretime  |  delay  |
+----------------------------------------------------------------------------------------------------------------
+    MaryRosslandJuction  |   veh_1926  |  straight  |         3  |   900000000000  |   917000000000  |     17  |
+    MaryRosslandJuction  |   veh_2887  |  straight  |         3  |  1330000000000  |  1349000000000  |     19  |
+    MaryRosslandJuction  |   veh_3848  |  straight  |         3  |  1680000000000  |  1707000000000  |     27  |
+    MaryRosslandJuction  |      veh_4  |     right  |         3  |   164000000000  |   180000000000  |     16  |
+    MaryRosslandJuction  |   veh_4809  |  straight  |         3  |  2064000000000  |  2083000000000  |     19  |
+    MaryRosslandJuction  |   veh_5770  |     right  |         3  |  2386000000000  |  2457000000000  |     71  |
+    MaryRosslandJuction  |   veh_6731  |  straight  |         3  |  2838000000000  |  2855000000000  |     17  |
+    MaryRosslandJuction  |    veh_965  |     right  |         3  |   567000000000  |   601000000000  |     34  |
+    MaryTauntonJunction  |   veh_1926  |     right  |         3  |   825000000000  |   841000000000  |     16  |
+    MaryTauntonJunction  |   veh_2887  |     right  |         3  |  1243000000000  |  1273000000000  |     30  |
+    MaryTauntonJunction  |   veh_3848  |     right  |         3  |  1603000000000  |  1623000000000  |     20  |
+    MaryTauntonJunction  |   veh_4809  |     right  |         3  |  1968000000000  |  2007000000000  |     39  |
+    MaryTauntonJunction  |   veh_6731  |     right  |         3  |  2753000000000  |  2781000000000  |     28  |
+ SimcoeRosslandJunction  |      veh_4  |      left  |         3  |   104000000000  |   120000000000  |     16  |
+ SimcoeRosslandJunction  |   veh_5770  |      left  |         3  |  2314000000000  |  2343000000000  |     29  |
+ SimcoeRosslandJunction  |    veh_965  |      left  |         3  |   472000000000  |   523000000000  |     51  |
+  SimcoeTauntonJunction  |   veh_1926  |      left  |         3  |   748000000000  |   777000000000  |     29  |
+  SimcoeTauntonJunction  |   veh_2887  |      left  |         3  |  1128000000000  |  1195000000000  |     67  |
+  SimcoeTauntonJunction  |   veh_3848  |      left  |         3  |  1487000000000  |  1555000000000  |     68  |
+  SimcoeTauntonJunction  |      veh_4  |  straight  |         3  |    32000000000  |    48000000000  |     16  |
+  SimcoeTauntonJunction  |   veh_4809  |      left  |         3  |  1850000000000  |  1921000000000  |     71  |
+  SimcoeTauntonJunction  |   veh_5770  |  straight  |         3  |  2213000000000  |  2257000000000  |     44  |
+  SimcoeTauntonJunction  |   veh_6731  |      left  |         3  |  2640000000000  |  2705000000000  |     65  |
+  SimcoeTauntonJunction  |    veh_965  |  straight  |         3  |   389000000000  |   415000000000  |     26  |
+Overall Average Delay for priority vehicles at the Intersections: 34.79166666666667
+Summary of Priority Vehicles' Delay Based on Vehicular Turning at Intersections:                     VehicleDelay summary                     
+   turn    |  Min [delay]  |  Max [delay]  |  Mean [delay]  |
+-------------------------------------------------------------
+ straight  |           16  |           44  |        23.125  |
+    right  |           16  |           71  |         31.75  |
+     left  |           16  |           71  |          49.5  |
+Veh: veh_5770 Travel Time: 173.0
+Veh: veh_2887 Travel Time: 202.0
+Veh: veh_4 Travel Time: 132.0
+Veh: veh_3848 Travel Time: 193.0
+Veh: veh_4809 Travel Time: 214.0
+Veh: veh_6731 Travel Time: 198.0
+Veh: veh_965 Travel Time: 178.0
+Veh: veh_1926 Travel Time: 152.0
+Total : 1442.0 Count : 8
+Average Travel Time of Priority Vehicles : 180.25
+OTHER VEHICLES DETAILS:
+Overall Average Delay for other vehicles at the Intersections: 125.05901690670015
+13:47:34 - Simulating: 3000000000000ns (3000.0s) - 100.0%    
+
+
+300: MultiIntersectionTrafficLightsController: Only High Priority Vehicles 10Veh/hr
+
+Overall Vehicular Delay at the Intersection: 110.37558858151814.9% (RTF:5.98, ETC:3.7s)                        
+Summary of Delay Based on Vehicular Turning at Intersection:                        VehicleDelay summary                       
+   turn    |  Min [delay]  |  Max [delay]  |    Mean [delay]     |
+------------------------------------------------------------------
+    right  |           15  |          442  |  102.9398198989673  |
+ straight  |           15  |          444  |  94.91296121097454  |
+     left  |           16  |         1171  |  141.1627597229617  |
+Throughput: 7462
+PRIORITY VEHICLES DETAILS:
+                                                  VehicleDelay                                                  
+       junctionid        |  vehicleid  |    turn    |  priority  |   arrivaltime   |  departuretime  |  delay  |
+----------------------------------------------------------------------------------------------------------------
+    MaryRosslandJuction  |   veh_1926  |  straight  |         3  |   985000000000  |  1011000000000  |     26  |
+    MaryRosslandJuction  |   veh_2887  |  straight  |         3  |  1772000000000  |  1799000000000  |     27  |
+    MaryRosslandJuction  |   veh_3848  |     right  |         3  |  1697000000000  |  1755000000000  |     58  |
+    MaryRosslandJuction  |      veh_4  |     right  |         3  |   165000000000  |   182000000000  |     17  |
+    MaryRosslandJuction  |   veh_4809  |     right  |         3  |  2060000000000  |  2117000000000  |     57  |
+    MaryRosslandJuction  |   veh_5770  |     right  |         3  |  2369000000000  |  2423000000000  |     54  |
+    MaryRosslandJuction  |   veh_6731  |     right  |         3  |  2804000000000  |  2863000000000  |     59  |
+    MaryRosslandJuction  |    veh_965  |  straight  |         3  |   585000000000  |   605000000000  |     20  |
+    MaryTauntonJunction  |   veh_1926  |     right  |         3  |   875000000000  |   927000000000  |     52  |
+    MaryTauntonJunction  |   veh_2887  |     right  |         3  |  1697000000000  |  1713000000000  |     16  |
+    MaryTauntonJunction  |    veh_965  |     right  |         3  |   477000000000  |   527000000000  |     50  |
+ SimcoeRosslandJunction  |   veh_3848  |      left  |         3  |  1582000000000  |  1625000000000  |     43  |
+ SimcoeRosslandJunction  |      veh_4  |      left  |         3  |   104000000000  |   122000000000  |     18  |
+ SimcoeRosslandJunction  |   veh_4809  |      left  |         3  |  1919000000000  |  1959000000000  |     40  |
+ SimcoeRosslandJunction  |   veh_5770  |      left  |         3  |  2277000000000  |  2325000000000  |     48  |
+ SimcoeRosslandJunction  |   veh_6731  |      left  |         3  |  2658000000000  |  2715000000000  |     57  |
+  SimcoeTauntonJunction  |   veh_1926  |      left  |         3  |   753000000000  |   827000000000  |     74  |
+  SimcoeTauntonJunction  |   veh_2887  |      left  |         3  |  1572000000000  |  1649000000000  |     77  |
+  SimcoeTauntonJunction  |   veh_3848  |  straight  |         3  |  1468000000000  |  1527000000000  |     59  |
+  SimcoeTauntonJunction  |      veh_4  |  straight  |         3  |    32000000000  |    48000000000  |     16  |
+  SimcoeTauntonJunction  |   veh_4809  |  straight  |         3  |  1829000000000  |  1863000000000  |     34  |
+  SimcoeTauntonJunction  |   veh_5770  |  straight  |         3  |  2189000000000  |  2221000000000  |     32  |
+  SimcoeTauntonJunction  |   veh_6731  |  straight  |         3  |  2549000000000  |  2603000000000  |     54  |
+  SimcoeTauntonJunction  |    veh_965  |      left  |         3  |   388000000000  |   429000000000  |     41  |
+Overall Average Delay for priority vehicles at the Intersections: 42.875
+Summary of Priority Vehicles' Delay Based on Vehicular Turning at Intersections:                     VehicleDelay summary                     
+   turn    |  Min [delay]  |  Max [delay]  |  Mean [delay]  |
+-------------------------------------------------------------
+ straight  |           16  |           59  |          33.5  |
+    right  |           16  |           59  |        45.375  |
+     left  |           18  |           77  |         49.75  |
+Veh: veh_5770 Travel Time: 180.0
+Veh: veh_2887 Travel Time: 200.0
+Veh: veh_4 Travel Time: 133.0
+Veh: veh_3848 Travel Time: 229.0
+Veh: veh_4809 Travel Time: 231.0
+Veh: veh_6731 Travel Time: 255.0
+Veh: veh_965 Travel Time: 197.0
+Veh: veh_1926 Travel Time: 232.0
+Total : 1657.0 Count : 8
+Average Travel Time of Priority Vehicles : 207.125
+OTHER VEHICLES DETAILS:
+Overall Average Delay for other vehicles at the Intersections: 110.4949882075476
+13:59:49 - Simulating: 3000000000000ns (3000.0s) - 100.0%   
+
+
+
+
+400: StaticPhaseTransitPreemptionController: Only High Priority Vehicles 10Veh/hr
+400: MultiIntersectionTrafficLightsController: Only High Priority Vehicles 10Veh/hr
+
+
+
+500: StaticPhaseTransitPreemptionController: Only High Priority Vehicles 10Veh/hr
+500: MultiIntersectionTrafficLightsController: Only High Priority Vehicles 10Veh/hr

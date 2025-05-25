@@ -1,0 +1,16 @@
+{
+    "minimalPayloadLength": "200 Bytes",
+    "minInterval": "500ms",
+    "maxInterval": "2s",
+    "perceptionConfiguration": {
+        "vehicleIndex": {
+            "enabled": true
+        },
+        "trafficLightIndex": {
+            "enabled": true
+        },
+        "wallIndex": {
+            "enabled": false
+        }
+    }
+}

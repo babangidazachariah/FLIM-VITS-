@@ -1,0 +1,276 @@
+Using the SUMO GUI with Eclipse MOSAIC
+
+Setting up the MOSAIC scenario
+
+1. Creating the scenario database
+
+	To create the scenario database we will use the scenario-convert script, that comes bundled with the MOSAIC extended version from the download section. Start by calling:
+
+	java -jar scenario-convert.jar --sumo2db -i sievekingplatz.net.xml
+
+	This will create a database called sievekingplatz.db and load the network into the database.
+
+
+2. Loading the routes into the database
+
+	Next we will use the same command to load the routes of the route-file into the database. This is optional, but necessary if you want to add vehicles along the routes of your SUMO route-file.
+
+	java -jar scenario-convert.jar --sumo2db -i sievekingplatz.rou.xml -d sievekingplatz.db
+
+	Note, that we also have to specify the database here.
+
+3. Create the MOSAIC scenario folder structure
+
+	MOSAIC requires a special folder structure to organize the configuration of different federates. If you haven’t dealt with MOSAIC scenarios yet have a look here. Start by creating a following folder structure representing the most basic set-up for a MOSAIC scenario:
+
+	└─ sievekingplatz
+	   ├─ application
+	   ├─ mapping
+	   └─ sumo
+	Next copy the database into the application-directory and all SUMO files into the sumo-directory. Additionally, you can create the configuration file mapping_config.json in the mapping-directory, we will fill this file later on.
+	
+	
+4. Set up the scenario_config.json
+
+	Create a file called scenario_config.json in the parent directory of you scenario, this is the main configuration for your scenario. The folder structure should now look as following:
+
+	└─ sievekingplatz
+	   ├─ application
+	   |  └─ sievekingplatz.db
+	   ├─ mapping
+	   |  └─ mapping_config.json
+	   ├─ sumo
+	   |  ├─ sievekingplatz.bus.add.xml 
+	   |  ├─ sievekingplatz.net.xml
+	   |  ├─ sievekingplatz.rou.xml
+	   |  ├─ sievekingplatz.sumocfg
+	   |  └─ sumo_config.json
+	   └─ scenario_config.json
+
+	Now it’s time to fill out the scenario_config.json. For now, you can copy the following configuration:
+
+	{
+		"simulation": {
+			"id": "Sievekingplatz",
+			"duration": "200s",
+			"randomSeed": 212323853,
+			"projection": {
+				"centerCoordinates": {
+					"latitude": 52.63,
+					"longitude": 13.56
+				},
+				"cartesianOffset": {
+					"x": -563984.16,
+					"y": -5933566.87
+				}
+			},
+			"network": {
+				"netMask": "255.255.0.0",
+				"vehicleNet": "10.1.0.0",
+				"rsuNet": "10.2.0.0",
+				"tlNet": "10.3.0.0",
+				"csNet": "10.4.0.0",
+				"serverNet": "10.5.0.0",
+				"tmcNet": "10.6.0.0"
+			}
+		},
+		"federates": {
+			"application": true,
+			"cell": false,
+			"environment": false,
+			"sns": false,
+			"ns3": false,
+			"omnetpp": false,
+			"sumo": true
+		}
+	}
+
+		Note: The cartesianOffset values are taken from the net-file and can generally just be copied over.
+
+5. Additional SUMO configuration
+
+	In the sievekingplatz.sumocfg the step-length is defined, this parameter will, by default, be ignored in MOSAIC and has to be set in the sumo_config.json (located in the sumo-directory) to ensure the same behaviour. (SUMO uses seconds as unit and MOSAIC milliseconds)
+
+	sievekingplatz.sumocfg:
+
+		...
+		<time>
+			<step-length value="0.1"/>
+		</time>
+		...    
+
+	sumo_config.json:
+
+	{
+		"updateInterval": 100
+	}
+
+	Additional Traffic Demand from MOSAIC
+
+	Now that we set up the basic scenario structure, we can continue by creating some additional traffic demand. Let’s try to add 3 additional vehicles using a flow definition in the mapping_config.json-file. We first define the prototype MappingCar for our new vehicles. Afterwards we define a spawner for three additional vehicles and also equip them with the HelloWorldApp, which we will have a look at next.
+
+	{
+		"prototypes": [
+			{
+				"name": "MappingCar"
+			},
+			...
+		],
+		"vehicles": [
+			{
+				"startingTime": "10.0 s",
+				"route": "3",
+				"targetFlow": 1200,
+				"maxNumberVehicles": 3,
+				"lanes": [ 1, 2 ],
+				"types": [
+					{
+						"name": "MappingCar",
+						"applications": [ "org.eclipse.mosaic.app.tutorial.eventprocessing.sampling.HelloWorldApp" ]
+					}
+				]
+			}
+		]
+	}
+
+		This isn’t shown here, but it is also possible to define bikes and busses in the mapping_config.json. In order to do this you have to set the according "vehicleClass"-attribute in the prototype (see org.eclipse.mosaic.lib.enums.VehicleClass).
+
+We can now start the scenario using the MOSAIC start script and will see both the vehicles from SUMO and the ones from MOSAIC.
+
+
+
+
+In order to use the SUMO GUI the file <mosaic>/etc/runtime.json needs to be edited. 
+Here, the entry org.eclipse.mosaic.fed.sumo.ambassador.SumoAmbassador must be replaced 
+with org.eclipse.mosaic.fed.sumo.ambassador.SumoGuiAmbassador.
+
+Start Simulation
+
+./mosaic.bat -c ./scenarios/isolatedintersection/scenario_config.json -w 0 ===>Widows
+./mosaic.sh -c ./scenarios/loopandv2idataintersection/scenario_config.json -w 0 ===>Linux
+
+Change directory:
+
+cd eclipse-workspace/TrafficLightsApp  ===> Porgram
+
+cd c:/cav/mosaic ===>Mosaic and scenarios execution
+
+cd ~/CAV/mosaic
+./mosaic.sh -c ./scenarios/isolatedintersection/scenario_config.json -w 0
+
+
+
+cd ~/CAV/mosaic
+./mosaic.sh -c ./scenarios/isolatedintersectionplatoon/scenario_config.json -w 0
+
+cd ~/CAV/mosaic
+./mosaic.sh -c ./scenarios/multiintersection/scenario_config.json -w 0
+
+
+Compile:
+
+mvn clean install
+
+Copy Jar File to Scenario
+
+cd ~/eclipse-workspace/TrafficLightsApp
+mvn clean install
+mv target/TrafficLightsApp-0.0.1.jar ~/CAV/mosaic/scenarios/isolatedintersection/application
+
+
+cd eclipse-workspace/TrafficLightsApp
+mvn clean install
+mv target/TrafficLightsApp-0.0.1.jar ~/CAV/mosaic/scenarios/multiintersection/application
+
+
+"vehicles": [
+  		{
+            "startingTime": "1.0 s",
+            "route": "SW0",
+            "maxNumberVehicles": 5000,
+			"targetFlow": 20,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehicleOnBoardUnit"] } ]
+        },
+	  	{
+            "startingTime": "1.0 s",
+            "route": "SE1",
+            "maxNumberVehicles": 5000,
+			"targetFlow": 40,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehicleOnBoardUnit"] } ]
+        },
+	  	{
+            "startingTime": "1.0 s",
+            "route": "SN1",
+            "maxNumberVehicles": 5000,
+			"targetFlow": 40,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehicleOnBoardUnit"] } ]
+        },
+	  	
+  		{
+            "startingTime": "1.0 s",
+            "route": "NE0",
+            "maxNumberVehicles": 5000,
+			"targetFlow": 20,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehicleOnBoardUnit"] } ]
+        },
+	  	{
+            "startingTime": "1.0 s",
+            "route": "NS1",
+            "maxNumberVehicles": 5000,
+			"targetFlow": 40,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehicleOnBoardUnit"] } ]
+        },
+	  	{
+            "startingTime": "1.0 s",
+            "route": "NW1",
+            "maxNumberVehicles": 5000,
+			"targetFlow": 40,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehicleOnBoardUnit"] } ]
+        },
+	  	
+	  	
+  		{
+            "startingTime": "1.0 s",
+            "route": "ES0",
+            "maxNumberVehicles": 5000,
+			"targetFlow": 0,
+            "types": [ { "name": "Car" , "applications":["com.debangis.VehicleOnBoardUnit"]} ]
+        },
+	  	{
+            "startingTime": "1.0 s",
+            "route": "EW1",
+            "maxNumberVehicles": 5000,
+			"targetFlow": 0,
+            "types": [ { "name": "Car" , "applications":["com.debangis.VehicleOnBoardUnit"]} ]
+        },
+	  	{
+            "startingTime": "1.0 s",
+            "route": "EN1",
+            "maxNumberVehicles": 5000,
+			"targetFlow": 0,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehicleOnBoardUnit"] } ]
+        },
+	  	
+	  	
+  		{
+            "startingTime": "1.0 s",
+            "route": "WN0",
+            "maxNumberVehicles": 5000,
+			"targetFlow": 0,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehicleOnBoardUnit"] } ]
+        },
+	  	{
+            "startingTime": "1.0 s",
+            "route": "WE1",
+            "maxNumberVehicles": 5000,
+			"targetFlow": 0,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehicleOnBoardUnit"] } ]
+        },
+	  	{
+            "startingTime": "1.0 s",
+            "route": "WS1",
+            "maxNumberVehicles": 5000,
+			"targetFlow": 0,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehicleOnBoardUnit"] } ]
+        }
+	]

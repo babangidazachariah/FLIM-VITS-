@@ -1,0 +1,138 @@
+{
+  "prototypes": [
+    {
+      "name": "Car",
+      "length": "4.5 m",
+      "minGap": "5.0 m",
+      "maxSpeed": "50.0 m/s",
+      "accel": 0.8,
+      "decel": 4.5,
+      "sigma": 0.5,
+      "tau": 1.0
+	  
+    },
+	{
+		"name": "TrafficLight",
+		"applications": ["com.debangis.UrgencyBasedAlgorithm" ]
+	}
+  ],
+  "trafficLights": [
+    	{
+        	"name": "TrafficLight",
+        	"tlGroupId": "Junction"
+    	}
+   ],
+  
+  "chargingStations": [],
+  "servers": [
+        {
+            "name": "CellularTrafficRecordingServer",
+            "group": "TrafficRecordingServers",
+            "applications": [ "com.debangis.CellularTrafficRecordingServer" ]
+        }
+		
+    ],
+"rsus":[
+		{
+			"name": "RSU",
+            "position": {
+                "latitude": 53.547745,
+                "longitude": 9.966246
+            }, 
+            "applications": [ "com.debangis.VehDelayRecordingRSU" ]
+        }
+		
+		
+	],
+  "vehicles": [
+  		{
+            
+            "route": "SW0",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehiclePerceptionBasedDriving"] } ]
+        },
+	  	{
+            
+            "route": "SE1",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehiclePerceptionBasedDriving"] } ]
+        },
+	  	{
+            
+            "route": "SN1",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehiclePerceptionBasedDriving"] } ]
+        },
+	  	
+  		{
+            
+            "route": "NE0",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehiclePerceptionBasedDriving"] } ]
+        },
+	  	{
+            
+            "route": "NS1",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehiclePerceptionBasedDriving"] } ]
+        },
+	  	{
+            
+            "route": "NW1",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehiclePerceptionBasedDriving"] } ]
+        },
+	  	
+	  	
+  		{
+            
+            "route": "ES0",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car" , "applications":["com.debangis.VehiclePerceptionBasedDriving"]} ]
+        },
+	  	{
+            
+            "route": "EW1",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car" , "applications":["com.debangis.VehiclePerceptionBasedDriving"]} ]
+        },
+	  	{
+            
+            "route": "EN1",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehiclePerceptionBasedDriving"] } ]
+        },
+	  	
+	  	
+  		{
+            
+            "route": "WN0",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehiclePerceptionBasedDriving"] } ]
+        },
+	  	{
+            
+            "route": "WE1",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehiclePerceptionBasedDriving"] } ]
+        },
+	  	{
+            
+            "route": "WS1",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.VehiclePerceptionBasedDriving"] } ]
+        }
+	]
+}

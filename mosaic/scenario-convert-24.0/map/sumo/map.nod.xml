@@ -1,0 +1,13 @@
+<nodes>
+	<node id="1769478532" x="670251.09" y="4866617.51" z="0.00" type="traffic_light" />
+	<node id="1769478550" x="670253.45" y="4866606.86" z="0.00" type="traffic_light" />
+	<node id="1769478569" x="670335.00" y="4866640.79" z="0.00" type="priority" />
+	<node id="1769478573" x="670197.55" y="4866594.84" z="0.00" type="priority" />
+	<node id="1769478596" x="670237.55" y="4866651.62" z="0.00" type="priority" />
+	<node id="1769478599" x="670242.19" y="4866603.80" z="0.00" type="traffic_light" />
+	<node id="1769478609" x="670263.14" y="4866543.20" z="0.00" type="priority" />
+	<node id="321920939" x="670112.57" y="4867008.67" z="0.00" type="traffic_light" />
+	<node id="4386081499" x="670669.04" y="4866753.98" z="0.00" type="priority" />
+	<node id="904994118" x="670240.04" y="4866613.90" z="0.00" type="traffic_light" />
+	<node id="9067151913" x="669921.25" y="4866498.86" z="0.00" type="priority" />
+</nodes>

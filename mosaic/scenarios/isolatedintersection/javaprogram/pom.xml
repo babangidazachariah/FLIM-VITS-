@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+   
+    <groupId>org.eclipse.mosaic.app</groupId>
+    <artifactId>TrafficLightsController</artifactId>
+    <version>0.0.1</version>
+    <packaging>jar</packaging>
+  
+    <properties>
+         <maven.compiler.source>11</maven.compiler.source>
+         <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+     
+    <repositories> 
+        <repository>
+            <id>repo.eclipse.org</id>
+            <name>MOSAIC Repository</name>
+            <url>https://repo.eclipse.org/content/repositories/mosaic</url>
+        </repository>
+    </repositories>
+                 
+    <dependencies>
+        <dependency>
+            <groupId>org.eclipse.mosaic</groupId>
+            <artifactId>mosaic-application</artifactId>
+            <version>24.0</version>
+        </dependency>
+		<dependency>
+			<groupId>com.fuzzylite</groupId>
+			<artifactId>jfuzzylite</artifactId>
+			<scope>system</scope>
+			<version>6.0.1</version>
+			<systemPath>${project.basedir}/libs/jfuzzylite-6.0.1/jfuzzylite-6.0.1.jar</systemPath>
+		</dependency>
+    </dependencies>
+       
+</project>

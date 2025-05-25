@@ -1,0 +1,30 @@
+		//INPUTS: queueLength waitingTime Distance 
+		ruleBlock.addRule(Rule.parse("if queueLength  is  short and waitingTime  is  low and distance  is  near then  phaseDuration  is  short  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  short and waitingTime  is  low and distance  is  far then  phaseDuration  is  short  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  short and waitingTime  is  low and distance  is  veryfar then  phaseDuration  is  long  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  short and waitingTime  is  high and distance  is  near then  phaseDuration  is  short  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  short and waitingTime  is  high and distance  is  far then  phaseDuration  is  long  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  short and waitingTime  is  high and distance  is  veryfar then  phaseDuration  is  verylong  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  short and waitingTime  is  veryhigh and distance  is  near then  phaseDuration  is  short  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  short and waitingTime  is  veryhigh and distance  is  far then  phaseDuration  is  short  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  short and waitingTime  is  veryhigh and distance  is  veryfar then  phaseDuration  is  short  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  long and waitingTime  is  low and distance  is  near then  phaseDuration  is  long  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  long and waitingTime  is  low and distance  is  far then  phaseDuration  is  long  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  long and waitingTime  is  low and distance  is  veryfar then  phaseDuration  is  long  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  long and waitingTime  is  high and distance  is  near then  phaseDuration  is  long  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  long and waitingTime  is  high and distance  is  far then  phaseDuration  is  long  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  long and waitingTime  is  high and distance  is  veryfar then  phaseDuration  is  long  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  long and waitingTime  is  veryhigh and distance  is  near then  phaseDuration  is  long  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  long and waitingTime  is  veryhigh and distance  is  far then  phaseDuration  is  long  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  long and waitingTime  is  veryhigh and distance  is  veryfar then  phaseDuration  is  long  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  verylong and waitingTime  is  low and distance  is  near then  phaseDuration  is  long  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  verylong and waitingTime  is  low and distance  is  far then  phaseDuration  is  verylong  ", engine));
+		ruleBlock.addRule(Rule.parse("if queueLength  is  verylong and waitingTime  is  low and distance  is  veryfar then  phaseDuration  is  verylong  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  verylong and waitingTime  is  high and distance  is  near then  phaseDuration  is  verylong  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  verylong and waitingTime  is  high and distance  is  far then  phaseDuration  is  verylong  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  verylong and waitingTime  is  high and distance  is  veryfar then  phaseDuration  is  verylong  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  verylong and waitingTime  is  veryhigh and distance  is  near then  phaseDuration  is  verylong  ", engine));
+        ruleBlock.addRule(Rule.parse("if queueLength  is  verylong and waitingTime  is  veryhigh and distance  is  far then  phaseDuration  is  verylong  ", engine));
+		ruleBlock.addRule(Rule.parse("if queueLength  is  verylong and waitingTime  is  veryhigh and distance  is  veryfar then  phaseDuration  is  verylong  ", engine));
+
+        

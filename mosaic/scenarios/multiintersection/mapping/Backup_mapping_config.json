@@ -1,0 +1,572 @@
+{
+  "prototypes": [
+    {
+      "name": "default",
+      "length": "7.5 m",
+      "minGap": "2.0 m",
+      "maxSpeed": "50.0 m/s",
+      "accel": 0.8,
+      "decel": 4.5,
+      "sigma": 0.5,
+      "tau": 1.0
+    }	
+  		{
+            
+            "route": "STEE",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "STER",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  	{
+            
+            "route": "STEL",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  
+	  	{
+            
+            "route": "STES",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "STEE",
+            "maxNumberVehicles": 500,
+			"targetFlow": 10,
+            "types": [ { "name": "Car", "applications":["com.debangis.PriorityVehicleOnBoardUnit"] } ]
+        },
+	  
+	  
+	  
+	  	
+  		{
+            
+            "route": "TSE",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "TSR",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  	{
+            
+            "route": "TSL",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  
+	  	{
+            
+            "route": "TSS",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  
+	  
+	  	
+  		{
+            
+            "route": "RSE",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "RSR",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  	{
+            
+            "route": "RSL",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  
+	  	{
+            
+            "route": "RSS",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  
+	  
+	  	
+  		{
+            
+            "route": "SRE",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "SRR",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  	{
+            
+            "route": "SRL",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  
+	  	{
+            
+            "route": "SRS",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  
+	  
+	  	
+  		{
+            
+            "route": "MRE",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "MRR",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  	{
+            
+            "route": "MRL",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  
+	  	{
+            
+            "route": "MRS",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  
+	  
+	  
+	  	
+  		{
+            
+            "route": "RME",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "RMR",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  	{
+            
+            "route": "RML",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  
+	  	{
+            
+            "route": "RMS",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  
+	  
+	  
+	  	
+  		{
+            
+            "route": "TME",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "TMR",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  	{
+            
+            "route": "TML",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  
+	  	{
+            
+            "route": "TMS",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  
+	  
+	  
+	  	
+  		{
+            
+            "route": "MTE",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "MTR",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  	{
+            
+            "route": "MTL",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  
+	  	{
+            
+            "route": "MTS",
+            "maxNumberVehicles": 500,
+			"targetFlow": 400,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        }
+  ],
+  "chargingStations": [],
+  "vehicles": [
+  			
+  		{
+            
+            "route": "STEE",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "STER",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  	{
+            
+            "route": "STEL",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  
+	  	{
+            
+            "route": "STES",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "STEE",
+            "maxNumberVehicles": 500,
+			"targetFlow": 10,
+            "types": [ { "name": "Car", "applications":["com.debangis.PriorityVehicleOnBoardUnit"] } ]
+        },
+	  
+	  
+	  
+	  	
+  		{
+            
+            "route": "TSE",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "TSR",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  	{
+            
+            "route": "TSL",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  
+	  	{
+            
+            "route": "TSS",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  
+	  
+	  	
+  		{
+            
+            "route": "RSE",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "RSR",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  	{
+            
+            "route": "RSL",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  
+	  	{
+            
+            "route": "RSS",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  
+	  
+	  	
+  		{
+            
+            "route": "SRE",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "SRR",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  	{
+            
+            "route": "SRL",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  
+	  	{
+            
+            "route": "SRS",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  
+	  
+	  	
+  		{
+            
+            "route": "MRE",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "MRR",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  	{
+            
+            "route": "MRL",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  
+	  	{
+            
+            "route": "MRS",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  
+	  
+	  
+	  	
+  		{
+            
+            "route": "RME",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "RMR",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  	{
+            
+            "route": "RML",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  
+	  	{
+            
+            "route": "RMS",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  
+	  
+	  
+	  	
+  		{
+            
+            "route": "TME",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "TMR",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  	{
+            
+            "route": "TML",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  
+	  	{
+            
+            "route": "TMS",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  
+	  
+	  
+	  	
+  		{
+            
+            "route": "MTE",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	{
+            
+            "route": "MTR",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  	
+	  	{
+            
+            "route": "MTL",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        },
+	  
+	  	{
+            
+            "route": "MTS",
+            "maxNumberVehicles": 500,
+			"targetFlow": 200,
+            "types": [ { "name": "Car", "applications":["com.debangis.GeneralVehicleOnBoardUnit"] } ]
+        }
+  ]
+}

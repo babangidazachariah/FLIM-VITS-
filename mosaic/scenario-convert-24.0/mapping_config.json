@@ -1,0 +1,16 @@
+{
+  "prototypes": [
+    {
+      "name": "default",
+      "length": "7.5 m",
+      "minGap": "2.0 m",
+      "maxSpeed": "50.0 m/s",
+      "accel": 0.8,
+      "decel": 4.5,
+      "sigma": 0.5,
+      "tau": 1.0
+    }
+  ],
+  "chargingStations": [],
+  "vehicles": []
+}

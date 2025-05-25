@@ -1,0 +1,20 @@
+<additionals>
+  <e1Detector id="eastApproachLoop0" lane="eastApproach_0" pos="200" freq="100.00" file="detectors.txt" />
+  <e1Detector id="eastApproachLoop1" lane="eastApproach_1" pos="200" freq="100.00" file="detectors.txt" />
+  <e1Detector id="eastApproachLoop2" lane="eastApproach_2" pos="200" freq="100.00" file="detectors.txt" />
+	
+  <e1Detector id="westApproachLoop0" lane="westApproach_0" pos="200" freq="100.00" file="detectors.txt" />
+  <e1Detector id="westApproachLoop1" lane="westApproach_1" pos="200" freq="100.00" file="detectors.txt" />
+  <e1Detector id="westApproachLoop2" lane="westApproach_2" pos="200" freq="100.00" file="detectors.txt" />
+	
+	
+  <e1Detector id="southApproachLoop0" lane="southApproach_0" pos="200" freq="100.00" file="detectors.txt" />
+  <e1Detector id="southApproachLoop1" lane="southApproach_1" pos="200" freq="100.00" file="detectors.txt" />
+  <e1Detector id="southApproachLoop2" lane="southApproach_2" pos="200" freq="100.00" file="detectors.txt" />
+	
+	
+  <e1Detector id="northApproachLoop0" lane="northApproach_0" pos="200" freq="100.00" file="detectors.txt" />
+  <e1Detector id="northApproachLoop1" lane="northApproach_1" pos="200" freq="100.00" file="detectors.txt" />
+  <e1Detector id="northApproachLoop2" lane="northApproach_2" pos="200" freq="100.00" file="detectors.txt" />
+	
+</additionals>

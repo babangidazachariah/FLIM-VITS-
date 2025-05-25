@@ -1,0 +1,5 @@
+{
+    "sumoConfigurationFile": "isolatedintersection.sumocfg",
+    "updateInterval": 1000,
+	"subscribeToAllVehicles": true
+}
