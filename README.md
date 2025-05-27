@@ -26,6 +26,90 @@ The directory should look as follows:
 |___mosaic
 
 The "TrafficLightsApp" directory contains the Java codes used to instantiate and control the simulation elements while the "mosaic" directory contains the simulation configurations and their dependencies.
+#### Fuzzy Rules
+| QueueLength | Distance | Speed     | WaitingTime | PhaseDuration |
+|-------------|----------|-----------|-------------|----------------|
+| short       | near     | slow      | short       | short          |
+| short       | near     | slow      | long        | short          |
+| short       | near     | slow      | verylong    | short          |
+| short       | near     | fast      | short       | short          |
+| short       | near     | fast      | long        | short          |
+| short       | near     | fast      | verylong    | short          |
+| short       | near     | veryfast  | short       | short          |
+| short       | near     | veryfast  | long        | short          |
+| short       | near     | veryfast  | verylong    | short          |
+| short       | far      | slow      | short       | long           |
+| short       | far      | slow      | long        | long           |
+| short       | far      | slow      | verylong    | long           |
+| short       | far      | fast      | short       | long           |
+| short       | far      | fast      | long        | long           |
+| short       | far      | fast      | verylong    | long           |
+| short       | far      | veryfast  | short       | long           |
+| short       | far      | veryfast  | long        | long           |
+| short       | far      | veryfast  | verylong    | long           |
+| short       | veryfar  | slow      | short       | verylong       |
+| short       | veryfar  | slow      | long        | verylong       |
+| short       | veryfar  | slow      | verylong    | verylong       |
+| short       | veryfar  | fast      | short       | verylong       |
+| short       | veryfar  | fast      | long        | verylong       |
+| short       | veryfar  | fast      | verylong    | verylong       |
+| short       | veryfar  | veryfast  | short       | verylong       |
+| short       | veryfar  | veryfast  | long        | verylong       |
+| short       | veryfar  | veryfast  | verylong    | verylong       |
+| long        | near     | slow      | short       | short          |
+| long        | near     | slow      | long        | short          |
+| long        | near     | slow      | verylong    | short          |
+| long        | near     | fast      | short       | short          |
+| long        | near     | fast      | long        | short          |
+| long        | near     | fast      | verylong    | short          |
+| long        | near     | veryfast  | short       | short          |
+| long        | near     | veryfast  | long        | short          |
+| long        | near     | veryfast  | verylong    | short          |
+| long        | far      | slow      | short       | long           |
+| long        | far      | slow      | long        | long           |
+| long        | far      | slow      | verylong    | long           |
+| long        | far      | fast      | short       | long           |
+| long        | far      | fast      | long        | long           |
+| long        | far      | fast      | verylong    | long           |
+| long        | far      | veryfast  | short       | long           |
+| long        | far      | veryfast  | long        | long           |
+| long        | far      | veryfast  | verylong    | long           |
+| long        | veryfar  | slow      | short       | verylong       |
+| long        | veryfar  | slow      | long        | verylong       |
+| long        | veryfar  | slow      | verylong    | verylong       |
+| long        | veryfar  | fast      | short       | verylong       |
+| long        | veryfar  | fast      | long        | verylong       |
+| long        | veryfar  | fast      | verylong    | verylong       |
+| long        | veryfar  | veryfast  | short       | verylong       |
+| long        | veryfar  | veryfast  | long        | verylong       |
+| long        | veryfar  | veryfast  | verylong    | verylong       |
+| verylong    | near     | slow      | short       | long           |
+| verylong    | near     | slow      | long        | long           |
+| verylong    | near     | slow      | verylong    | long           |
+| verylong    | near     | fast      | short       | long           |
+| verylong    | near     | fast      | long        | long           |
+| verylong    | near     | fast      | verylong    | long           |
+| verylong    | near     | veryfast  | short       | long           |
+| verylong    | near     | veryfast  | long        | long           |
+| verylong    | near     | veryfast  | verylong    | long           |
+| verylong    | far      | slow      | short       | verylong       |
+| verylong    | far      | slow      | long        | verylong       |
+| verylong    | far      | slow      | verylong    | verylong       |
+| verylong    | far      | fast      | short       | verylong       |
+| verylong    | far      | fast      | long        | verylong       |
+| verylong    | far      | fast      | verylong    | verylong       |
+| verylong    | far      | veryfast  | short       | verylong       |
+| verylong    | far      | veryfast  | long        | verylong       |
+| verylong    | far      | veryfast  | verylong    | verylong       |
+| verylong    | veryfar  | slow      | short       | verylong       |
+| verylong    | veryfar  | slow      | long        | verylong       |
+| verylong    | veryfar  | slow      | verylong    | verylong       |
+| verylong    | veryfar  | fast      | short       | verylong       |
+| verylong    | veryfar  | fast      | long        | verylong       |
+| verylong    | veryfar  | fast      | verylong    | verylong       |
+| verylong    | veryfar  | veryfast  | short       | verylong       |
+| verylong    | veryfar  | veryfast  | long        | verylong       |
+| verylong    | veryfar  | veryfast  | verylong    | verylong       |
 
 ### Reference
 <a id="ref1"></a>  
