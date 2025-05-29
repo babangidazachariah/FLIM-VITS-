@@ -28,6 +28,7 @@ The directory should look as follows:
 The "TrafficLightsApp" directory contains the Java codes used to instantiate and control the simulation elements while the "mosaic" directory contains the simulation configurations and their dependencies.
 
 ### FLIM-VITS Framework
+[Zoom-In for clearity of Figure]
 <img src="images/framework.drawio.jpg" alt="FLIM-VITS Framework" />
 
 ### Fuzzy Inference System/Architecture
